@@ -6,6 +6,7 @@ It can also indirectly leverage Watson Discovery to provide "Search skill" for W
 # Main project structure
 - `covid-client` - A client app that interact directly with user
     - `react` - Currently only client available
+- `covid-client-express` - Serve static files builts from `covid-client`
 - `covid-wa-gateway` - A bunch of cloud functions that act as gateway for Watson Assistant API
     - `msg-wa` - A gateway function that forward message to Watson Assistant
     - `start-wa` - A gateway function that return new sessionId
