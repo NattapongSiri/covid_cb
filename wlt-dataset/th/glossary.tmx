@@ -1,0 +1,71 @@
+  <header
+    creationtool="VS Code" creationtoolversion="1.44"
+    datatype="PlainText" segtype="phrase"
+    adminlang="en-us" srclang="th"/>
+  <body>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>โควิด</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Covid</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>โควิท</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Covid</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>โคโรนา</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Corona</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>โคโรน่า</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Corona</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>โควิด</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Covid</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ยอดผู้ป่วย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>patient count</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ยอดโควิด</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Covid's case count</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สถานะวันนี้</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>status report for today</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

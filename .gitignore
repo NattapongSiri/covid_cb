@@ -1,0 +1,8 @@
+**/build/*
+**/node_modules
+case_count_sync/*
+.*
+!.gitignore
+node_modules
+*.zip
+package-lock.json

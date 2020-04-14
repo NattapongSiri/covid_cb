@@ -1,0 +1,37 @@
+  <header
+    creationtool="VS Code" creationtoolversion="1.44"
+    datatype="PlainText" segtype="sentence"
+    adminlang="en-us" srclang="th"/>
+  <body>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ยอดผู้ป่วย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>patient count</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ยอดผู้ติดเชื้อ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>infected count</seg>
+      </tuv>
+    </tu>  <header
+    creationtool="VS Code" creationtoolversion="1.44"
+    datatype="PlainText" segtype="phrase"
+    adminlang="en-us" srclang="th"/>
+  <body>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ยังออกจากบ้านได้ไหม</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Is it permitted to leave the house</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>
+  </body>
+</tmx>
