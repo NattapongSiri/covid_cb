@@ -1,10 +1,10 @@
 import React, {useEffect, useRef} from "react"
 
 import _debounce from 'lodash.debounce'
-import {Container} from '@material-ui/core'
+import { Container } from '@material-ui/core'
 
 import ChatMessage from './ChatMessage'
-import {Message} from './commons/Message'
+import { Message, MessageState } from './commons/Message'
 
 export default function ChatDialog({messages, style, onChoose}: {style?: React.CSSProperties, messages: Message[], onChoose?: (msg: string) => void}) {
 
@@ -49,7 +49,8 @@ export default function ChatDialog({messages, style, onChoose}: {style?: React.C
                                         message: r.highlight,
                                         type: "Watson",
                                         timestamp: new Date(),
-                                        reference: r.url
+                                        reference: r.url,
+                                        state: MessageState.succeed
                                     }} />
                             ))}
                         </React.Fragment>

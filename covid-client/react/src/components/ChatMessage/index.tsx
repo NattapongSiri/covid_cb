@@ -4,10 +4,10 @@ import { Theme, ThemeProvider } from "@material-ui/core/styles"
 import { makeStyles, useTheme } from "@material-ui/styles"
 import watson from './watson-avatar.png'
 
-import {Message} from '../commons/Message'
+import { Message, MessageState } from '../commons/Message'
 import Context from '../../Context'
 
-import {BubbleClass, BubbleArrowClass, MsgClass, SenderClass, FlexBreaker} from "./ChatMessage-style"
+import { BubbleClass, BubbleArrowClass, MsgClass, SenderClass, FlexBreaker } from "./ChatMessage-style"
 
 export default function ChatMessage({message, onChoose}: {message: Message, onChoose?: (msg: string) => void}) {
     const self = message.type === "self"
@@ -88,9 +88,21 @@ export default function ChatMessage({message, onChoose}: {message: Message, onCh
                 </div>
                 {self && <Avatar style={{display:"inline-block"}} />}
                 <div className={breakFlex.root}/>
-                <Typography color={"textSecondary"} variant={"body2"} display={"block"} style={{margin: self?"3px 55px 1vh 0":"3px 0 1vh 55px"}}>
-                    {dateTimeFormatter.format(message.timestamp)}
-                </Typography>
+                {message.state === MessageState.succeed &&
+                    <Typography color={"textSecondary"} variant={"body2"} display={"block"} style={{margin: self?"3px 55px 1vh 0":"3px 0 1vh 55px"}}>
+                        {dateTimeFormatter.format(message.timestamp)}
+                    </Typography>
+                }
+                {message.state === MessageState.sending &&
+                    <Typography variant={"body2"} display={"block"} style={{margin: self?"3px 55px 1vh 0":"3px 0 1vh 55px", color: theme.palette.type==="dark"?theme.palette.warning.dark:theme.palette.warning.light}}>
+                        Sending
+                    </Typography>
+                }
+                {message.state === MessageState.failed &&
+                    <Typography variant={"body2"} display={"block"} style={{margin: self?"3px 55px 1vh 0":"3px 0 1vh 55px", color: theme.palette.type==="dark"?theme.palette.error.dark:theme.palette.error.light}}>
+                        Failed
+                    </Typography>
+                }
             </div>
         </ThemeProvider>
     )

@@ -26,6 +26,12 @@ export interface Suggestion {
     }
 }
 
+export enum MessageState {
+    sending,
+    failed,
+    succeed
+}
+
 export interface Message {
     uuid: string
     message: string
@@ -33,6 +39,7 @@ export interface Message {
     timestamp: Date
     reference?: string // for example: url of source of this message
     previewUrl?: URL // message associate with link to be preview
+    state: MessageState
 
     suggestions?: [{
         uuid: string
