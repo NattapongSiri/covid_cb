@@ -57,17 +57,17 @@ impl WASession {
     }
 
     /// Primitive function to send user input.
-    pub async fn send<'a, M1, M2, M3, O, P, T>(&self, message: &UserInput<'a, M1, T>) -> Result<WAResponse<M1, M2, M3, O, P, T>, CurlErr> where M1 : for<'r> Deserialize<'r> + Serialize, M2 : for<'r> Deserialize<'r> + Serialize, M3 : for<'r> Deserialize<'r> + Serialize, O : for<'r> Deserialize<'r> + Serialize, P : for<'r> Deserialize<'r> + Serialize, T : for<'r> Deserialize<'r> + Serialize {
+    pub async fn send<'a, M1, M2, M3, M4, M5, P, T>(&self, message: &UserInput<'a, M1, T>) -> Result<WAResponse<M1, M2, M3, M4, M5, P, T>, CurlErr> where M1 : for<'r> Deserialize<'r> + Serialize, M2 : for<'r> Deserialize<'r> + Serialize, M3 : for<'r> Deserialize<'r> + Serialize, M4 : for<'r> Deserialize<'r> + Serialize, M5 : for<'r> Deserialize<'r> + Serialize, P : for<'r> Deserialize<'r> + Serialize, T : for<'r> Deserialize<'r> + Serialize {
         post_json(&self.send_url, &self.api_key, Some(message))
     }
 
     /// User friendly function to let user send simple text message to WA
-    pub async fn send_txt<>(&self, input: &str) -> Result<WAResponse<(), (), (), (), (), ()>, CurlErr> {
+    pub async fn send_txt<>(&self, input: &str) -> Result<WAResponse<(), (), (), (), (), (), ()>, CurlErr> {
         post_json(&self.send_url, &self.api_key, Some(&UserInputBuilder::builder().text(input).build()))
     }
 
     /// User friendly function to let user simple text message along with message context to WA
-    pub async fn send_txt_with_context<'a, T>(&self, input: &str, context: T) -> Result<WAResponse<(), (), (), (), (), T>, CurlErr> where T : for<'r> Deserialize<'r> + Serialize {
+    pub async fn send_txt_with_context<'a, T>(&self, input: &str, context: T) -> Result<WAResponse<(), (), (), (), (), (), T>, CurlErr> where T : for<'r> Deserialize<'r> + Serialize {
         post_json(&self.send_url, &self.api_key, Some(&UserInputBuilder::builder().text(input).context(ContextBuilder::builder().user_defined(context).build()).build()))
     }
 
@@ -590,11 +590,45 @@ pub struct OutputOption<M> where M : Serialize {
 }
 
 #[derive(Debug, Deserialize, Serialize)]
-pub struct Suggestion<M, T> where M : Serialize,T : Serialize {
-    pub label: String,
-    pub value: OptionInput<M>,
+#[serde(rename_all = "snake_case")]
+pub enum SuggestionInputType {
+    Text,
+    Option,
+    Image
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct SuggestionInput<M1, M2> where M1 : Serialize, M2 : Serialize {
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub output: Option<T>
+    pub response_type: Option<SuggestionInputType>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub text: Option<String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub options: Option<Vec<OutputOption<M1>>>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub source: Option<String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub title: Option<String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub intents: Option<Vec<Intent>>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub entities: Option<Vec<Entity<M2>>>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub suggestion_id: Option<String>
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct GenericSuggestion<M1, M2> where M1 : Serialize, M2 : Serialize {
+    #[serde(skip_serializing_if = "Option::is_none")]
+    generic: Option<Vec<SuggestionInput<M1, M2>>>
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct Suggestion<M1, M2, M3> where M1 : Serialize, M2 : Serialize, M3 : Serialize {
+    pub label: String,
+    pub value: OptionElm<M1>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub output: Option<GenericSuggestion<M2, M3>>
 }
 
 #[derive(Debug, Deserialize, Serialize)]
@@ -618,7 +652,7 @@ pub struct SearchResult {
 }
 
 #[derive(Debug, Deserialize, Serialize)]
-pub struct ResponseGeneric<M, N, T> where M : Serialize, N : Serialize, T : Serialize {
+pub struct ResponseGeneric<M1, M2, M3, M4> where M1 : Serialize, M2 : Serialize, M3 : Serialize, M4 : Serialize {
     pub response_type: ResponseType,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub text: Option<String>,
@@ -635,13 +669,13 @@ pub struct ResponseGeneric<M, N, T> where M : Serialize, N : Serialize, T : Seri
     #[serde(skip_serializing_if = "Option::is_none")]
     pub preference: Option<OptionPreference>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub options: Option<Vec<OutputOption<M>>>,
+    pub options: Option<Vec<OutputOption<M1>>>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub message_to_human_agent: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub topic: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub suggestions: Option<Vec<Suggestion<N, T>>>,
+    pub suggestions: Option<Vec<Suggestion<M2, M3, M4>>>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub header: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -703,25 +737,27 @@ pub struct DebugInfo {
 }
 
 #[derive(Debug, Deserialize, Serialize)]
-pub struct GenericMessageOutput<M1, M2, M3, O, P> where M1 : Serialize, M2 : Serialize, M3 : Serialize, O : Serialize, P : Serialize {
-    pub generic: Vec<ResponseGeneric<M1, M3, O>>,
-    pub intents: Vec<Intent>,
-    pub entities: Vec<Entity<M2>>,
+pub struct GenericMessageOutput<M1, M2, M3, M4, M5, P> where M1 : Serialize, M2 : Serialize, M3 : Serialize, M4 : Serialize, M5 : Serialize, P : Serialize {
+    pub generic: Vec<ResponseGeneric<M1, M3, M4, M5>>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub intents: Option<Vec<Intent>>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub entities: Option<Vec<Entity<M2>>>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub actions: Option<Vec<Action<P>>>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub debug: Option<DebugInfo>
 }
 
-/// A response where it doesn't return any meta, nor actions parameters, nor context
-pub type SimpleWAResponse = WAResponse<(), (), (), (), (), ()>;
+// /// A response where it doesn't return any meta, nor actions parameters, nor context
+// pub type SimpleWAResponse = WAResponse<(), (), (), (), (), ()>;
 
-/// A response that will have context associated but have no meta nor actions parameters
-pub type WAResponseWithContext<C> = WAResponse<(), (), (), (), (), C>;
+// /// A response that will have context associated but have no meta nor actions parameters
+// pub type WAResponseWithContext<C> = WAResponse<(), (), (), (), (), C>;
 
 #[derive(Debug, Deserialize, Serialize)]
-pub struct WAResponse<M1, M2, M3, O, P, T> where M1 : Serialize, M2 : Serialize, M3 : Serialize, O : Serialize, P : Serialize, T : Serialize {
-    pub output: GenericMessageOutput<M1, M2, M3, O, P>,
+pub struct WAResponse<M1, M2, M3, M4, M5, P, T> where M1 : Serialize, M2 : Serialize, M3 : Serialize, M4 : Serialize, M5 : Serialize, P : Serialize, T : Serialize {
+    pub output: GenericMessageOutput<M1, M2, M3, M4, M5, P>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub context: Option<Context<T>>
 }

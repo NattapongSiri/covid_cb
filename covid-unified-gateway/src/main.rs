@@ -111,30 +111,32 @@ fn main() {
                         }
                     }
                     println!("Total text to be translated: {} text", translation_batch.len());
-                    println!("Sending translation batch to WLT");
-                    // Perform batch translation
-                    let mut wa_translated: Option<wlt::WLTTranslationResponse> = None;
-                    let to_be_translate = translation_batch.iter().map(|s| s.as_str()).collect::<Vec<&str>>();
-                    for attempt in 0..=wlt_retry {
-                        if let Ok(t) = wlt::WLTTranslationRequest::new(
-                                &wlt_endpoint, 
-                                &wlt_api_key, 
-                                to_be_translate.as_slice(), 
-                                &params.target_lang, 
-                                &params.source_lang, 
-                                &wlt_version).send().await {
-                            
-                            println!("WLT return {} text", t.translations.len());
-                            wa_translated = Some(t);
-                        } else {
-                            println!("Failed to translate WA response for {} time(s)", attempt + 1);
+                    if translation_batch.len() > 0 {
+                        println!("Sending translation batch to WLT");
+                        // Perform batch translation
+                        let mut wa_translated: Option<wlt::WLTTranslationResponse> = None;
+                        let to_be_translate = translation_batch.iter().map(|s| s.as_str()).collect::<Vec<&str>>();
+                        for attempt in 0..=wlt_retry {
+                            if let Ok(t) = wlt::WLTTranslationRequest::new(
+                                    &wlt_endpoint, 
+                                    &wlt_api_key, 
+                                    to_be_translate.as_slice(), 
+                                    &params.target_lang, 
+                                    &params.source_lang, 
+                                    &wlt_version).send().await {
+                                
+                                println!("WLT return {} text", t.translations.len());
+                                wa_translated = Some(t);
+                            } else {
+                                println!("Failed to translate WA response for {} time(s)", attempt + 1);
+                            }
                         }
-                    }
-                    // replace original wa response text with translated text
-                    if let Some(t) = wa_translated {
-                        t.translations.into_iter().zip(translation_batch.into_iter()).for_each(|(translated, original)| {
-                            *original = translated.translation;
-                        });
+                        // replace original wa response text with translated text
+                        if let Some(t) = wa_translated {
+                            t.translations.into_iter().zip(translation_batch.into_iter()).for_each(|(translated, original)| {
+                                *original = translated.translation;
+                            });
+                        }
                     }
                 }
                 println!("{{\"status\": 200, \"result\": {}}}", serde_json::to_string(&r).expect("Fail to convert result object to JSON"));
