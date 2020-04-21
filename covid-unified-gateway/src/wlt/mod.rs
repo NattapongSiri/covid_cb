@@ -1,6 +1,6 @@
 use serde::{ Deserialize, Serialize };
 use std::fmt::{ Debug };
-use super::utils::{post_json, CurlErr};
+use super::utils::{ post_json, CurlErr, RawResponse };
 
 #[derive(Serialize)]
 pub struct WLTTranslationRequest<'a> {
@@ -44,8 +44,8 @@ impl<'a> WLTTranslationRequest<'a> {
         }
     }
 
-    pub async fn send(&self) -> Result<WLTTranslationResponse, WLTErr> {
-        match post_json(&self.endpoint, &self.api_key, Some(self)) as Result<WLTTranslationResponse, CurlErr> {
+    pub async fn send(&self) -> Result<RawResponse<WLTTranslationResponse>, WLTErr> {
+        match post_json(&self.endpoint, &self.api_key, Some(self)) as Result<RawResponse<WLTTranslationResponse>, CurlErr> {
             Ok(result) => {
                 if result.translations.len() > 0 {
                     Ok(result)

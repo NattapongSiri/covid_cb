@@ -7,26 +7,21 @@ fn test_create_entity_builder() {
 
 #[test]
 fn test_build_entity_with_meta() {
-    #[derive(Debug, Deserialize, Serialize)]
-    struct LocalMeta {
-        name: &'static str
-    }
+    use serde_json::json;
+
     println!("{:?}", 
         EntityBuilder::builder("b".to_owned(), [2, 2], "bbbb".to_owned())
-                    .metadata(LocalMeta {name: "me"})
+                    .metadata(UnknownType::Value(json!({"name": "me"})))
                     .confidence(0.5f32)
     );
 }
 
 #[test]
 fn test_build_context() {
-    #[derive(Debug, Serialize)]
-    struct MyContext {
-        name: &'static str
-    }
+    use serde_json::json;
     let ctx = ContextBuilder::builder()
                         .timezone("Asia/Bangkok".to_owned())
-                        .user_defined(MyContext {name: "whoami"});
+                        .user_defined(UnknownType::Value(json!( {"name": "whoami"})));
     println!("{:?}", ctx)
 }
 
@@ -66,7 +61,7 @@ fn test_create_send_session() -> Result<(), CurlErr> {
                                     .build();
     futures::executor::block_on(async {
         let session = WASession::new(endpoint, api_key, id, version).await?;
-        let result: SimpleWAResponse = session.send(&msg).await?;
+        let result: WAResponse = session.send(&msg).await?.into_inner().1;
         println!("{:?}", result);
         Ok(())
     })
@@ -81,7 +76,7 @@ fn test_create_send_txt_session() -> Result<(), CurlErr> {
     
     futures::executor::block_on(async {
         let session = WASession::new(endpoint, api_key, id, version).await?;
-        let result: SimpleWAResponse = session.send_txt("hey there").await?;
+        let result: WAResponse = session.send_txt("hey there").await?.into_inner().1;
         println!("{:?}", result);
         Ok(())
     })
@@ -100,7 +95,7 @@ fn test_create_reattach_session() -> Result<(), CurlErr> {
     futures::executor::block_on(async {
         let session = WASession::new(endpoint.to_owned(), api_key.to_owned(), id.to_owned(), version.to_owned()).await?;
         let another_session = WASession::re_attach(endpoint, api_key, id, version, session.session_id);
-        let result : SimpleWAResponse = another_session.send(&msg).await?;
+        let result : WAResponse = another_session.send(&msg).await?.into_inner().1;
         println!("{:?}", result);
         Ok(())
     })

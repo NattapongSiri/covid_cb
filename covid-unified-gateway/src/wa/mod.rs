@@ -1,5 +1,7 @@
-use super::utils::{delete, post_json, CurlErr};
+use super::utils::{delete, post_json, CurlErr, RawResponse};
 use serde::{Deserialize, Serialize};
+use serde_json::value::{RawValue, Value};
+use std::boxed::Box;
 use std::collections::HashMap;
 
 #[derive(Debug)]
@@ -57,18 +59,18 @@ impl WASession {
     }
 
     /// Primitive function to send user input.
-    pub async fn send<'a, M1, M2, M3, M4, M5, P, T>(&self, message: &UserInput<'a, M1, T>) -> Result<WAResponse<M1, M2, M3, M4, M5, P, T>, CurlErr> where M1 : for<'r> Deserialize<'r> + Serialize, M2 : for<'r> Deserialize<'r> + Serialize, M3 : for<'r> Deserialize<'r> + Serialize, M4 : for<'r> Deserialize<'r> + Serialize, M5 : for<'r> Deserialize<'r> + Serialize, P : for<'r> Deserialize<'r> + Serialize, T : for<'r> Deserialize<'r> + Serialize {
+    pub async fn send<'a>(&self, message: &UserInput<'a>) -> Result<RawResponse<WAResponse>, CurlErr> {
         post_json(&self.send_url, &self.api_key, Some(message))
     }
 
     /// User friendly function to let user send simple text message to WA
-    pub async fn send_txt<>(&self, input: &str) -> Result<WAResponse<(), (), (), (), (), (), ()>, CurlErr> {
-        post_json(&self.send_url, &self.api_key, Some(&UserInputBuilder::builder().text(input).build()))
+    pub async fn send_txt(&self, input: &str) -> Result<RawResponse<WAResponse>, CurlErr> {
+        post_json(&self.send_url, &self.api_key, Some(&UserInputBuilder::builder().text(input).options(InputOptions::default()).build()))
     }
 
     /// User friendly function to let user simple text message along with message context to WA
-    pub async fn send_txt_with_context<'a, T>(&self, input: &str, context: T) -> Result<WAResponse<(), (), (), (), (), (), T>, CurlErr> where T : for<'r> Deserialize<'r> + Serialize {
-        post_json(&self.send_url, &self.api_key, Some(&UserInputBuilder::builder().text(input).context(ContextBuilder::builder().user_defined(context).build()).build()))
+    pub async fn send_txt_with_context(&self, input: &str, context: UnknownType) -> Result<RawResponse<WAResponse>, CurlErr> {
+        post_json(&self.send_url, &self.api_key, Some(&UserInputBuilder::builder().text(input).options(InputOptions::default()).context(ContextBuilder::builder().user_defined(context).build()).build()))
     }
 
     /// Terminate the session.
@@ -86,21 +88,40 @@ pub struct InputOptions {
     export: bool
 }
 
+impl Default for InputOptions {
+    fn default() -> Self {
+        InputOptions {
+            debug: false,
+            restart: false,
+            alternate_intents: true,
+            return_context: true,
+            export: false
+        }
+    }
+}
+
 #[derive(Debug, Deserialize, Serialize)]
 pub struct Intent {
     intent: String,
     confidence: f32
 }
 
+#[derive(Clone, Debug, Deserialize, Serialize)]
+#[serde(untagged)]
+pub enum UnknownType {
+    Raw(Box<RawValue>),
+    Value(Value)
+}
+
 #[derive(Debug, Deserialize, Serialize)]
-pub struct Entity<M> where M: Serialize {
+pub struct Entity {
     entity: String,
     location: [usize;2],
     value: String,
     #[serde(skip_serializing_if = "Option::is_none")]
     confidence: Option<f32>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    metadata: Option<M>,
+    metadata: Option<UnknownType>,
     #[serde(skip_serializing_if = "Option::is_none")]
     groups: Option<Vec<CapturedGrouup>>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -188,7 +209,7 @@ pub struct EntityRole {
 }
 
 #[derive(Debug, Serialize)]
-pub struct InputMessage<'a, M> where M: Serialize {
+pub struct InputMessage<'a> {
     #[serde(skip_serializing_if = "Option::is_none")]
     message_type: Option<InputType>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -198,7 +219,7 @@ pub struct InputMessage<'a, M> where M: Serialize {
     #[serde(skip_serializing_if = "Option::is_none")]
     intents: Option<&'a [&'a Intent]>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    entities: Option<Vec<Entity<M>>>,
+    entities: Option<Vec<Entity>>,
     #[serde(skip_serializing_if = "Option::is_none")]
     suggestion_id: Option<&'a str>
 }
@@ -224,32 +245,32 @@ pub struct ContextGlobal {
 }
 
 #[derive(Debug, Deserialize, Serialize)]
-pub struct ContextSkill<T> where T: Serialize {
+pub struct ContextSkill {
     #[serde(skip_serializing_if = "Option::is_none")]
-    user_defined: Option<T>,
+    user_defined: Option<UnknownType>,
     #[serde(skip_serializing_if = "Option::is_none")]
     system: Option<HashMap<String, String>>
 }
 
 #[derive(Debug, Deserialize, Serialize)]
-pub struct Context<T> where T: Serialize {
+pub struct Context {
     #[serde(skip_serializing_if = "Option::is_none")]
     global: Option<ContextGlobal>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    skills: Option<HashMap<String, ContextSkill<T>>>
+    skills: Option<HashMap<String, ContextSkill>>
 }
 
 #[derive(Debug, Serialize)]
-pub struct UserInput<'a, M, T> where M: Serialize, T: Serialize {
-    input: InputMessage<'a, M>,
+pub struct UserInput<'a> {
+    input: InputMessage<'a>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    context: Option<Context<T>>
+    context: Option<Context>
 }
 
-impl<'a, M, T> UserInput<'a, M, T> where M : Serialize, T : Serialize {
+impl<'a> UserInput<'a> {
     /// Attach a context to this input. It will consume current input
     /// and move all input into new UserInput with new context.
-    pub fn attach<C>(self, context: Context<C>) -> UserInput<'a, M, C> where C : Serialize {
+    pub fn attach(self, context: Context) -> UserInput<'a> {
         UserInput {
             input: self.input,
             context: Some(context)
@@ -257,65 +278,14 @@ impl<'a, M, T> UserInput<'a, M, T> where M : Serialize, T : Serialize {
     }
 }
 
-#[derive(Debug, Serialize)]
-pub struct SimpleUserInputBuilder<'a> {
-    #[serde(skip_serializing_if = "Option::is_none")]
-    message_type: Option<InputType>,
-    #[serde(skip_serializing_if = "Option::is_none")]
-    text: Option<&'a str>,
-    #[serde(skip_serializing_if = "Option::is_none")]
-    options: Option<InputOptions>
-}
-
-impl<'a> SimpleUserInputBuilder<'a> {
-    pub fn builder() -> SimpleUserInputBuilder<'a> {
-        SimpleUserInputBuilder {
-            message_type: None,
-            text: None,
-            options: None
-        }
-    }
-
-    pub fn message_type<'b: 'a>(&mut self, msg_type: InputType) -> &mut SimpleUserInputBuilder<'a> {
-        self.message_type = Some(msg_type);
-        self
-    }
-
-    pub fn text<'b: 'a>(&mut self, text: &'b str) -> &mut SimpleUserInputBuilder<'a> {
-        self.text = Some(text);
-        self
-    }
-
-    pub fn options(&mut self, options: InputOptions) -> &mut SimpleUserInputBuilder<'a> {
-        self.options = Some(options);
-        self
-    }
-
-    pub fn build(self) -> UserInput<'a, (), ()> {
-        UserInput {
-            input: InputMessage {
-                message_type: self.message_type,
-                text: self.text,
-                options: self.options,
-                intents: None,
-                entities: None,
-                suggestion_id: None
-            },
-            context: None
-        }
-    }
-}
-
-pub type UserInputBuilder<'a> = UserInputBuilderWithEntity<'a, (), ()>;
-
 #[derive(Debug)]
-pub struct UserInputBuilderWithEntity<'a, C, M> where C : Serialize, M : Serialize{
-    user_input: UserInput<'a, M, C>
+pub struct UserInputBuilder<'a> {
+    user_input: UserInput<'a>
 }
 
-impl<'a, C, M> UserInputBuilderWithEntity<'a, C, M> where C : Serialize, M : Serialize {
-    fn builder() -> UserInputBuilderWithEntity<'a, C, M> {
-        UserInputBuilderWithEntity {
+impl<'a> UserInputBuilder<'a> {
+    fn builder() -> UserInputBuilder<'a> {
+        UserInputBuilder {
             user_input: UserInput {
                 input: InputMessage {
                     message_type: None,
@@ -330,33 +300,33 @@ impl<'a, C, M> UserInputBuilderWithEntity<'a, C, M> where C : Serialize, M : Ser
         }
     }
 
-    pub fn message_type<'b: 'a>(mut self, msg_type: InputType) -> UserInputBuilderWithEntity<'a, C, M> {
+    pub fn message_type<'b: 'a>(mut self, msg_type: InputType) -> UserInputBuilder<'a> {
         self.user_input.input.message_type = Some(msg_type);
         self
     }
 
-    pub fn text<'b: 'a>(mut self, text: &'b str) -> UserInputBuilderWithEntity<'a, C, M>{
+    pub fn text<'b: 'a>(mut self, text: &'b str) -> UserInputBuilder<'a> {
         self.user_input.input.text = Some(text);
         self
     }
 
-    pub fn options(mut self, options: InputOptions) -> UserInputBuilderWithEntity<'a, C, M> {
+    pub fn options(mut self, options: InputOptions) -> UserInputBuilder<'a> {
         self.user_input.input.options = Some(options);
         self
     }
 
-    pub fn intents(mut self, intents: &'a[&'a Intent]) -> UserInputBuilderWithEntity<'a, C, M> {
+    pub fn intents(mut self, intents: &'a[&'a Intent]) -> UserInputBuilder<'a> {
         self.user_input.input.intents = Some(intents);
         self
     }
 
-    pub fn suggestion_id(mut self, suggestion_id: &'a str) -> UserInputBuilderWithEntity<'a, C, M> {
+    pub fn suggestion_id(mut self, suggestion_id: &'a str) -> UserInputBuilder<'a> {
         self.user_input.input.suggestion_id = Some(suggestion_id);
         self
     }
 
-    pub fn entities<N>(self, entities: Vec<Entity<N>>) -> UserInputBuilderWithEntity<'a, C, N> where N : Serialize {
-        UserInputBuilderWithEntity {
+    pub fn entities(self, entities: Vec<Entity>) -> UserInputBuilder<'a> {
+        UserInputBuilder {
             user_input: UserInput {
                 input: InputMessage {
                     message_type: self.user_input.input.message_type,
@@ -371,8 +341,8 @@ impl<'a, C, M> UserInputBuilderWithEntity<'a, C, M> where C : Serialize, M : Ser
         }
     }
 
-    pub fn context<T>(self, context: Context<T>) -> UserInputBuilderWithEntity<'a, T, M> where T : Serialize {
-        UserInputBuilderWithEntity {
+    pub fn context(self, context: Context) -> UserInputBuilder<'a> {
+        UserInputBuilder {
             user_input: UserInput {
                 input: self.user_input.input,
                 context: Some(context)
@@ -380,21 +350,19 @@ impl<'a, C, M> UserInputBuilderWithEntity<'a, C, M> where C : Serialize, M : Ser
         }
     }
 
-    pub fn build(self) -> UserInput<'a, M, C> {
+    pub fn build(self) -> UserInput<'a> {
         self.user_input
     }
 }
 
-pub type EntityBuilder = EntityBuilderWithMeta<()>;
-
 #[derive(Debug)]
-pub struct EntityBuilderWithMeta<M> where M: Serialize {
-    entity: Entity<M>
+pub struct EntityBuilder {
+    entity: Entity
 }
 
-impl<M> EntityBuilderWithMeta<M> where M : Serialize {
-    pub fn builder(entity: String, location: [usize;2], value: String) -> EntityBuilderWithMeta<M> {
-        EntityBuilderWithMeta {
+impl<'a> EntityBuilder {
+    pub fn builder(entity: String, location: [usize;2], value: String) -> EntityBuilder {
+        EntityBuilder {
             entity: Entity {
                 entity: entity,
                 location: location,
@@ -409,13 +377,13 @@ impl<M> EntityBuilderWithMeta<M> where M : Serialize {
         }
     }
 
-    pub fn confidence(&mut self, c: f32) -> &mut EntityBuilderWithMeta<M> {
+    pub fn confidence(mut self, c: f32) -> EntityBuilder {
         self.entity.confidence = Some(c);
         self
     }
 
-    pub fn metadata<T>(self, meta: T) -> EntityBuilderWithMeta<T> where T: Serialize {
-        EntityBuilderWithMeta {
+    pub fn metadata(self, meta: UnknownType) -> EntityBuilder {
+        EntityBuilder {
             entity: Entity {
                 entity: self.entity.entity,
                 location: self.entity.location,
@@ -430,47 +398,46 @@ impl<M> EntityBuilderWithMeta<M> where M : Serialize {
         }
     }
 
-    pub fn groups(&mut self, groups: Vec<CapturedGrouup>) -> &mut EntityBuilderWithMeta<M> {
+    pub fn groups(mut self, groups: Vec<CapturedGrouup>) -> EntityBuilder {
         self.entity.groups = Some(groups);
         self
     }
 
-    pub fn interpretation(&mut self, interpretation: Interpretation) -> &mut EntityBuilderWithMeta<M> {
+    pub fn interpretation(mut self, interpretation: Interpretation) -> EntityBuilder {
         self.entity.interpretation = Some(interpretation);
         self
     }
 
-    pub fn alternatives(&mut self, alternatives: Vec<AlternativeEntity>) -> &mut EntityBuilderWithMeta<M> {
+    pub fn alternatives(mut self, alternatives: Vec<AlternativeEntity>) -> EntityBuilder {
         self.entity.alternatives = Some(alternatives);
         self
     }
 
-    pub fn role(&mut self, role: EntityRole) -> &mut EntityBuilderWithMeta<M> {
+    pub fn role(mut self, role: EntityRole) -> EntityBuilder {
         self.entity.role = Some(role);
         self
     }
 
-    pub fn build(self) -> Entity<M> {
+    pub fn build(self) -> Entity {
         self.entity
     }
 }
 
-pub type ContextBuilder = CustomContextBuilder<()>;
 
 #[derive(Debug)]
-pub struct CustomContextBuilder<T> where T : Serialize {
+pub struct ContextBuilder {
     timezone: Option<String>,
     user_id: Option<String>,
     turn_count: Option<usize>,
     locale: Option<String>,
     reference_time: Option<String>,
-    user_defined: Option<T>
+    user_defined: Option<UnknownType>
 }
 
-impl<T> CustomContextBuilder<T> where T : Serialize {
+impl ContextBuilder {
 
-    pub fn builder() -> CustomContextBuilder<T> {
-        CustomContextBuilder {
+    pub fn builder() -> ContextBuilder {
+        ContextBuilder {
             timezone: None,
             user_id: None,
             turn_count: None,
@@ -480,33 +447,33 @@ impl<T> CustomContextBuilder<T> where T : Serialize {
         }
     }
 
-    pub fn timezone(mut self, timezone_name: String) -> CustomContextBuilder<T> {
+    pub fn timezone(mut self, timezone_name: String) -> ContextBuilder {
         self.timezone = Some(timezone_name);
         self
     }
 
-    pub fn user_id(mut self, user_id: String) -> CustomContextBuilder<T> {
+    pub fn user_id(mut self, user_id: String) -> ContextBuilder {
         self.user_id = Some(user_id);
         self
     }
 
-    pub fn turn_count(mut self, count: usize) -> CustomContextBuilder<T> {
+    pub fn turn_count(mut self, count: usize) -> ContextBuilder {
         self.turn_count = Some(count);
         self
     }
 
-    pub fn locale(mut self, locale: String) -> CustomContextBuilder<T> {
+    pub fn locale(mut self, locale: String) -> ContextBuilder {
         self.locale = Some(locale);
         self
     }
 
-    pub fn reference_time(mut self, reference_time: String) -> CustomContextBuilder<T> {
+    pub fn reference_time(mut self, reference_time: String) -> ContextBuilder {
         self.reference_time = Some(reference_time);
         self
     }
 
-    pub fn user_defined<C>(self, context: C) -> CustomContextBuilder<C> where C : Serialize {
-        CustomContextBuilder {
+    pub fn user_defined(self, context: UnknownType) -> ContextBuilder {
+        ContextBuilder {
             timezone: self.timezone,
             user_id: self.user_id,
             turn_count: self.turn_count,
@@ -516,7 +483,7 @@ impl<T> CustomContextBuilder<T> where T : Serialize {
         }
     }
 
-    pub fn build(self) -> Context<T> {
+    pub fn build(self) -> Context {
         let mut skills = HashMap::new();
         skills.insert("main skill".to_owned(), ContextSkill {
             user_defined: self.user_defined,
@@ -563,7 +530,7 @@ pub enum InputType {
 }
 
 #[derive(Debug, Deserialize, Serialize)]
-pub struct OptionInput<M> where M : Serialize {
+pub struct OptionInput {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub message_type: Option<InputType>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -573,20 +540,20 @@ pub struct OptionInput<M> where M : Serialize {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub intents: Option<Vec<Intent>>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub entities: Option<Vec<Entity<M>>>,
+    pub entities: Option<Vec<Entity>>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub suggestion_id: Option<String>
 }
 
 #[derive(Debug, Deserialize, Serialize)]
-pub struct OptionElm<M> where M: Serialize {
-    pub input: OptionInput<M>
+pub struct OptionElm {
+    pub input: OptionInput
 }
 
 #[derive(Debug, Deserialize, Serialize)]
-pub struct OutputOption<M> where M : Serialize {
+pub struct OutputOption {
     pub label: String,
-    pub value: OptionElm<M>
+    pub value: OptionElm
 }
 
 #[derive(Debug, Deserialize, Serialize)]
@@ -598,13 +565,13 @@ pub enum SuggestionInputType {
 }
 
 #[derive(Debug, Deserialize, Serialize)]
-pub struct SuggestionInput<M1, M2> where M1 : Serialize, M2 : Serialize {
+pub struct SuggestionInput {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub response_type: Option<SuggestionInputType>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub text: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub options: Option<Vec<OutputOption<M1>>>,
+    pub options: Option<Vec<OutputOption>>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub source: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -612,23 +579,23 @@ pub struct SuggestionInput<M1, M2> where M1 : Serialize, M2 : Serialize {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub intents: Option<Vec<Intent>>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub entities: Option<Vec<Entity<M2>>>,
+    pub entities: Option<Vec<Entity>>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub suggestion_id: Option<String>
 }
 
 #[derive(Debug, Deserialize, Serialize)]
-pub struct GenericSuggestion<M1, M2> where M1 : Serialize, M2 : Serialize {
+pub struct GenericSuggestion {
     #[serde(skip_serializing_if = "Option::is_none")]
-    generic: Option<Vec<SuggestionInput<M1, M2>>>
+    generic: Option<Vec<SuggestionInput>>
 }
 
 #[derive(Debug, Deserialize, Serialize)]
-pub struct Suggestion<M1, M2, M3> where M1 : Serialize, M2 : Serialize, M3 : Serialize {
+pub struct Suggestion {
     pub label: String,
-    pub value: OptionElm<M1>,
+    pub value: OptionElm,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub output: Option<GenericSuggestion<M2, M3>>
+    pub output: Option<GenericSuggestion>
 }
 
 #[derive(Debug, Deserialize, Serialize)]
@@ -652,7 +619,7 @@ pub struct SearchResult {
 }
 
 #[derive(Debug, Deserialize, Serialize)]
-pub struct ResponseGeneric<M1, M2, M3, M4> where M1 : Serialize, M2 : Serialize, M3 : Serialize, M4 : Serialize {
+pub struct ResponseGeneric {
     pub response_type: ResponseType,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub text: Option<String>,
@@ -669,13 +636,13 @@ pub struct ResponseGeneric<M1, M2, M3, M4> where M1 : Serialize, M2 : Serialize,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub preference: Option<OptionPreference>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub options: Option<Vec<OutputOption<M1>>>,
+    pub options: Option<Vec<OutputOption>>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub message_to_human_agent: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub topic: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub suggestions: Option<Vec<Suggestion<M2, M3, M4>>>,
+    pub suggestions: Option<Vec<Suggestion>>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub header: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -695,12 +662,12 @@ pub enum ActionType {
 }
 
 #[derive(Debug, Deserialize, Serialize)]
-pub struct Action<T> where T : Serialize {
+pub struct Action {
     pub name: String,
     pub result_variable: String,
     #[serde(rename = "type")]
     pub action_type: ActionType,
-    pub parameters: T,
+    pub parameters: Box<RawValue>,
     pub credentials: String
 }
 
@@ -737,14 +704,14 @@ pub struct DebugInfo {
 }
 
 #[derive(Debug, Deserialize, Serialize)]
-pub struct GenericMessageOutput<M1, M2, M3, M4, M5, P> where M1 : Serialize, M2 : Serialize, M3 : Serialize, M4 : Serialize, M5 : Serialize, P : Serialize {
-    pub generic: Vec<ResponseGeneric<M1, M3, M4, M5>>,
+pub struct GenericMessageOutput {
+    pub generic: Vec<ResponseGeneric>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub intents: Option<Vec<Intent>>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub entities: Option<Vec<Entity<M2>>>,
+    pub entities: Option<Vec<Entity>>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub actions: Option<Vec<Action<P>>>,
+    pub actions: Option<Vec<Action>>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub debug: Option<DebugInfo>
 }
@@ -756,10 +723,10 @@ pub struct GenericMessageOutput<M1, M2, M3, M4, M5, P> where M1 : Serialize, M2 
 // pub type WAResponseWithContext<C> = WAResponse<(), (), (), (), (), C>;
 
 #[derive(Debug, Deserialize, Serialize)]
-pub struct WAResponse<M1, M2, M3, M4, M5, P, T> where M1 : Serialize, M2 : Serialize, M3 : Serialize, M4 : Serialize, M5 : Serialize, P : Serialize, T : Serialize {
-    pub output: GenericMessageOutput<M1, M2, M3, M4, M5, P>,
+pub struct WAResponse {
+    pub output: GenericMessageOutput,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub context: Option<Context<T>>
+    pub context: Option<Context>
 }
 
 #[cfg(test)]
