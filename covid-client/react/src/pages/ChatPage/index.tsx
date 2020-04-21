@@ -34,124 +34,139 @@ export default function ChatPage() {
         setMessages(messages)
 
         try {
-            if (!sessionId) {
-                let response = await createWASession()
+            // Fix #2
+            // if (!sessionId) {
+            //     let response = await createWASession()
             
-                if (response.status === 201) {
-                    setSessionId(response.result.session_id)
-                    // temporary put sessionId onto existing one so we don't have to wait for next render
-                    sessionId = response.result.session_id
-                    } 
-            }
+            //     if (response.status === 201) {
+            //         setSessionId(response.result.session_id)
+                    
+            //         sessionId = response.result.session_id
+            //         } 
+            // }
 
             for (let retry = 0; retry <= MAX_ATTEMPT; retry++) {
                 inputMsg.state = MessageState.sending
+                let response
 
                 if (sessionId) {
-                    let response = await sendWAMessage({
+                    // reuse existing sessionId
+                    response = await sendWAMessage({
                         sessionId,
                         message: msg,
                         sourceLang: ctx.locale.substring(0, 2)
                     })
+                } else {
+                    // establish new session then send a message immediately
+                    response = await sendWAMessage({
+                        message: msg,
+                        sourceLang: ctx.locale.substring(0, 2)
+                    })
+                }
                     
-                    if (response.status === 200) {
-                        inputMsg.state = MessageState.succeed
-                        let wa_output = response.result.output
-                        let wa_context = response.result.context
-                        let wa_response = wa_output.generic
+                if (response.status === 200) {
+                    if (sessionId !== response.sessionId) {
+                        // Server return new session
+                        setSessionId(sessionId)
+                        // temporary put sessionId onto existing one so we don't have to wait for next render
+                        sessionId = response.sessionId
+                    }
+                    inputMsg.state = MessageState.succeed
+                    let wa_output = response.result.output
+                    let wa_context = response.result.context
+                    let wa_response = wa_output.generic
 
-                        
-                        let replied: Message[] = wa_response.map((r: any) => {
-                            switch (r.response_type) {
-                                case "text":
-                                    return {
-                                        uuid: `m${uuidv4()}`,
-                                        message: sanitizeHtml(r.text),
-                                        type: "Watson",
-                                        timestamp: new Date(),
-                                        context: wa_context,
-                                        state: MessageState.succeed
-                                    }
-                                case "suggestion":
-                                    return {
-                                        uuid: `m${uuidv4()}`,
-                                        message: r.title,
-                                        type: "Watson",
-                                        timestamp: new Date(),
-                                        context: wa_context,
-                                        state: MessageState.succeed,
+                    
+                    let replied: Message[] = wa_response.map((r: any) => {
+                        switch (r.response_type) {
+                            case "text":
+                                return {
+                                    uuid: `m${uuidv4()}`,
+                                    message: sanitizeHtml(r.text),
+                                    type: "Watson",
+                                    timestamp: new Date(),
+                                    context: wa_context,
+                                    state: MessageState.succeed
+                                }
+                            case "suggestion":
+                                return {
+                                    uuid: `m${uuidv4()}`,
+                                    message: r.title,
+                                    type: "Watson",
+                                    timestamp: new Date(),
+                                    context: wa_context,
+                                    state: MessageState.succeed,
 
-                                        suggestions: r.suggestions.map((s: any) => {
-                                            return {
-                                                uuid: `su${uuidv4()}`,
-                                                label: s.label,
-                                                intents: s.value.input.intents
-                                            }
-                                        })
-                                    }
-                                case "search":
-                                    return {
-                                        uuid: `m${uuidv4()}`,
-                                        message: r.header,
-                                        type: "Watson",
-                                        timestamp: new Date(),
-                                        context: wa_context,
-                                        state: MessageState.succeed,
+                                    suggestions: r.suggestions.map((s: any) => {
+                                        return {
+                                            uuid: `su${uuidv4()}`,
+                                            label: s.label,
+                                            intents: s.value.input.intents
+                                        }
+                                    })
+                                }
+                            case "search":
+                                return {
+                                    uuid: `m${uuidv4()}`,
+                                    message: r.header,
+                                    type: "Watson",
+                                    timestamp: new Date(),
+                                    context: wa_context,
+                                    state: MessageState.succeed,
 
-                                        results: r.results.map((sr:any) => {
-                                            let url = undefined
-                                            if (sr.result_metadata && sr.result_metadata.source && sr.result_metadata.source.link) {
-                                                url = sr.result_metadata.source.link.url
-                                            } else if (sr.url) {
-                                                url = sr.url
-                                            }
-                                            return {
-                                                uuid: `se${uuidv4()}`,
-                                                title: sanitizeHtml(sr.title),
-                                                highlight: sanitizeHtml(sr.highlight.body[0]),
-                                                url: url?sanitizeHtml(url):undefined
-                                            }
-                                        })
-                                    }
-                                case "option":
-                                    return {
-                                        uuid: `m${uuidv4()}`,
-                                        message: r.title,
-                                        type: "Watson",
-                                        timestamp: new Date(),
-                                        context: wa_context,
-                                        state: MessageState.succeed,
+                                    results: r.results.map((sr:any) => {
+                                        let url = undefined
+                                        if (sr.result_metadata && sr.result_metadata.source && sr.result_metadata.source.link) {
+                                            url = sr.result_metadata.source.link.url
+                                        } else if (sr.url) {
+                                            url = sr.url
+                                        }
+                                        return {
+                                            uuid: `se${uuidv4()}`,
+                                            title: sanitizeHtml(sr.title),
+                                            highlight: sanitizeHtml(sr.highlight.body[0]),
+                                            url: url?sanitizeHtml(url):undefined
+                                        }
+                                    })
+                                }
+                            case "option":
+                                return {
+                                    uuid: `m${uuidv4()}`,
+                                    message: r.title,
+                                    type: "Watson",
+                                    timestamp: new Date(),
+                                    context: wa_context,
+                                    state: MessageState.succeed,
 
-                                        suggestions: r.options.map((o: any) => ({
-                                            uuid: `op${uuidv4()}`,
-                                            label: o.label
-                                        }))
-                                    }
-                                default:
-                                    return {
-                                        uuid: `m${uuidv4()}`,
-                                        message: "Unsupported type of response. Please contact admin.",
-                                        type: "Watson",
-                                        timestamp: new Date(),
-                                        state: MessageState.succeed,
-                                    }
-                            }
-                        })
-
-                        messages = messages.concat(...replied)
-
-                        setMessages(messages)
-                        break
-                    } else {
-                        console.error("Fail to send message to WA server. Wait for 1 second to retry.")
-                        await new Promise((resolve) => setTimeout(resolve, 1000))
-                        let response = await createWASession()
-
-                        if (response.status === 201) {
-                            setSessionId(response.result.session_id)
-                            // temporary put sessionId onto existing one so we don't have to wait for next render
-                            sessionId = response.result.session_id
+                                    suggestions: r.options.map((o: any) => ({
+                                        uuid: `op${uuidv4()}`,
+                                        label: o.label
+                                    }))
+                                }
+                            default:
+                                return {
+                                    uuid: `m${uuidv4()}`,
+                                    message: "Unsupported type of response. Please contact admin.",
+                                    type: "Watson",
+                                    timestamp: new Date(),
+                                    state: MessageState.succeed,
+                                }
                         }
+                    })
+
+                    messages = messages.concat(...replied)
+
+                    setMessages(messages)
+                    break
+                } else {
+                    console.error("Fail to send message to WA server. Wait for 1 second to retry.")
+                    await new Promise((resolve) => setTimeout(resolve, 1000))
+                    let response = await createWASession()
+
+                    if (response.status === 201) {
+                        setSessionId(response.result.session_id)
+                        // temporary put sessionId onto existing one so we don't have to wait for next render
+                        sessionId = response.result.session_id
                     }
                 }
             }

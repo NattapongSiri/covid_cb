@@ -139,7 +139,7 @@ fn main() {
                         }
                     }
                 }
-                println!("{{\"status\": 200, \"result\": {}}}", serde_json::to_string(&r).expect("Fail to convert result object to JSON"));
+                println!("{{\"status\": 200, \"sessionId\": \"{}\", \"result\": {}}}", wa_session.session_id, serde_json::to_string(&r).expect("Fail to convert result object to JSON"));
             } else {
                 println!("{}", "{\"status\": 400}");
             }

@@ -57,11 +57,11 @@ export interface Entity {
 }
 
 export interface Message {
-    sessionId: string
     message: string
     sourceLang: string
     targetLang?: "en" | "en-US" // It currently support only English
 
+    sessionId?: string
     context?: any
     userid?: string
     intents?: Intent[]
