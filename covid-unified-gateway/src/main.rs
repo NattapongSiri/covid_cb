@@ -20,6 +20,7 @@ mod wlt;
 mod wa;
 mod utils;
 
+/// Main flow that is going to be performed when deployed on Cloud Functions.
 fn main() {
     dotenv().ok();
     let wlt_api_key = env::var("WLT_APIKEY").expect("Undefined WLT_APIKEY");

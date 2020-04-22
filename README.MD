@@ -7,6 +7,7 @@ It can also indirectly leverage Watson Discovery to provide "Search skill" for W
 - `covid-client` - A client app that interact directly with user
     - `react` - Currently only client available
 - `covid-client-express` - Serve static files builts from `covid-client`
+- `covid-unified-gateway` - A gateway that combined `covid-wa-gateway` and `covid-wlt-gateway` into single gateway to reduce latency between each response. It has only one function to do input translate, create assistant session, send message, and translate response. This sub-project is written in Rust 1.42.
 - `covid-wa-gateway` - A bunch of cloud functions that act as gateway for Watson Assistant API
     - `msg-wa` - A gateway function that forward message to Watson Assistant
     - `start-wa` - A gateway function that return new sessionId

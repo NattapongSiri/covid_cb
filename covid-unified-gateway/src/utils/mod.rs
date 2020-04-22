@@ -1,3 +1,19 @@
+//! Helper function to help send REST API
+//! 
+//! It has two functions.
+//! The most common one is [post_json](fn.post_json.html) where 
+//! it send HTTP POST request to given url.
+//! It take url, apikey, and optional post body.
+//! It return [RawResponse](struct.RawResponse.html).
+//! The struct implement `Deref` and `Deref_mut` to inner
+//! parsed object so it can be directly treat like it's inner object.
+//! It also allow to unpack it using [into_inner](struct.RawResponse.html#method.into_inner)
+//! to consume it.
+//! Another function is [delete](fn.delete.html).
+//! It take url and apikey as parameters.
+//! 
+//! Both function may also return [CurlErr](enum.CurlErr.html) to designate
+//! there's something wrong with the operation.
 use curl::easy::Easy;
 use serde::{Deserialize, Serialize};
 use std::io::Read;

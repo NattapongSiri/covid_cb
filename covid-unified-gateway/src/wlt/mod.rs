@@ -1,3 +1,8 @@
+//! The module to send translation request to WLT
+//! Construct [WLTTranslationRequest](struct.WLTTranslationRequest.html)
+//! then call async [send method](struct.WLTTranslationRequest.html#method.send)
+//! to get future result.
+
 use serde::{ Deserialize, Serialize };
 use std::fmt::{ Debug };
 use super::utils::{ post_json, CurlErr, RawResponse };

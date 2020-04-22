@@ -1,3 +1,22 @@
+//! Module to create session and send user message to Watson Assistant
+//! 
+//! Use [WASession struct](struct.WASession.html) to create new session
+//! or use [re_attach](struct.WASession.html#method.re_attach) to reuse 
+//! existing session_id.
+//! 
+//! There's couple of `send` method to use depending on complexity of input.
+//! The simplest one is [send_txt](struct.WASession.html#method.send_txt) 
+//! where it only take user message as parameter.
+//! Another one is [send_txt_with_context](struct.WASession.html#method.send_txt_with_context) 
+//! where it take user message along with `context`. 
+//! The most complex one is [send](struct.WASession.html#method.send) where
+//! it take [UserInput](struct.UserInput.html) object.
+//! 
+//! There's [UserInputBuilder](struct.UserInputBuilder.html) to help build
+//! UserInput object to send.
+//! To Obtain [UserInput](struct.UserInput.html) object, call 
+//! [build](struct.UserInputBuilder.html#method.build) method
+
 use super::utils::{delete, post_json, CurlErr, RawResponse};
 use serde::{Deserialize, Serialize};
 use serde_json::value::{RawValue, Value};
