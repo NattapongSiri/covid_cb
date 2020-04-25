@@ -1,70 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmx version="1.4">
   <header
-    creationtool="VS Code" creationtoolversion="1.44"
-    datatype="PlainText" segtype="phrase"
-    adminlang="en-us" srclang="th"/>
+    creationtool="" creationtoolversion=""
+    datatype="PlainText" segtype="phrase" o-tmf=""
+    adminlang="en" srclang="th" o-encoding="UTF-8"/>
   <body>
     <tu>
-      <tuv xml:lang="th">
-        <seg>โควิด</seg>
-      </tuv>
       <tuv xml:lang="en">
         <seg>Covid</seg>
       </tuv>
+      <tuv xml:lang="th">
+        <seg>โควิด</seg>
+      </tuv>
     </tu>
     <tu>
+      <tuv xml:lang="en">
+        <seg>Covid</seg>
+      </tuv>
       <tuv xml:lang="th">
         <seg>โควิท</seg>
       </tuv>
-      <tuv xml:lang="en">
-        <seg>Covid</seg>
-      </tuv>
     </tu>
     <tu>
+      <tuv xml:lang="en">
+        <seg>Corona</seg>
+      </tuv>
       <tuv xml:lang="th">
         <seg>โคโรนา</seg>
       </tuv>
+    </tu>
+    <tu>
       <tuv xml:lang="en">
         <seg>Corona</seg>
       </tuv>
-    </tu>
-    <tu>
       <tuv xml:lang="th">
         <seg>โคโรน่า</seg>
       </tuv>
-      <tuv xml:lang="en">
-        <seg>Corona</seg>
-      </tuv>
     </tu>
     <tu>
-      <tuv xml:lang="th">
-        <seg>โควิด</seg>
-      </tuv>
       <tuv xml:lang="en">
         <seg>Covid</seg>
       </tuv>
+      <tuv xml:lang="th">
+        <seg>โควิด</seg>
+      </tuv>
     </tu>
     <tu>
-      <tuv xml:lang="th">
-        <seg>ยอดผู้ป่วย</seg>
-      </tuv>
       <tuv xml:lang="en">
         <seg>patient count</seg>
       </tuv>
+      <tuv xml:lang="th">
+        <seg>ยอดผู้ป่วย</seg>
+      </tuv>
     </tu>
     <tu>
-      <tuv xml:lang="th">
-        <seg>ยอดโควิด</seg>
-      </tuv>
       <tuv xml:lang="en">
         <seg>Covid's case count</seg>
       </tuv>
+      <tuv xml:lang="th">
+        <seg>ยอดโควิด</seg>
+      </tuv>
     </tu>
     <tu>
-      <tuv xml:lang="th">
-        <seg>สถานะวันนี้</seg>
-      </tuv>
       <tuv xml:lang="en">
         <seg>status report for today</seg>
+      </tuv>
+      <tuv xml:lang="th">
+        <seg>สถานะวันนี้</seg>
       </tuv>
     </tu>
   </body>
