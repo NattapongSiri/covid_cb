@@ -28,8 +28,7 @@ pub enum CurlErr {
 }
 
 /// Send HTTP Post to given URL using `api_key` as authorization and optional JSON `data` 
-/// to be sent as body. It return Result with in following format `(Vec<u8>, R)` where 
-/// `Vec<u8>` is raw byte buffer of returned data and `R` is parsed JSON object or it return
+/// to be sent as body. It return `R` that is parsed JSON object or it return
 /// `CurlErr`
 pub fn post_json<I, R>(url: &str, api_key: &str, data: Option<&I>) -> Result<R, CurlErr> where I : Serialize, R: for<'r> Deserialize<'r> + Serialize {
     let mut client = Easy::new();
