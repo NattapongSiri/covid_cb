@@ -61,7 +61,7 @@ fn test_create_send_session() -> Result<(), CurlErr> {
                                     .build();
     futures::executor::block_on(async {
         let session = WASession::new(endpoint, api_key, id, version).await?;
-        let result: WAResponse = session.send(&msg).await?.into_inner().1;
+        let result: WAResponse = session.send(&msg).await?;
         println!("{:?}", result);
         Ok(())
     })
@@ -76,7 +76,7 @@ fn test_create_send_txt_session() -> Result<(), CurlErr> {
     
     futures::executor::block_on(async {
         let session = WASession::new(endpoint, api_key, id, version).await?;
-        let result: WAResponse = session.send_txt("hey there").await?.into_inner().1;
+        let result: WAResponse = session.send_txt("hey there").await?;
         println!("{:?}", result);
         Ok(())
     })
@@ -95,7 +95,7 @@ fn test_create_reattach_session() -> Result<(), CurlErr> {
     futures::executor::block_on(async {
         let session = WASession::new(endpoint.to_owned(), api_key.to_owned(), id.to_owned(), version.to_owned()).await?;
         let another_session = WASession::re_attach(endpoint, api_key, id, version, session.session_id);
-        let result : WAResponse = another_session.send(&msg).await?.into_inner().1;
+        let result : WAResponse = another_session.send(&msg).await?;
         println!("{:?}", result);
         Ok(())
     })

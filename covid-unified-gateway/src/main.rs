@@ -2,7 +2,6 @@ use dotenv::dotenv;
 use std::env;
 use serde::{Deserialize, Serialize};
 use serde_json::{json};
-use utils::{RawResponse};
 
 #[derive(Deserialize, Serialize)]
 #[serde(rename_all = "camelCase")]
@@ -118,7 +117,7 @@ fn main() {
                     if translation_batch.len() > 0 {
                         println!("Sending translation batch to WLT");
                         // Perform batch translation
-                        let mut wa_translated: Option<RawResponse<wlt::WLTTranslationResponse>> = None;
+                        let mut wa_translated: Option<wlt::WLTTranslationResponse> = None;
                         let to_be_translate = translation_batch.iter().map(|s| s.as_str()).collect::<Vec<&str>>();
                         for attempt in 0..=wlt_retry {
                             if let Ok(t) = wlt::WLTTranslationRequest::new(
@@ -138,13 +137,13 @@ fn main() {
                         // replace original wa response text with translated text
                         if let Some(t) = wa_translated {
                             // consume translation and move the translated value in place of original
-                            t.into_inner().1.translations.into_iter().zip(translation_batch.into_iter()).for_each(|(translated, original)| {
+                            t.translations.into_iter().zip(translation_batch.into_iter()).for_each(|(translated, original)| {
                                 *original = translated.translation;
                             });
                         }
                     }
                 }
-                println!("{{\"status\": 200, \"sessionId\": \"{}\", \"result\": {}}}", wa_session.session_id, serde_json::to_string(&*r).expect("Fail to convert result object to JSON"));
+                println!("{{\"status\": 200, \"sessionId\": \"{}\", \"result\": {}}}", wa_session.session_id, serde_json::to_string(&r).expect("Fail to convert result object to JSON"));
             } else {
                 println!("{}", "{\"status\": 400}");
             }

@@ -17,7 +17,7 @@
 //! To Obtain [UserInput](struct.UserInput.html) object, call 
 //! [build](struct.UserInputBuilder.html#method.build) method
 
-use super::utils::{delete, post_json, CurlErr, RawResponse};
+use super::utils::{delete, post_json, CurlErr};
 use serde::{Deserialize, Serialize};
 use serde_json::value::{RawValue, Value};
 use std::boxed::Box;
@@ -78,17 +78,17 @@ impl WASession {
     }
 
     /// Primitive function to send user input.
-    pub async fn send<'a>(&self, message: &UserInput<'a>) -> Result<RawResponse<WAResponse>, CurlErr> {
+    pub async fn send<'a>(&self, message: &UserInput<'a>) -> Result<WAResponse, CurlErr> {
         post_json(&self.send_url, &self.api_key, Some(message))
     }
 
     /// User friendly function to let user send simple text message to WA
-    pub async fn send_txt(&self, input: &str) -> Result<RawResponse<WAResponse>, CurlErr> {
+    pub async fn send_txt(&self, input: &str) -> Result<WAResponse, CurlErr> {
         post_json(&self.send_url, &self.api_key, Some(&UserInputBuilder::builder().text(input).options(InputOptions::default()).build()))
     }
 
     /// User friendly function to let user simple text message along with message context to WA
-    pub async fn send_txt_with_context(&self, input: &str, context: UnknownType) -> Result<RawResponse<WAResponse>, CurlErr> {
+    pub async fn send_txt_with_context(&self, input: &str, context: UnknownType) -> Result<WAResponse, CurlErr> {
         post_json(&self.send_url, &self.api_key, Some(&UserInputBuilder::builder().text(input).options(InputOptions::default()).context(ContextBuilder::builder().user_defined(context).build()).build()))
     }
 
