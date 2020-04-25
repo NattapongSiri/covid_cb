@@ -1,7 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmx>
   <header
-    creationtool="VS Code" creationtoolversion="1.44"
-    datatype="PlainText" segtype="sentence"
-    adminlang="en-us" srclang="th"/>
+    creationtool="" creationtoolversion=""
+    datatype="PlainText" segtype="sentence" o-tmf=""
+    adminlang="en" srclang="th" o-encoding="UTF-8"/>
   <body>
     <tu>
       <tuv xml:lang="th">
