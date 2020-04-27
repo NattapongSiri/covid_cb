@@ -19,11 +19,37 @@ const useStyle = makeStyles((theme: Theme) => ({
     }
 }))
 
+/** 
+ * Go through entire list of messages and find earlier message where type === "self"
+ * and return index of that location. If there's no more such message, it return -1.
+ */
+function find_earlier_user_message(messages: Message[], cursor: number): number {
+    // If cursor <= 0, there's no earlier message
+    for (let i = cursor - 1; i >= 0; i--) {
+        if (messages[i].type === "self") return i
+    }
+
+    return -1
+}
+
+/** 
+ * Go through entire list of messages and find later message where type === "self"
+ * and return index of that location. If there's no more such message, it return -1.
+ */
+function find_later_user_message(messages: Message[], cursor: number): number {
+    for (let i = cursor + 1; i < messages.length; i++) {
+        if (messages[i].type === "self") return i
+    }
+
+    return -1
+}
+
 export default function ChatPage() {
     let theme = useTheme() as Theme
     let style = useStyle(theme)
     let [sessionId, setSessionId] = useState<string>()
     let [messages, setMessages] = useState<Message[]>([])
+    let [historyPointer, setHistoryPointer] = useState(messages.length - 1);
     let ctx = useContext(Context)
 
     const sendMessage = async (msg: string) => {
@@ -189,7 +215,31 @@ export default function ChatPage() {
         <Container className={style.root}>
             <Header />
             <ChatDialog style={{height: "70vh", overflow: "scroll", padding: "0 0 0 0", margin: "0 0 0 0"}} messages={messages} onChoose={sendMessage}/>
-            <ChatInput style={{height: "18vh"}} onSubmit={(msg) => {sendMessage(msg)}}/>
+            <ChatInput 
+                style={{height: "18vh"}} 
+                onSubmit={(msg) => {
+                    sendMessage(msg)
+                    setHistoryPointer(messages.length)
+                }} 
+                onKeyUp={(cb) => {
+                    console.log("Looking for previous entry from", messages, historyPointer)
+                    let new_pointer = find_earlier_user_message(messages, historyPointer)
+                    console.log("Found previous entry in history", new_pointer)
+                    if (new_pointer >= 0) {
+                        setHistoryPointer(new_pointer)
+                        cb(messages[new_pointer].message)
+                    }
+                }}
+                onKeyDown={(cb) => {
+                    console.log("Looking for next entry from", messages, historyPointer)
+                    let new_pointer = find_later_user_message(messages, historyPointer)
+                    console.log("Found next entry in history", new_pointer)
+                    if (new_pointer >= 0) {
+                        setHistoryPointer(new_pointer)
+                        cb(messages[new_pointer].message)
+                    }
+                }}
+            />
         </Container>
     )
 }

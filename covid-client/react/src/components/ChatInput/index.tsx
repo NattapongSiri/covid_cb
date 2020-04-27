@@ -16,7 +16,7 @@ enum InputMethod {
     Voice
 }
 
-export default function ChatInput({style, locked = false, onSubmit}: {style?: React.CSSProperties, locked?: boolean, onSubmit?: (msg: string) => void}) {
+export default function ChatInput({style, locked = false, onSubmit, onKeyUp, onKeyDown}: {style?: React.CSSProperties, locked?: boolean, onSubmit?: (msg: string) => void, onKeyUp?: (handler: (val: string) => void) => void, onKeyDown?: (handler: (val: string) => void) => void}) {
     const theme = useTheme()
     const {t} = useTranslation("chatDialog")
     const containerClass = useContainerClass()
@@ -45,6 +45,12 @@ export default function ChatInput({style, locked = false, onSubmit}: {style?: Re
                         // enter key press
                         if (e.key === 'Enter' || e.keyCode === 13) {
                             setReadyToSend(true)
+                        } else if (e.key === 'ArrowDown' && onKeyDown) {
+                            // change current text in input to next entry in history
+                            onKeyDown(setComposing)
+                        } else if (e.key === 'ArrowUp' && onKeyUp) {
+                            // change current text in input to previous entry in history
+                            onKeyUp(setComposing)
                         }
                     }}
                     value={composing} 
