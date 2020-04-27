@@ -159,13 +159,13 @@ export default function ChatPage() {
                     response = await sendWAMessage({
                         sessionId,
                         message: msg,
-                        sourceLang: ctx.locale.substring(0, 2)
+                        sourceLang: ctx.locale
                     })
                 } else {
                     // establish new session then send a message immediately
                     response = await sendWAMessage({
                         message: msg,
-                        sourceLang: ctx.locale.substring(0, 2)
+                        sourceLang: ctx.locale
                     })
                 }
                     
@@ -221,7 +221,7 @@ export default function ChatPage() {
                 // establish new session then send a message immediately
                 let response = await sendWAMessage({
                     message: "",
-                    sourceLang: ctx.locale.substring(0, 2)
+                    sourceLang: ctx.locale
                 })
 
                 if (response.status === 200) {
