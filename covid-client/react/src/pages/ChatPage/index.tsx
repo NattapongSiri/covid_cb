@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import sanitizeHtml from "sanitize-html"
 import {Container} from '@material-ui/core'
 import {Theme} from "@material-ui/core/styles"
@@ -42,6 +42,85 @@ function find_later_user_message(messages: Message[], cursor: number): number {
     }
 
     return -1
+}
+
+function parse_wa_response(wa_response: any, wa_context: any): Message[] {
+    return wa_response.map((r: any) => {
+        switch (r.response_type) {
+            case "text":
+                return {
+                    uuid: `m${uuidv4()}`,
+                    message: sanitizeHtml(r.text),
+                    type: "Watson",
+                    timestamp: new Date(),
+                    context: wa_context,
+                    state: MessageState.succeed
+                }
+            case "suggestion":
+                return {
+                    uuid: `m${uuidv4()}`,
+                    message: r.title,
+                    type: "Watson",
+                    timestamp: new Date(),
+                    context: wa_context,
+                    state: MessageState.succeed,
+
+                    suggestions: r.suggestions.map((s: any) => {
+                        return {
+                            uuid: `su${uuidv4()}`,
+                            label: s.label,
+                            intents: s.value.input.intents
+                        }
+                    })
+                }
+            case "search":
+                return {
+                    uuid: `m${uuidv4()}`,
+                    message: r.header,
+                    type: "Watson",
+                    timestamp: new Date(),
+                    context: wa_context,
+                    state: MessageState.succeed,
+
+                    results: r.results.map((sr:any) => {
+                        let url = undefined
+                        if (sr.result_metadata && sr.result_metadata.source && sr.result_metadata.source.link) {
+                            url = sr.result_metadata.source.link.url
+                        } else if (sr.url) {
+                            url = sr.url
+                        }
+                        return {
+                            uuid: `se${uuidv4()}`,
+                            title: sanitizeHtml(sr.title),
+                            highlight: sanitizeHtml(sr.highlight.body[0]),
+                            url: url?sanitizeHtml(url):undefined
+                        }
+                    })
+                }
+            case "option":
+                return {
+                    uuid: `m${uuidv4()}`,
+                    message: r.title,
+                    type: "Watson",
+                    timestamp: new Date(),
+                    context: wa_context,
+                    state: MessageState.succeed,
+
+                    suggestions: r.options.map((o: any) => ({
+                        uuid: `op${uuidv4()}`,
+                        label: o.label
+                    }))
+                }
+            default:
+                return {
+                    uuid: `m${uuidv4()}`,
+                    message: "Unsupported type of response. Please contact admin.",
+                    type: "Watson",
+                    timestamp: new Date(),
+                    state: MessageState.succeed,
+                }
+        }
+    })
 }
 
 export default function ChatPage() {
@@ -102,83 +181,7 @@ export default function ChatPage() {
                     let wa_context = response.result.context
                     let wa_response = wa_output.generic
 
-                    
-                    let replied: Message[] = wa_response.map((r: any) => {
-                        switch (r.response_type) {
-                            case "text":
-                                return {
-                                    uuid: `m${uuidv4()}`,
-                                    message: sanitizeHtml(r.text),
-                                    type: "Watson",
-                                    timestamp: new Date(),
-                                    context: wa_context,
-                                    state: MessageState.succeed
-                                }
-                            case "suggestion":
-                                return {
-                                    uuid: `m${uuidv4()}`,
-                                    message: r.title,
-                                    type: "Watson",
-                                    timestamp: new Date(),
-                                    context: wa_context,
-                                    state: MessageState.succeed,
-
-                                    suggestions: r.suggestions.map((s: any) => {
-                                        return {
-                                            uuid: `su${uuidv4()}`,
-                                            label: s.label,
-                                            intents: s.value.input.intents
-                                        }
-                                    })
-                                }
-                            case "search":
-                                return {
-                                    uuid: `m${uuidv4()}`,
-                                    message: r.header,
-                                    type: "Watson",
-                                    timestamp: new Date(),
-                                    context: wa_context,
-                                    state: MessageState.succeed,
-
-                                    results: r.results.map((sr:any) => {
-                                        let url = undefined
-                                        if (sr.result_metadata && sr.result_metadata.source && sr.result_metadata.source.link) {
-                                            url = sr.result_metadata.source.link.url
-                                        } else if (sr.url) {
-                                            url = sr.url
-                                        }
-                                        return {
-                                            uuid: `se${uuidv4()}`,
-                                            title: sanitizeHtml(sr.title),
-                                            highlight: sanitizeHtml(sr.highlight.body[0]),
-                                            url: url?sanitizeHtml(url):undefined
-                                        }
-                                    })
-                                }
-                            case "option":
-                                return {
-                                    uuid: `m${uuidv4()}`,
-                                    message: r.title,
-                                    type: "Watson",
-                                    timestamp: new Date(),
-                                    context: wa_context,
-                                    state: MessageState.succeed,
-
-                                    suggestions: r.options.map((o: any) => ({
-                                        uuid: `op${uuidv4()}`,
-                                        label: o.label
-                                    }))
-                                }
-                            default:
-                                return {
-                                    uuid: `m${uuidv4()}`,
-                                    message: "Unsupported type of response. Please contact admin.",
-                                    type: "Watson",
-                                    timestamp: new Date(),
-                                    state: MessageState.succeed,
-                                }
-                        }
-                    })
+                    let replied: Message[] = parse_wa_response(wa_response, wa_context)
 
                     messages = messages.concat(...replied)
 
@@ -211,6 +214,30 @@ export default function ChatPage() {
         }
     }
 
+    useEffect(() => {
+        (async () => {
+            let failed = true
+            for (let i = 0; i <= MAX_ATTEMPT && failed; i++) {
+                // establish new session then send a message immediately
+                let response = await sendWAMessage({
+                    message: "",
+                    sourceLang: ctx.locale.substring(0, 2)
+                })
+
+                if (response.status === 200) {
+                    failed = false
+                    setSessionId(response.sessionId)
+                    let wa_output = response.result.output
+                    let wa_context = response.result.context
+                    let wa_response = wa_output.generic
+                    
+                    let welcome_msg: Message[] = parse_wa_response(wa_response, wa_context)
+                    setMessages(welcome_msg)
+                }
+            }
+        })()
+    }, [ctx.locale, setMessages, setSessionId]);
+
     return (
         <Container className={style.root}>
             <Header />
@@ -222,18 +249,14 @@ export default function ChatPage() {
                     setHistoryPointer(messages.length)
                 }} 
                 onKeyUp={(cb) => {
-                    console.log("Looking for previous entry from", messages, historyPointer)
                     let new_pointer = find_earlier_user_message(messages, historyPointer)
-                    console.log("Found previous entry in history", new_pointer)
                     if (new_pointer >= 0) {
                         setHistoryPointer(new_pointer)
                         cb(messages[new_pointer].message)
                     }
                 }}
                 onKeyDown={(cb) => {
-                    console.log("Looking for next entry from", messages, historyPointer)
                     let new_pointer = find_later_user_message(messages, historyPointer)
-                    console.log("Found next entry in history", new_pointer)
                     if (new_pointer >= 0) {
                         setHistoryPointer(new_pointer)
                         cb(messages[new_pointer].message)
