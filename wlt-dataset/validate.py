@@ -4,6 +4,7 @@ from glob import glob
 from lxml import etree
 import requests
 from io import StringIO
+import sys
 
 tmx_parser = etree.XMLParser(dtd_validation=True, no_network=False)
 tmx_dtd_txt = StringIO(requests.get(url=r"https://www.gala-global.org/sites/default/files/uploads/pdfs/tmx14%20%281%29.dtd").text)
@@ -26,6 +27,6 @@ if __name__ == "__main__":
         for file in files:
             try:
                 validate(file)
+                print("\033[92m{} passed.\033[0m".format(file))
             except Exception as e:
-                print("{} is invalid tmx file".format(file))
-                print(e)
+                print("\033[91m{} failed. {}\033[0m".format(file, e), file=sys.stderr)
