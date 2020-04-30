@@ -54,7 +54,8 @@ def convert(source_path, target_path, source_idx = -1, source_lang = "en", seg_t
     `seg_type` can be either "sentence" or "phrase".
     """
     counter = 0
-    with open(source_path, "r") as fp:
+    # utf-8-sig decode csv with UTF-8 and strip BOM out
+    with open(source_path, "r", encoding="utf-8-sig") as fp:
         csv_reader = csv.reader(fp)
         lang_line = csv_reader.__next__()
 
@@ -62,7 +63,9 @@ def convert(source_path, target_path, source_idx = -1, source_lang = "en", seg_t
             # Need to seek column number of source
             for i, l in enumerate(lang_line):
                 if l == source_lang:
+                    print("found at", i)
                     source_idx = i
+                    break
         # Can't find such lang id from csv
         if source_idx == -1:
             raise Exception("Unspecified source_idx or specified_lang cannot be found from csv.")
@@ -120,7 +123,7 @@ if __name__ == "__main__":
                 target = target_path(file)
                 if path.exists(target) and not args.force:
                     raise Exception("{} already exist".format(target))
-                pairs = convert(file, target, args.source, args.source_lang, args.seg_type)
+                pairs = convert(file, target, source_idx=args.source, source_lang=args.source_lang, seg_type=args.seg_type)
                 print("\033[92m{} -> {} {} pairs are done.\033[0m".format(file, target, pairs))
             except Exception as e:
                 print("\033[91m{} failed.\n{}\033[0m".format(file, e), file=sys.stderr)
