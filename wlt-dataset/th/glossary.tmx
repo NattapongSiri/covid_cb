@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tmx version="1.4">
-  <header
-    creationtool="" creationtoolversion=""
-    datatype="PlainText" segtype="phrase" o-tmf=""
-    adminlang="en" srclang="th" o-encoding="UTF-8"/>
+  <header creationtool="" creationtoolversion="" datatype="PlainText" segtype="sentence" adminlang="en" srclang="en" targetlang="UTF-8"/>
   <body>
     <tu>
       <tuv xml:lang="en">

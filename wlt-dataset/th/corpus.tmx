@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tmx>
-  <header
-    creationtool="" creationtoolversion=""
-    datatype="PlainText" segtype="sentence" o-tmf=""
-    adminlang="en" srclang="th" o-encoding="UTF-8"/>
+<tmx version="1.4">
+  <header creationtool="" creationtoolversion="" datatype="PlainText" segtype="sentence" adminlang="en" srclang="th" targetlang="UTF-8"/>
   <body>
     <tu>
       <tuv xml:lang="th">
@@ -20,11 +17,7 @@
       <tuv xml:lang="en">
         <seg>infected count</seg>
       </tuv>
-    </tu>  <header
-    creationtool="VS Code" creationtoolversion="1.44"
-    datatype="PlainText" segtype="phrase"
-    adminlang="en-us" srclang="th"/>
-  <body>
+    </tu>
     <tu>
       <tuv xml:lang="th">
         <seg>ยังออกจากบ้านได้ไหม</seg>
@@ -33,7 +26,2997 @@
         <seg>Is it permitted to leave the house</seg>
       </tuv>
     </tu>
-  </body>
-</tmx>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>การคัดกรองโควิดในประเทศไทย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Covid-19 screening in Thailand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สวัสดี เราคือ Watson Assistant เราพร้อมจะตอบคำถามเกี่ยวกับโควิดด้วยข้อมูลใหม่ล่าสุด มีคำถามอะไรไหม ?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Hello, I’m Watson Assistant, ready to answer your questions about COVID-19 with the latest information. How can I help you?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>นี่ใช่สิ่งที่คุณต้องการหรือไม่ ?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>You can:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หาข้อมูลจาก CDC สหรัฐอเมริกา</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Get information from CDC - USA</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หาข้อมูลจาก DDC ประเทศไทย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Get information from DDC - Thailand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>การตรวจคัดกรองเชื้อ Covid-19 ในประเทศไทย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Covid-19 screening in Thailand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หาข้อมูลเกี่ยวกับการเดินทาง</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Get travel information</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>นี่คือข้อมูลใหม่ล่าสุดจาก CDC:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Here are some of the most up-to-date bulletins from the CDC:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ดูวิดีโอนี้เพื่อเรียนรู้เกี่ยวกับ Covid-19</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Watch this video to learn about COVID-19</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ข้อเท็จจริงของ Covid-19 จาก CDC</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Facts About COVID-19 from the CDC</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ข้อมูลสำหรับนักเดินทางจาก CDC</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>CDC Information for Travelers</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ข้อสรุปล่าสุดจาก CDC</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Latest summary update from the CDC</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>โทรหาหมอทันทีหากคุณสัมผัสใกล้ชิดกับผู้ติดเชื้อ Covid-19</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Call your doctor: If you are a close contact of someone with COVID-19</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คุณอยู่ในแหล่งชุมชนที่มีการแพร่ระบาดของเชื้อโควิดและมีอาการเบื้องต้นของโรคโควิด</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>you are a resident in a community where there is ongoing spread of COVID-19 and develop symptoms of COVID-19</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>โทรปรึกษากับผู้เชียวชาญทางด้านสาธารณสุขและอธิบายถึงอาการและภาวะเสี่ยงของคุณ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>call your healthcare provider and tell them about your symptoms and your exposure. They will decide whether you need to be tested, but keep in mind that there is no treatment for COVID-19 and people who are mildly ill may be able to isolate and care for themselves at home.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เขาจะสามารถแนะนำคุณได้ว่าคุณควรจะต้องไปตรวจสอบหรือไม่</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>They will decide whether you need to be tested</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อย่างไรก็ตาม ในขณะนี้ไม่มียารักษาสำหรับโรค Covid-19</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>but keep in mind that there is no treatment for COVID-19 and people who are mildly ill may be able to isolate and care for themselves at home.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ผู้ที่มีอาการป่วยเล็กน้อยอาจสามารถกักตัวอยู่ที่บ้านเพื่อรักษาตัวเองจนหาย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>people who are mildly ill may be able to isolate and care for themselves at home.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>โรงพยาบาลในไทยที่ให้บริการตรวจคัดกรองเชื้อสำหรับผู้ต้องสงสัยที่แสดงอาการของเชื้อไวรัสโคโรนา:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Thailand Hospital is offering screening tests for anyone in Thailand who suspects they are showing symptoms of the corona virus:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>โรงพยายาลรับผู้ป่วย Covid-19 ในประเทศไทย: คลิกที่นี่เพื่อดูเพิ่มเติม</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>COVID-19 hospital in Thailand: click here to find our more</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เราได้ทำการส่งข้อความถึงโทรศัพท์ของคุณแล้ว</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The text message has been sent to your phone number.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คุณต้องการให้ส่งข้อความไปที่หมายเลขโทรศัพท์ใด ?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>To what phone number should the text message be sent?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คุณได้ทำการจองการตรวจคัดกรองเชื้อโคโรน่าเรียบร้อยแล้ว</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>You can schedule a virtual appointment with a provider for Corona virus screening</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คลิกที่นี่เพื่อดูเพิ่มเติม</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>click here to find out more</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อาการของการติดเชื้อโคโรน่า (Covid-19) อาจดูเหมือนไข้หวัดหรืออาการป่วยทั่วไป</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Symptoms of the coronavirus (COVID-19) can look similar to the flu and other common ailments.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เรามาเริ่มจากอาการพื้นฐานกันก่อน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Let's start with the most indicative symptom.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คุณมีไข้ไหม ?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Do you have a fever?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>การมีไข้เป็นอาการอย่างหนึ่งของเชื้อโคโรนา</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Fever is one of the symptoms of the corona virus.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คุณมีอาการหายใจติดขัดหรือไม่ ?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Do you have shortness of breath?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>จากอาการข้างต้น คุณอาจติดเชื้อไวรัสโคโรนา</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Based on the symptoms you describe, you may have the coronavirus.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อาการอื่น ๆ ของการติดเชื้อโคโรนา ได้แก่ ไอ และ เจ็บคอ เป็นต้น</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Other coronavirus symptoms include coughing and  sore throat.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>จากอาการข้างต้น คุณอาจเป็นไข้หวัด</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Based on the symptoms you describe, you may just have the flu. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อาการอื่น ๆ ของไข้หวัด ได้แก่ ไอ อ่อนเพลีย และ เหนื่อย เป็นต้น</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Other flu symptoms include coughing, fatigue, weakness, and exhaustion.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>การหายใจติดขัดหมายถึงคุณหายใจลำบากขึ้นกว่าปกติ โดยเฉพาะการหายใจลึก ๆ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Having shortness of breath means you're having trouble breathing, in particular taking deep breaths.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ผู้ติดเชื้อไวรัสโคโรนา มักมีไข้</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Someone with coronavirus would typically have a fever. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ไข้หวัดใหญ่​ (หรือที่มักเรียกสั้น ๆ ว่าไข้) เป็นโรคติดต่อในทางเดินหายใจ โดยมีสาเหตจากเชื้อไวรัสไข้หวัด</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Influenza (also known as “flu”) is a contagious respiratory illness caused by influenza viruses. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>มันอาจมีอาการตั้งแต่ไม่สบายเล็กน้อยจนถึงเสียชีวิต</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>It can cause mild to severe illness, and at times can lead to death.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อาการของหวัดอาจมีไข้และรู้สึกร้อนหรือหนาว ไอ เจ็บคอ มีน้ำมูก ขี้มูก ปวดเมื่อยตามตัว ปวดหัว และ อ่อนเพลีย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The symptoms of flu can include fever or feeling feverish/chills, cough, sore throat, runny or stuffy nose, muscle or body aches, headaches and fatigue (tiredness). </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อาการของหวัดทั่วไปไม่รุนแรงเท่าไข้หวัด</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Cold symptoms are usually milder than the symptoms of flu. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คนที่ไม่สบายทั่วไปมักจะมีน้ำมูกหรือขี้มูกมากกว่า</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>People with colds are more likely to have a runny or stuffy nose. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หวัดโดยทั่วไปมักไม่เป็นอันตรายต่อสุขภาพ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Colds generally do not result in serious health problems.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อย่างไรก็ตาม อาการของ Covid-19 คือการมีไข้ ไอ และ หายใจติดขัด</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>However, COVID-19 causes a respiratory illness manifested by fever, cough and difficulty breathing. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อาการเหล่านี้เป็นสัญญาณของโรค Covid-19</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Those three symptoms together are indications of COVID-19. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อย่างไรก็ตาม อาการของ Covid-19 อาจดูเหมือนไข้ธรรมดา เช่น ปวดเมื่อย เจ็บคอ มีน้ำมูก หรือ ท้องเสีย เป็นต้น</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>However, COVID-19 infection can also produce symptoms similar to the flu like aches and pains, sore throat, runny nose, nasal congestion or diarrhea.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>โทรปรึกษาหมอหรือนัดหมายการตรวจทางไกลกับผู้เชียวชาญทางด้านสาธารณสุข</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Call your doctor or schedule a virtual visit with a medical professional. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ไม่ควรไปพบแพทย์ที่สถานพยาบาลหรือศูนย์ผู้ป่วยฉุกเฉินโดยไม่โทรนัดหมายล่วงหน้า เนื่องจากสถานการณ์ของไวรัสโคโรนาขณะนี้</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Given heightened threat of coronavirus and the stress on the healthcare system, do not go to a doctor’s office, urgent care center or hospital emergency department without calling first.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หากคุณป่วยจากเชื้อ Covid-19 หรือสงสัยว่าจะติดเชื้อ Covid-19 ให้ทำตามขั้นตอนต่อไปนี้เพื่อป้องกันการระบาดภายในบ้านหรือแหล่งชุมชมของท่าน:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>If you are sick with COVID-19 or suspect you are infected with the virus that causes COVID-19, follow the steps below to help prevent the disease from spreading to people in your home and community:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อยู่ที่บ้าน ยกเว้นจำเป็นต้องไปสถานพยาบาล</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Stay home except to get medical care</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>แยกตัวเองให้ห่างจากผู้อื่นรวมถึงสัตว์เลี้ยงภายในบ้าน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Separate yourself from other people and animals in your home</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>โทรนัดหมายล่วงหน้าก่อนพบแพทย์</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Call ahead before visiting your doctor</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สวมหน้ากากหากไม่สบาย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Wear a face mask if you are sick</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ล้างมือบ่อย ๆ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Clean your hands often</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ทำความสะอาดพื้นผิวที่สัมผัสบ่อย ๆ ทุก ๆ วัน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Clean all "high touch" surfaces everyday</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>จากอาการที่กล่าวมา คุณน่าจะเป็นภูมแพ้ทั่วไป</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Based on the symptoms you describe, you may just have seasonal allergies. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อาการอื่น ๆ ของภูมิแพ้ได้แก่ จาม และ มีน้ำมูก</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Other allergy symptoms include sneezing and runny nose.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อาการทั่วไปอาจแตกต่างกันในแต่ละคน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Common symptoms can vary from person to person. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ข้อมูลนี้เป็นเพียงคำแนะนำส่วนบุคคล</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>This information is intended to provide personal guidance. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>มีเพียงแพทย์ที่สามารถตรวจสอบยืนยันได้</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Only your doctor can make a complete diagnosis. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ควรพบแพทย์หากคุณมีอาการรุนแรง หรือ อาการที่อาจเป็นอันตรายถึงแก่ชีวิต</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Seek immediate medical attention for any serious or life threatening health issue.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อาการภูมิแพ้ คือ อาการที่ภูมิต้านทานตอบสนองต่อเกษรดอกไม้หรือเชื้อรา</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Seasonal allergies, also known as allergic rhinitis or hay fever, are an immune response to pollen and mold. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สิ่งที่แตกต่างจากไข้นั่นคือภูมิแพ้มักมีอาการต่อเนื่องหลายสัปดาห์จนถึงหลายเดือนหรืออาจหลายปี</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Unlike a cold or the flu, allergy symptoms often last for several weeks to months of the years.  </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ภูมิแพ้มักเป็นสาเหตุของการติดเชื้อในโพรงไซนัส หู และ ทางเดินหายใจ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Allergies can also be an underlying cause of frequent sinus, ear, and respiratory infections. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อาการได้แก่:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Symptoms include:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>มีน้ำมูกในโพรงไซนัส</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Sinus Congestion</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>น้ำมูกไหล</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Runny Nose</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เสมหะ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Post-Nasal Drip</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>จาม</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Sneezing</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ไอ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Coughing</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คัน หรือ น้ำตาไหล</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Itchy or Watery Eyes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ภูมิแพ้ทำให้จาม ไอ มีน้ำมูก และ คันผิวหรือตา แต่ covid-19 นั้นมีอาการได้แก่ ไข้ ปวดเมื่อยตามตัว หายใจลำบาก</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Seasonal allergies cause sneezing, coughing, runny nose and irritated skin or eyes while COVID-19 can be mild but can include fever, body aches and difficulty breathing. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>Covid-19 หรือ ไข้ จะแสดงอาการอย่างรวดเร็ว ในขณะที่อาการภูมิแพ้นั้นป้องกันได้ด้วยการลดการสัมผัส (อยู่กับบ้าน)</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>COVID-19 or the flu come on quickly while allergies are mitigated by limiting exposure (not going outside).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>จากอาการข้างต้น คุณอาจเป็นไข้หวัด</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Based on the symptoms you describe, you may just have a common cold. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อาการของหวัดทั่วไปได้แก่ จาม และ น้ำมูกไหล</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Other common cold symptoms include sneezing and runny nose.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อาการของหวัดทั่วไป</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Common cold symptoms</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>วิธีการรักษาพยาบาลหวัดทั่วไป</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Common cold primary treatments</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ความแตกต่างของหวัดทั่วไป กับ ไข้หวัด</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Common cold vs. flu</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ความแตกต่างของหวัดทั่วไป กับ โคโรนา</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Common cold vs. coronavirus</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ถ้าไวรัสหวัดทั่วไป คุณจะพบว่าคุณจำเป็นต้องพกกระดาษทิชชู่ติดตัวไปหลายวัน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>If it’s a cold virus, you may find yourself close to a tissue box for several days. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>โดยทั่วไปแล้ว หวัดจะหายได้เองภายใน 10 วันหรือน้อยกว่านั้น</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Most of the time, colds get better on their own in 10 days or less. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หวัดอาจมีอาการอย่างอื่นร่วมด้วยที่ทำให้คุณรู้สึกลำคาญ ได้แก่</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Colds bring on a nasty mix of symptoms that can really wear you down. They can include:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เจ็บคอ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Sore throat </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ปวดหัว</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Headache </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>มีขี้มูก</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Stuffy nose</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ปวดกล้ามเนื้อ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Mucus buildup</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อ่อนเพลีย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Fatigue </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>โพรงไซนัสอักเสบ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Swollen sinuses</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ไข้ (มักจะมีไข้ต่ำในผู้ใหญ่ แต่อาจมีไข้สูงในเด็ก)</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Fever (usually low-grade in adults but higher in children)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ถึงแม้ว่าคุณจะสามารถโทรหาหมอเพื่อขอคำแนะนำ แต่หวัดโดยทั่วไป ไม่จำเป็นต้องหาหมอ ยกเว้นคุณมีอาการอย่างอื่นร่วมด้วย เช่น</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>While you can certainly call your primary physician for advice and guidance the nominal cold will not require a doctor visit unless secondary indications require a visit – for example, </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ถ้าคุณมีอาการไซนัสอักเสบ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>if you contract a sinus infection or</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เริ่มมีปัญหาในการหายใจ หรือ เจ็บปอดหรือหน้าอก</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>begin to have more severe breathing issues or lung and chest pains. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เพราะว่าหวัดทั่วไปคือไวรัส ยาปฏิชีวนะจะใช้ไม่ได้ผล</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Because the common cold is a virus, antibiotics won’t help. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>แต่ยาที่สามารถหาได้ตามร้านขายยาทั่วไปอาจสามารถช่วยให้คุณรู้สึกดีขึ้นได้</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>But over-the-counter medications may make you feel better.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อาการของไข้หวัดได้แก่ มีไข้ ตัวร้อน หรือ หนาว ไอ เจ็บคอ มีน้ำมูก ขี้มูก ปวดเมื่อย ปวดหัว อ่อนเพลีย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The symptoms of flu can include fever or feeling feverish/chills, cough, sore throat, runny or stuffy nose, muscle or body aches, headaches and fatigue (tiredness). </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อาการหวัดมักจะเบากว่าไข้หวัด</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Cold symptoms are usually milder than the symptoms of flu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>CDC ถือว่าคนนั้นมีไข้หากเขาหรือเธอมีอุณหภูมิสูงกว่า 100.4 องศาฟาเรนไฮ (38 องศาเซลเซียส) หรือรู้สึกอุ่นจากการสัมผัส หรือรู้สึกตัวร้อน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The CDC considers a person to have a fever when he or she has a measured temperature of 100.4° F (38° C) or greater, or feels warm to the touch, or gives a history of feeling feverish.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ทุกคนควรอยู่ที่บ้านเพื่อหยุดการแพร่กระจายของเชื้อไวรัสโคโรนา</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Everyone must stay at home to help stop the spread of coronavirus. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คุณควรทำตัวคุณเองให้สถอาดและล้างมือบ่อย ๆ โดยเฉพาะหลังจากคุณสัมผัสกับสิ่งที่อาจมีเชื้อโรค</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>You should keep yourself clean and wash your hand regularly especially after you've got contact to object that might be contaminated.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คุณควรออจากบ้านเฉพาะ 1 ใน 4 เหตุผลเหล่านี้เท่านั้น</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>You should only leave the house for 1 of 4 reasons:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ซื้อสิ่งของจำเป็น เช่น อาหาร ยา ซึ่งควรจะถี่น้อยที่สุด</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>shopping for basic necessities, for example food and medicine, which must be as infrequent as possible</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ออกกำลังกายแบบเดียว เช่น วิ่ง เดิน ขี่จักรยาน คนเดียว หรือกับครอบครัว</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>one form of exercise a day, for example a run, walk, or cycle – alone or with members of your household</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ความจำเป็นทางการแพทย์ หรือการช่วยเหลือบุคคลอื่น</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>any medical need, or to provide care or to help a vulnerable person</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>การไปกลับที่ทำงาน แต่ควรจะเฉพาะเท่าที่จำเป็น เช่นงานที่ไม่สามารถทำจากที่บ้านได้</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>travelling to and from work, but only where this absolutely cannot be done from home</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>บุตรหลานของคุณเรียนโรงเรียนแบบใด ?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>What type of school do your children attend?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>รหัสไปรษณีย์ของที่อยู่คุณคืออะไร​ ?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>What zip code do you live in?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>วิทยาลัยและมหาวิทยาลัยในรหัสไปรษณีย์ $zip_code ได้เปลี่ยนเป็นการเรียน online</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Colleges and universities in zip code $zip_code have moved their classes online. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>กรุณาติดต่อโรงเรียนของคุณสำหรับข้อมูลเพิ่มเติม</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Please contact your school for further details.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ทุกโรงเรียนระดับต่ำกว่าวิทยาลัย/มหาวิทยาลัยในรหัสไปรษณีย์ $zip_code ปิดจนกว่าจะมีประกาศเป็นอย่างอื่น</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>All schools below the college/university level in zip code $zip_code will remain closed until further notice.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คุณควรทำตามคำแนะนำของ CDC ในการเดินทางทุกชนิด</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Follow the CDC's guidelines for all travel. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คุณสามารถหาข้อมูลเกี่ยวกับการห้ามเดินทางของแต่ละประเทศรวมถึงแผนที่การประเมินความเสียงการกระจายของ Covid-19 ได้ที่นี่</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>You can find travel restrictions by country as well as a Geographic Risk Assessment map for COVID-19 transmission here.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ติดตามแผนที่การประเมินความเสี่ยงระดับภูมิภาคของแพร่ระบาด Covid-19 ได้ที่นี่</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Follow the Geographic Risk Assessment map for COVID-19 transmission here.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คุณสามารถพบรายการสถานพยาบาลของเอกชนและรัฐได้ที่นี่</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>You can also find a list of State and Local Health Departments here</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ถ้าคุณต้องการเดินทางกลับไปที่สหรัฐ CDC แนะนำให้ทำดังต่อไปนี้</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>If you are returning to the US from international travel, the CDC recommends following these guidelines</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ข้อมูลเกียวกับ Visa ที่เกี่ยวข้องกับไวรัสโคโรนาจากการเดินทางไปต่างประเทศ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Information for Visa Applicants Regarding Novel Coronavirus read more.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อยู่กับบ้าน 14 วันนับจากวันที่คุณเดินทางกลับมาถึง</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Stay home for 14 days from the time you returned from international travel. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ภายใน 14 วันนี้ ทำตามขั้นตอนดังต่อไปนี้เพื่อตรวจสอบสุขภาพของคุณ อย่าลืมอยู่ห่างจากคนรอบข้าง</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>During this 14-day period, take these steps to monitor your health and practice social distancing:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>วัดอุณหภูมิของคุณด้วยเทอร์โมมิเตอร์สองครั้งต่อวันเพื่อตรวจสอบไข้</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Take your temperature with a thermometer two times a day and monitor for fever. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สังเกตว่ามีการไอ หรือหายใจลำบากหรือไม่</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Also watch for cough or trouble breathing.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อยู่กับบ้านและหลีกเลี่ยงการปฏิสัมพันธ์กับบุคคลอื่น</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Stay home and avoid contact with others. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ห้ามไปทำงานหรือโรงเรียน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Do not go to work or school.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ห้ามเดินทางโดยใช้ระบบขนส่งมวลชน แท็กซี่ หรือ อาศัยรถผู้อื่น</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Do not take public transportation, taxis, or ride-shares.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>รักษาระยะห่างจากผู้อื่น (ประมาณ 6 ฟุตหรือ 2 เมตร)</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Keep your distance from others (about 6 feet or 2 meters).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สำหรับข้อมูลเกี่ยวกับการห้ามเดินทาง ดูได้ที่นี่</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>For more information on travel restrictions, visit here</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>กระทรวงสาธารณะสุข โดยกรมควบคุมโรค ได้มีคำแนะนำสำหรับการเดินทางข้ามชาติ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Ministry of Public Health By the Department of Disease Control There are suggestions for those traveling to or from abroad. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เผยแพร่บนเว็บไซต์ https://ibm.biz/Bdqfk2 </seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Publish on website https://ibm.biz/Bdqfk2 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หากคุณเดินทางกลับมาจากประเทศที่กำลังมีการแพร่ระบาด หากไม่มีความจำเป็นกระทรวงสาธารณะสุขแนะนำให้ท่านงดการเดินทางโดยใช้ระบบขนส่งมวลชน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>When traveling back from a country that has an ongoing epidemic The Ministry of Public Health recommends refraining from going out in public places unnecessarily. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>และคุณควรวัดอุณหภูมิร่างกายทุกวันจนครบ 14 วันนับจากวันแรกที่กลับสู่ประเทศไทย หากคุณมีไข้ และ ไอ ติดต่อเบอร์ 1422</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>And measure body temperature daily until 14 days have elapsed after traveling to Thailand During the symptom observation, if there is a fever, cough, report 1422.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อาการเบื้องต้นของ Covid-19 คือ ไข้ ไอแห้ง และหอบ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The most common symptoms of COVID-19 are fever, a dry cough, and shortness of breath. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อาการอาจเกิดขึ้นในช่วงเวลา 2-14 วันหลังจากได้รับเชื้อ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>These symptoms may appear 2-14 days after exposure.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>โทรปรึกษาแพทย์ หากคุณคิดว่าคุณได้รับเชื้อ Covid-19 และเริ่มมีไข้ ไอ และหายใจลำบาก</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Call your doctor: If you think you have been exposed to COVID-19 and develop a fever and symptoms, such as cough or difficulty breathing, </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>โทรปรึกษากับผู้เชียวชาญทางด้านสาธารณสุขเพื่อขอคำแนะนำในการรักษา</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>call your healthcare provider for medical advice.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หากคุณมีอากา Covid-19 ขั้นรุนแรง กรุณาพบแพทย์โดยทันที</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>If you develop emergency warning signs for COVID-19 get medical attention immediately. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สัญญาณเตือนขั้นรุนแรงได้แก่</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Emergency warning signs include: </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หายใจลำบากและหอบหืด</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Difficulty breathing or shortness of breath</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เจ็บ ปวด หรือ รู้สึกเหมือนถูกทับบริเวณหน้าอก</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Persistent pain or pressure in the chest</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สับสน หรือ ขาดการตื่นตัว</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>New confusion or inability to arouse</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ปากหรือหน้าแดง</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Bluish lips or face</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หากต้องการข้อมูลเพิ่มเติม ดูที่ https://ibm.biz/BdqfkZ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>For more information, visit:  https://ibm.biz/BdqfkZ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>พบข้อมูลการเตือนเกี่ยวกับ Covid-19 ได้ที่นี่</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Find our Covid-19 alert document: click here to find our more</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อาการหอบหมายถึงอาการหายใจลำบาก มาโยคลินิคได้อธิบายไว้ที่นี่</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Shortness of breath refers to difficulty breathing. The Mayo clinic has a definition here.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ปฏิบัติตามข้อกำหนดของรัฐหรือผู้มีอำนาจสั่งการ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Listen to and follow the directions of your state and local authorities.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ผู้ป่วย Covid-19 จำนวนไม่มากที่จำเป็นต้องนอนโรงพยาบาล</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Not all patients with COVID-19 require hospital admission. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ผู้ป่วยที่โรงพยาบาลระบุว่าจำเป็นต้องนอนโรงพยาบาลเพื่อใช้บริการทางการแพทย์ควรได้รับการดูแลและแยกห่างจากผู้อื่นอย่างระมัดระวัง</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Patients whose clinical presentation warrants in-patient clinical management for supportive medical care should be admitted to the hospital under appropriate isolation precautions.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>การตัดสินใจว่าผู้ใดควรนอนโรงพยาบาลต้องดูเป็นกรณี ๆ ไป</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The decision to monitor these patients in the inpatient or outpatient setting should be made on a case-by-case basis. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เงื่อนไขการตัดสินใจไม่ได้จำกัดอยู่เพียงแต่ทางด้านการรักษา แต่ยังรวมถึงความสามารถในการดูแลตัวเอง ความสามารถในการกักกันตัวเอง และความเสี่ยงในการแพร่ระบาดในย่านที่พักของผู้ป่วย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>This decision will depend not only on the clinical presentation, but also on the patient’s ability to engage in self-monitoring, the feasibility of safe isolation at home, and the risk of transmission in the patient’s home environment.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สำหรับข้อมูลเพิ่มเติม ดูได้ที่นี่ หรือ ที่นี่</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>For more information visit here or here.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หากคุณมีไข้ ไอ หรือหายใจลำบาก กรุณาติดต่อบริการสาธารณะสุขใกล้บ้านคุณ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>If you have fever, cough, or shortness of breath, call your healthcare provider. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เขาอาจบอกวิธีการดูแลตัวเองจากที่บ้าน ในกรณีดังกล่าว แนะนำให้ทำดังต่อไปนี้</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>They may tell you to manage your care from home. If so, follow these tips.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หากคุณมีอาการบ่งบอกถึงอันตรายของ Covid-19 ดังต่อไปนี้ ให้รีบเข้ารับการรักษาโดยทันที</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>If you develop emergency warning signs for COVID-19 get medical attention immediately. Emergency warning signs include*:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>รายการดังกล่าวเป็นเพียงตัวอย่าง กรุณาปรึกษาบริการสาธารณะสุขใกล้บ้านคุณหากมีข้อสงสัยเพิ่มเติม</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>This list is not all inclusive. Please consult your medical provider for any other symptoms that are severe or concerning.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สามารถหาข้อมูลเกี่ยวกับการดูแลตัวเองที่บ้านได้ที่นี่</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>For more information on caring for yourself at home, visit here.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>กรณีศึกษา</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>CASE STUDY</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ครอบครัว ผู้อยู่อาศัย และแขก ได้เข้าพักในพื้นที่เสี่ยงสูงภายในประเทศไทยในวันที่ 28 กุมภาพันธ์ 2020</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Family member/resident/visitor arrives in Thailand on Feb 28th, 2020, from a high-risk country/area.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ครอบครัว ผู้อยู่อาศัย และแขก ซึ่งได้เดินทางไปยังพื้นที่เสี่ยงสูง รวมถึงบุตรหลานที่ไม่ได้เดินทางด้วยต้องถูกกักบริเวณ 14 วัน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Family member/resident/visitor who had travelled to high-risk country/area, and child (did not travel) both need to be quarantined for 14 days, </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>แม้ว่าไม่มีใครได้รับผลตรวจ Covid-19 เป็นบวก</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>even though no one has tested positive for COVID-19. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>วันที่ 28 กุมภาพันธ์ 2020 นับเป็นวันแรกของการกักบริเวณ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Feb 28th, 2020 is counted as the first day of quarantine. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>การเดินทางระหว่างประเทศ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>International travellers</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อนุญาตให้เฉพาะผู้มี Passport ถูกต้องเท่านั้นถึงจะเข้าไปยังที่พักผู้โดยสารระหว่างประเทศ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Only travellers with a valid passport will be able to access the international terminal.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เพื่อให้การเว้นระยะห่างเป็นไปอย่างมีประสิทธิภาพ เราจำเป็นต้องขอให้ผู้เดินทางทุกท่านมาถึงก่อนเวลาเดินทาง 3 ชั่วโมง</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>To help with social distancing requirements we also request that travellers only arrive three hours before their flight.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>การเดินทางภายในประเทศ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Domestic travellers</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>การเดินทางภายในประเทศยังสามารถทำได้ตามปกติ อย่างไรก็ตาม ทางรัฐบาลขอความร่วมมือในการลดการเดินทางที่ไม่จำเป็นลง</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The domestic terminal is still open however; the Government has asked to limit all non-essential domestic travel</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ขอความร่วมมือให้ทุกท่านลดการเดินทางไปยังพื้นที่อื่น ๆ ภายในประเทศยกเว้นแต่หากมีเหตุจำเป็น</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>People are encouraged not to visit different parts of the country unless it’s for an essential reason.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ใช่ หากมีใครเดินทางผ่านสนามบินในพื้นที่หรือประเทศที่มีความเสี่ยงสูง ท่านจำเป็นต้องได้ถูกกักตัวเป็นระยะเวลา 14 วันในประเทศไทย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Yes. A person who had made transits in airports located in high-risk countries/areas will need to be quarantined for 14 days upon arrival in Thailand. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>CDC แนะนำให้ล้างมือด้วยสบู่เป็นระยะเวลาไม่น้อยกว่า 20 วินาที และควรทำความสะอาดบริเวณใต้เล็บด้วย หลังจากนั้นควรทำให้แห้งโดยใช้ผ้าสะอาดหรือเครื่องเป่ามือ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The CDC recommends washing your hands with soap and water for at least 20 seconds, being sure to scrub all around and under fingernails, and finally drying with an air dryer or clean towel.   </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หากคุณไม่มีสบู่หรือน้ำ คุณสามารถใช้แอลกอฮอลเจลสำหรับทำความสะอาดมือที่มีความเข้มข้นไม่ต่ำกว่า 60%</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>If you do not have access to soap or running water, you can use a hand sanitizer with at least 60% alcohol concentration. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คุณสามารถหาข้อมูลเพิ่มเติมเกี่ยวกับการล้างมือจาก CDC ได้ที่นี่</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>You can find more information on the CDC's hand-washing recommendations here.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ปกป้องตัวเอง</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Protect yourself. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ล้างมือบ่อย ๆ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Clean your hands regularly. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ล้างมือด้วยสบู่และน้ำและทำให้แห้ง คลิกที่นี่เพื่ออ่านเพิ่มเติม</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Wash your hands with soap and water, and dry them thoroughly: click here to find our more</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ไวรัสโคโรนาเป็นไวรัสตระกูลใหญ่ บางครั้งอาจติดไปยังสัตว์เช่นอูฐ แมว และ ค้างคาว</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Coronaviruses are a large family of viruses, some causing illness in people and others circulating among animals, including camels, cats and bats.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เชื้อไวรัสโคโรนา 2019 (2019) เป็นเชื้อไรวัสใหม่ที่ทำให้เกินอาการป่วยในทางเดินหายใจ สามารถแพร่ระบาดระหว่างคนถึงคน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The 2019 novel coronavirus (COVID-19) is a new virus that causes respiratory illness in people and can spread from person-to-person. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ไวรัสถูกค้นพบครั้งแรกที่เหมือนอู่ฮั่นประเทศจีน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>This virus was first identified during an investigation into an outbreak in Wuhan, China.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ชื่อของโรคเรียกว่าโรคโคโรนา 2019 หรือเรียกสั้น ๆ ว่า Covid-19</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The name of this disease is coronavirus disease 2019, abbreviated as COVID-19</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ใน Covid-19 นั้น Co มาจากคำว่า Corona Vi มาจากคำว่า Virus และ D มาจากคำว่าโรคระบาด</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for disease.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ก่อนหน้านี้ โรคนี้ถูกเรียกว่า เชื้อไวรัสโคโรน่า 2019 หรือ 2019-nCov</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV.”</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เชื่อว่าเชื้อ Covid-19 นั้นติดระหว่างคนถึงคน ดังนั้นการเว้นระยะห่างระหว่างบุคคลจึงเป็นเรื่องสำคัญสำหรับการป้องกันตนเองจากการติดเชื้อไวรัส</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Covid-19 is thought to spread mainly through person to person transmission, so it's important to distance yourself from others as much as possible to prevent getting the virus.  </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ยิ่งกว่านั้น คุณยังควรล้างมือบ่อย ๆ และ หลีกเลี่ยงจากการสัมผัสใบหน้าให้มากที่สุด</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Additionally, you should wash your hands often and avoid touching your face as much as possible. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สำหรับข้อมูลเพิ่มเติม อ่านได้ที่คำแนะนำในการปกป้องตนเองและผู้อื่นของ CDC</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>For more information, check out the CDC's guide to protecting yourself and others.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>วิธีการป้องกันที่ดีที่สุดสำหรับตัวคุณ ครอบครัว และเพื่อนฝูง จากไวรัส คือการล้างมืออย่างน้อย 20 วินาทีด้วยสบู่และน้ำ จากนั้นทำให้มือแห้งทันที</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The best way to protect yourself, family, friends and colleagues from germs and viruses is to wash your hands for 20 seconds with soap and water and dry them well.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ดังนั้น เมื่อใดก็ตาที่คุณทำงานที่บ้าน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>So, whether you’re at work or at home</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ทำมือให้เปียกด้วยน้ำ ใช้น้ำอุ่นหากเป็นไปได้</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Wet your hands under clean running water. Use warm water if available.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ถูมือด้วยสบู่เป็นเวลาไม่ต่ำกว่า 20 วินาที สบู่เหลวจะมีประสิทธิภาพดีที่สุด</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Put soap on your hands and wash for 20 seconds. Liquid soap is best</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ถูมือจนกว่าจะมีฟอง</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Rub hands together until the soap makes bubbles.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ถูทั้งสองด้านของทั้งสองมือ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Rub on both sides of both hands</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>และทั้งซอกนิ้วรวมถึงนิ้วโป้ง</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>and in between fingers and thumbs</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>และรอบ ๆ ทั้งสองมือ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>and round and round both hands</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ล้างสบู่ออกโดยให้น้ำเปล่าไหลผ่าน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Rinse all the soap off under clean running water. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หากเป็นไปได้ ให้ใช้น้ำอุ่น</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Use warm water if available</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ทำมือให้แห้งไม่ต่ำกว่า 20 วินาที</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Dry your hands all over for 20 seconds</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ใช้ผ้าเช็ดมือจะดีที่สุด (หากอยู่ที่บ้านให้ใช้ผ้าแห้งที่สะอาด)</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Using a paper towel is best (or, if at home, a clean dry towel)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ควรล้างมือและทำมือให้แห้งบ่อย ๆ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Always wash and dry your hands</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>กินหรือเตรียมอาหาร</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Eating or preparing food</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>จาม ไอ หรือสั่งน้ำมูก (หรือการเช็ดจมูกเด็ก)</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Sneezing, coughing or blowing your nose (or wiping children's noses)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ทำสวน (หรือเล่นนอกบ้านกับเด็ก)</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Gardening (or playing outside for children)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สัมผัสสัตว์</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Having contact with animals</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>การเข้าห้องน้ำหรือการเปลี่ยนผ้าอ้อม</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Going to the toilet or changing nappies</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ดูแลผู้ป่วย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Looking after sick people</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ในเดือนกุมภาพันธ์ 2020 ประเทศจีนได้อนุมัติการใช้ยา Favilavir สำหรับรักษา Covid-19</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In February 2020, China has approved the use of Favilavir for the treatment of COVID-19</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>รวมถึงยาอื่น ๆ เช่น antiretroviral therapy (lopinavir และ Ritonavir) มักถูกใช้ร่วมกันเพื่อนต่อต้านไข้หวัดและไข้มาเลเลีย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Also, many drugs such as antiretroviral therapy (lopinavir with Ritonavir) are used in combination with anti-influenza, anti-malarial drugs</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>พบว่ายา Remdesivir มีประสิทธิภาพในการรักษาสัตว์ที่ติดโรค Sars และ Mers</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Remdesivir has been found to be effective in vitro and in animals infected with SARS and MERS</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ทั้งหมดนี้ยังต้องการการวิจัยเพื่อยืนยันผลการรักษา</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>All of this still requires further research to confirm reliable treatment results. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สำหรับการรักษานั้น แนะนำให้ไปยังโรงพยาบาลและให้แพทย์ทำการรักษา</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>For treatment, it is advisable to only be hospitalized by a professional doctor</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เพื่อให้การรักษามีประสิทธิภาพสูงสุดและลดภาวะอันตรายจากผลข้างเคียงของยา</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>To fully achieve therapeutic effects and prevent dangerous side effects from medication </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สิ่งเหล่านี้สามารถช่วยลดความเสี่ยงของคุณและคนรอบตัวจากการติดเชื้อไวรัสโคโรนา</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>There are things you can do to help reduce the risk of you and anyone you live with getting ill with coronavirus.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ล้างมือด้วยสบู่บ่อย ๆ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>wash your hands with soap and water often</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ไม่ต่ำกว่า 20 วินาที</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>do this for at least 20 seconds</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ใช้เจลฆ่าเชื้อในกรณีที่ไม่มีสบู่</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>use hand sanitiser gel if soap and water are not available</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ล้างมือทันทีที่กลับถึงบ้าน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>wash your hands as soon as you get back home</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ปิดปากและจมูกด้วยทิชชู่หรือแขนเสือ (ไม่ควรใช้มือ) หากไอหรือจาม</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>cover your mouth and nose with a tissue or your sleeve (not your hands) when you cough or sneeze</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ทิ้งกระดาษทิชชู่ลงถังขยะและล้างมือทันที</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>put used tissues in the bin immediately and wash your hands afterwards</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ห้ามสัมผัสตา จมูก หรือ ปาก หากยังไม่ได้ล้างมือ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>do not touch your eyes, nose or mouth if your hands are not clean</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ตั้งแต่วันที่ 24 มีนาคม แนะนำให้ผู้ปกครองดูแลบุตรหลานที่บ้าน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>From Tuesday 24 March, parents are encouraged to keep their children at home. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>จะไม่มีการไล่บุตรหลานท่านออกจากโรงเรียน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>No child will be turned away from school.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>นักเรียนหรือคณาจารย์ที่มีการเดินทางไปต่างประเทศภายใน 14 วันก่อนหน้าควรกักตัวเองเป็นระยะเวลา 14 วันหลังจากกลับมา</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Any student or staff member who over the last 14 days has been overseas should be in self-isolation for 14 days after they returned</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>พวกเขาควรถูกแยกจากโรงเรียนและไม่ควรกลับไปยังโรงเรียนหรือสถานดูแลเด็กเป็นระยะเวลาไม่ต่ำกว่า 14 วันนับจากวันที่กลับมา</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>They are excluded from school and should not return to school or child care services for a period of 14 days after arriving, </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เนื่องจาก Covid-19 มีระยะเวลาฟักเชื้อยาวนานกว่า 2 อาทิตย์</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>as the COVID-19 incubation period can be as long as two weeks</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คณาจารย์และนักเรียนที่พบว่าใกล้ชิดกับผู้ที่ถูกวินิจฉัยว่าเป็น Covid-19 จะต้องกักตัวเองที่บ้าน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Staff and students who have been identified as close contacts of a person diagnosed with COVID-19 during their infectious period must also self-isolate at home, </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>และไม่ควรไปยังโรงเรียนหรือสถานรับเลี้ยงเด็กไม่ต่ำกว่า 14 วัน นับจากวันที่ใกล้ชิดกับผู้ป่วย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>and should not attend school or childcare settings until 14 days after their last contact with the infected person.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>กรุณางดการแสดงความกังวลบนสื่น social ทุกชนิด</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Please do not discuss anyone you have concerns about via any type of social media.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>มันอาจสร้างปัญหาให้แก่สังคมและความเป็นอยู่ของผู้คน มันไม่มีผลดีใด ๆ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>This can be damaging to the community and people’s wellbeing and has no positive outcomes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หลาย ๆ คน มีปัญหาด้านสุขภาพซึ่งไม่เกี่ยวข้องใด ๆ กับความเสี่ยงของ Covid-19</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Many people may have a range of health issues that are in no way related to a risk of Covid-19.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>จนถึงวันนี้ยังไม่มีวัคซีนหรือยาต้านไวรัสที่สามารถป้องกันหรือรักษา Covid-2019</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>To date, there is no vaccine and no specific antiviral medicine to prevent or treat COVID-2019</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อย่างไรก็ตาม ผู้ติดเชื้อควรได้รบการรักษาตามอาการ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>However, those affected should receive care to relieve symptoms.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ผู้ที่ป่วยหนักควรเข้ารับการรักษาที่โรงพยาบาล</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>People with serious illness should be hospitalized.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ผู้ป่วยส่วนใหญ่หายได้จากการรักษาดังกล่าว</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Most patients recover thanks to supportive care</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>วัคซีนและยากำลังถูกคิดค้น</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Possible vaccines and some specific drug treatments are under investigation</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>มันกำลังถูกทดลองรักษา</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>They are being tested through clinical trials.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>WHO กำลังร่วมมือกันสร้างวัคซีนและยาสำหรับป้องกันและรักษา Covid-19</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>WHO is coordinating efforts to develop vaccines and medicines to prevent and treat COVID-19.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>รัฐบาลไทยได้กำหนดให้มีการคัดกรองและกักตัวเพื่อลดการแพร่ระบาดของ Covid-19</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The Royal Thai Government (RTG) has implemented enhanced screening and quarantine measures to reduce the spread of COVID-19</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>นักเดินทางควรเตรียมพร้อมสำหรับการจำกัดการเดินทางโดยอาจไม่มีการแจ้งให้ทราบล่วงหน้า</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Travelers should be prepared for travel restrictions to be put into effect with little or no advance notice</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ประชาชนจากสหรัฐอเมริกาที่มีความประสงค์จะเดินทางกลับประเทศควรตรวจสอบกับสายการบินเพื่อทำการจองเที่ยวบินล่วงหน้า</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>U.S. citizens who are considering returning to the United States are urged to work with their airlines to make travel arrangements while flights are still available.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>การนับการกักตัว 14 วันนั้น เริ่มนับวันที่ 1 จากวันที่มาถึง ไม่ใช่วันที่ออกจากพื้นที่เสี่ยง</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The 14 day period begins with Day 1 on the day of entry into Thailand, not the day of departure from the high-risk area. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ในระยะเวลากักตัว 14 วันนี้ เราแนะนำให้ท่านทำตามข้อปฏิบัติของรัฐเพื่อลดการสัมผัสกับผู้อื่น หลีกเลี่ยงจากพื้นที่คับคั่งให้มากที่สุด เช่น ขนส่งมวลชน ห้างสรรพสินค้า หลีกเลี่ยงการสนทนากับผู้อื่น</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>During this 14 day self quarantine period, we advise you to follow the government guidance to minimise contact with people and stay away from busy places such as public transport and shopping centres. As far as possible, avoid face to face contact with anyone from community.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หากอุณหภูมิของท่านสูงกว่า 38 องศา กรุณาอยู่บ้านและปฏิบัติตามคำแนะนำของบุคลากรทางการแพทย์</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>If your temperature is 38 degrees or higher, please stay at home and seek medical advice</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หากอุณหภูมิของท่านเพิ่มขึ้นในสถานศึกษา ควรหาทางส่งตัวท่านสู่บ้านอย่างปลอดภัย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>If your temperature becomes elevated in school, the necessary arrangements will be made to have you sent home safely.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ถ้าท่านไม่ได้เดินทางไปหยั่งสถานที่ ๆ มีความเสี่ยงสูง ท่านจะได้กลับมาสถานศึกษาใหม่เมื่อท่านหายดีและมีหนังสือรับรองแพทย์ที่น่าเชื่อถือ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>If you have not travelled to the high risk areas, you will be able to return to school when you are fully recovered and are able to bring a note of good health from a reputable doctor.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>กรุณาละลึกไว้เสมอว่าการมีไข้เป็นอาการเบื้องต้นของการป่วยได้หลายชนิด</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Please remember that a high temperature may be a symptom of a number of illnesses</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ไม่ได้หมายความว่าการมีไข้จะต้องป่วยเป็น Covid-19 เสมอไป</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>there is no reason to assume that a temperature is caused by the Covid-19 virus.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หากคุณตั้งครรภ์และเป็นกังวลเรื่องไวรัสโคโรนา คุณสามารถขอคำปรึกษาได้จาก Royal College of Obstretricians and Gynaecologists.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>If you're pregnant and worried about coronavirus, you can get advice about coronavirus and pregnancy from the Royal College of Obstretricians and Gynaecologists.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เพื่อให้คุณแข็งแรงในขณะที่อยู่บ้าน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>To help yourself stay well while you're at home</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>พูดคุยกับเพื่อหรือครอบครัวผ่านทางโทรศัพท์หรือสื่อ Social</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>stay in touch with family and friends over the phone or on social media</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ทำตัวเองให้ยุ่งเสมอ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>try to keep yourself busy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คุณอาจลองทำกิจกรรมต่าง ๆ เช่น ทำอาหาร อ่านหนังสือ เรียนออนไลน์ หรือ ดูหนัง</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>you could try activities like cooking, reading, online learning and watching films</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ออกกำลังกายแบบเบา ๆ ที่บ้าน หรือ กลางแจ้ง วันละครั้ง</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>do light exercise at home, or outside once a day</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หากคุณต้องการความช่วยเหลือด้านสาธารณะสุข หลีกเลี่ยงการไปยังสถานพยาบาล ร้านขายยา หรือ โรงพยาบาล</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>If you need medical help for any reason, do not go to places like a GP surgery, pharmacy or hospital.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หากคุณมีอาการของไวรัสโคโรนา (มีไข้ ไอต่อเนื่อง) โทร 111 สายด่วนไวรัสโคโรนา</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>If you have symptoms of coronavirus (a high temperature or a new, continuous cough), use the 111 coronavirus service.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หากคุณต้องการคำแนะนำเรื่องที่ไม่เกี่ยวกับไวรัสโคโรนา</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>If you need help or advice not related to coronavirus</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สำหรับข้อมูลเกี่ยวกับสุขภาพ ไปที่เว็บไซต์ของ NHS หรือ เว็บไซท์สถานพยาบาลนั้น ๆ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>for health information and advice, use the NHS website or your GP surgery website</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สำหรับความช่วยเหลือฉุกเฉิน ใช้บริการออนไลน์ 111 ของ NHS - โทร 111 เฉพาะเมื่อคุณไม่สามารถขอความช่วยเหลือออนไลน์ได้</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>for urgent medical help, use the NHS 111 online service – only call 111 if you're unable to get help online</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สำหรับเหตุฉุกเฉินด้านสุขภาพอื่น ๆ โทร 999 เพื่อเรียกรถพยาบาล</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>for life-threatening emergencies, call 999 for an ambulance</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อ่านคำแนะนำเกี่ยวกับเรื่องสุขภาพจากที่บ้าน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Read more advice about getting medical help at home</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ไม่ ใครก็ตามที่เดินทางกลับมาจากสถานที่หรือประเทศ ๆ มีความเสี่ยงสูง ควรกักตัวเองไม่น้อยกว่า 14 วันและไม่ควรไปโรงเรียน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>No. Anyone who had travelled to high-risk countries/areas should be quarantined for 14 days and should not visit the school premises.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ตามคำแนะนำของกระทรวงศึกษาแห่งประเทศไทย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>According to the directive by the Ministry of Education of Thailand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ทุกคนที่เคยอาศัยร่วมด้วยจะต้องถูกกักตัว 14 วัน นับจากวันที่มาถึงประเทศไทย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>all residents who live in the same household must be placed on a 14-day quarantine starting from the day of arrival to Thailand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หากพวกเขาเคยไปยังพื้นที่/ประเทศกลุ่มเสี่ยงดังต่อไปนี้</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>if they have visited the following high-risk countries/areas</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ทุกคนที่เคยอาศัยร่วมด้วยจะต้องมีหนังสืออนุญาตเดินทางหากเป็นการเดินทางระหว่างประเทศ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>All those who live in the same household will need to complete a travel declaration form if they are travelling overseas</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ใช่ กรุณาดูข้อกำหนดที่ออกในวันที่ 28 กุมภาพันธ์ 2020 โดยกระทรวงศึกษาธิการประเทศไทย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Yes. Please refer to the following directive issued by the Ministry of Education of Thailand on February 28, 2020.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ในกรณีจ้าวพนักงาน ครู และบุคคลากรภายในกระทรวงศึกษาธิการ นักเรียน และ นักศึกษาภายใต้กระทรวงศึกษามีบุคคลในครอบครัวเดินทางกลับมาจากพื้นที่เสี่ยงหรือมีการใกล้ชิดกับผู้ต้องสงสัยว่าจะติดเชื้อ ห้ามบุคคลนั้นไปเรียนหรือไปทำงานและให้กักตัวอยู่ที่บ้านอย่างน้อย 14 วัน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In case that the government officers, teachers and educational personnel, officers under the Ministry of Education and all divisions, students in all schools and universities under the Ministry of Education have family members returned from at-risk countries or have had close contact with those who are suspected to be an infected case, they must not attend class or not go to work for 14-day self-quarantine at home</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เริ่มบังคับใช้ตั้งแต่วันที่ 28 กุมภาพันธ์ 2020 ทุกคนภายใต้กฏดังกล่าวจะต้องกักตัว 14 วัน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>With effect from February 28th, 2020, any personnel which falls under the directive above will need to be quarantined for 14 days. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ค่าใช้จ่ายในการตรวจยืนยันแตกต่างกันสำหรับแต่ละโรงพยาบาล ตั้งแต่ 2,500 - 13,000 บาท เนื่องจากค่าใช้จ่ายในการจัดการความเสี่ยงของบุคลากรและค่าคนส่ง</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The cost of laboratory confirmation is different for each public and private hospital, from 2,500 - 13,000 baht due to the cost of personnel protection in accordance with the risk level of the client, the sample transportation cost</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เนื่องจากบางโรงพยาบาลไม่มีแลบสำหรับทดสอบ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Because some hospitals do not perform self-tests</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>มีผลการศึกษาจากประเทศจีน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>There is a study report in China</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ตรวจพบการติดเชื้อโดยใช้เครื่อง RT-PCR หลังจากได้รับการรักษา</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The infection was detected by RT-PCR again after receiving treatment</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ไม่มีการพบเชื้อระหว่างการตรวจทั้งสองครั้งซึ่งห่างกัน 48 ชั่วโมง</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>no infection was found at least 2 times apart, 48 hours apart</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อย่างไรก็ตาม ผลการศึกษายังไม่พอที่จะยืนยันว่าผลบวกของ RT-PCR หมายถึงการติดเชื้อ เนื่องจากการทดสอบ RT-PCR ไม่ได้ใช้สำหรับตรวจสอบการติดเชื้อ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>However, more studies have yet to be found that the positive RT-PCR results Means the patient is infected because RT-PCR is a test that does not indicate infection.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>นอกจากนั้น ผู้ป่วยที่ตรวจนั้นไม่แสดงอาการอย่างอื่น</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In addition, patients who have detected the infection do not show symptoms</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>โดยทั่วไปแล้ว ผู้ป่วยจากเชื้อไวรัสเมื่อหายแล้วจะมีภูมิคุ้มกันสูงพอจะป้องกันโรคนั้นได้อีกหลายเดือน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In general, general viral infection Patients who recover from the disease build immunity that is high enough to prevent the disease for many months</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>จากข้อมูลของ Thai PBS ค่าใช้จ่ายอาจแตกต่างกันในแต่ละโรงพยาบาลสำหรับแต่ละบุคคล ดูได้ที่นี่</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>According to information obtained by Thai PBS, the charges made for an individual to be tested for COVID-19 infection vary from hospital to hospital available here</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ในปัจจุบันยังไม่มีหลักฐานการระบาดทางอากาศ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>There is currently no strong evidence of the transmission as airborne</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>การติดเชื้อจะติดผ่านละอองที่มีของเหลวเป็นภาหะ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Is a diffusion, also known as aerosol, that is to get infected through the aerosol that is diffused by a nebulizer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>การได้รับเชื้อโดยหลักมาจากละอองน้ำลาย ไอ หรือมือที่สัมผัสถูกพื้นผิวที่มีเชื้อและเข้าสู่ร่างกายผ่านเนื้อเยื่ออ่อนทางการขยี้ตาหรือการแคะจมูก</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The main contact is also close to the aura, cough or hand touch the contaminated surface and then brought to the body through rubbing eyes soft tissue or nose picking (Mucosa)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สมุนไพรบางชนิดได้รับการยืนยันผ่านกรมการแพทย์แผนไทยและการแพทย์ทางเลือกสำหรับรักษาหวัดเช่น andrographis paniculata </seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Herbal medicine such as andrographis paniculata, an herbal medicine recommended by the Department of Thai Traditional Medicine and Alternative Medicine to treat colds</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>Covid-19 เป็นไวรัสในกลุ่มโคโรนา ไม่ใช่กลุ่มไข้หวัดทั่วไป</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>COVID-19 is a virus in the corona virus group, not influenza virus</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ข้อมูลเกี่ยวกับการเดินทางจากสถานฑูตไทย หาได้ที่นี่</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Travel information from Thailand Embassy: available here</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>Covid-19 สามารถกระจายผ่านทางสิ่งของที่มีเชื้อ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>COVID-19 can spread through contaminated items</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>มันสามารถมีชีวิตอยู่ได้หลายวันหากไม่ได้ทำความสะอาด</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Can last for many days without cleaning</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ยกตัวอย่างเช่น อุปกรณ์ต่างๆ ในพื้นที่สาธารณะ เช่น ลูกบิดประตู มือจับประตู ฝักบัว ราว รถสาธารณะ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>For example, various devices Used in public areas such as door knobs and door handles, faucets, handrails, public vehicles</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ยังมีบางครั้งอาจได้รับเชื้อจากการจับโทรศัพท์มือถือ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In addition, there may be tarnish through the hand and then hold the mobile phone</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ถ้าใช้มือสัมผัสวัตถุนั้น ๆ แล้วสัมผัสบริเวณหน้า</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>If using hands to touch an object and then touch the face area</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>จับอาหารเข้าปาก</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>picking food into the mouth </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สามารถติดเชื้อได้ไม่ต่างจากการได้รับโดยตรงจากผู้ติดเชื้อ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Can be infected as well as direct contact from patients</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ควรทำความสะอาดพื้นผิวที่อาจมีเชื้อโรคอย่างละเอียดบ่อย ๆ และ ล้างมือบ่อย ๆ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Should be careful Cleaning the surface that may be contaminated frequently And wash hands frequently</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ข่าวล่าสุดเกี่ยวกับไวรัสโคโรนารายวันรวมถึงข้อมูลเกี่ยวกับจำนวนผู้ป่วย มีอยู่ที่นี่</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The latest coronavirus news updated every day including coronavirus cases: available here</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ยังไม่มีรายงานเกี่ยวกับการติดเชื้อจากสระว่ายน้ำ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>There is currently no reported infection from swimming in the pool. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หรือจากแหล่งน้ำ อย่างไรก็ตาม ควรหลีกเลี่ยงจากสระว่ายน้ำที่มีคนเยอะ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Or other water sources But should avoid a crowded pool</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>นี่คือแหล่งข่าวเกี่ยวกับ Covid-19 ในพื้นที่ของคุณ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Here is up-to-the-minute news about COVID-19 in your area:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>จำนวนผู้ป่วย Covid-19 ล่าสุดในประเทศไทย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Latest count of COVID-19 cases in Thailand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ข่าวด่วนล่าสุดจาก BangkokPost</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Latest breaking news on BangkokPost</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ข้อมูลเกี่ยวกับการได้รับการตรวจสอบในประเทศไทย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Information about getting tested in Thailand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>จากข้อแนะนำของ WHO หน้ากากทางการแพทย์สามารถลดอัตราการติดเชื้อได้</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Based on WHO guideline, standard medical grade mask can significantly reduce infection rate</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อย่างไรก็ตาม มันมีสิ่งที่ควรรู้มากกว่านั้น กรุณาอ่านคำแนะนำของ WHO เกี่ยวกับเรื่องนี้</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>However, there is a lot more to that. Please read WHO guideline for this</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>กดที่นี่เพื่ออ่านเพิ่มเติม</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>click here to find our more</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หากคุณกลับมาจากพื้นที่ ๆ มีการระบาดอย่างกว้างขวางระหว่างคนสู่คน (ระดับ 3 ควรระมัดระวังสุขภาพในการเดินทางเข้าสู่ประเทศ)</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>If you are returning from an area with widespread, ongoing community spread (Level 3 Travel Health Notice countries)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อยู่บ้าน 14 วัน นับจากวันที่คุณออกมา และ อยู่ห่างจากบุคคลอื่น ๆ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>stay home for 14 days from the time you left and practice social distancing</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ดูที่นี่เกี่ยวกับการแจ้งเตือนความเสี่ยงด้านสุขภาพจากการเดินทางจาก CDC</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>See the latest the CDC Travel Health Notices here</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ขึ้นอยู่กับสถานการณ์ของคุณ คุณอาจเลื่อนหรือยกเลิกแผนนั้น</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Depending on your unique circumstances, you may choose to delay or cancel your plans</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ถ้าคุณตัดสินใจเดินทาง ควรมั่นใจว่าคุณระมัดระวังในการติดเชื้อหรือแพร่เชื้อ Covid-19 และโรคทางเดินหายใจอื่น ๆ ในระหว่างเดินทาง</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>If you do decide to travel, be sure to practice precautions to prevent getting and spreading COVID-19 and other respiratory diseases during travel</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สำหรับข้อมูลสำหรับการเดินทางล่าสุดสืบเนื่องจาก Covid-19 ดูได้ที่หน้าของ CDC Covid-19</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>For the most up-to-date COVID-19 travel information, visit CDC COVID-19 Travel page</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>รับรู้ข้อเท็จจริงเกี่ยวกับการระบาดของไวรัสโคโรนา 2019 (Covid-19) และช่วยหยุดการกระจายข่าวลือ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Know the facts about coronavirus disease 2019 (COVID-19) and help stop the spread of rumors.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ไปที่เว็บไซท์นี้เพื่อดูข้อมูลล่าสุดเกี่ยวกับสถานการณ์ Covid-19 จาก CDC</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Go to this web site for the latest update on the COVID-19 situation from the CDC</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>พบปัญหาบางอย่าง ไม่สามารถดึงข้อมูลยอดผู้ป่วยได้</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Internal error, cannot retrieve case count</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เว็บดังต่อไปนี้มีข้อมูลยอดผู้ป่วย Covid-19 ที่ได้รับการยืนยันแล้วในประเทศไทย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The following web page contains the latest number of confirmed Covid-19 patients in Thailand.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คลิกที่นี่เพื่อดูข้อมูลเพิ่มเติมจาก Cognos Analytics</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Click here to find our more from Cognos Analytics</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ติดตามคำแนะนำการเดินทางจาก CDC</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Follow the CDC's guidelines for all travel</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คุณสามารถหาข้อมูลคำแนะนำการเดินทางในแต่ละประเทศได้จากแผนที่ประเมินความเสี่ยงของการแพร่ระบาด Covid-19 ได้ที่นี่</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>You can find travel recommendations by country as well as a Geographic Risk Assessment map for COVID-19 transmission here</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อาการของ Covid-19 มักปรากฎภายใน 2-14 วันหลังจากได้รับเชื้อไวรัส</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Symptoms for Covid-19 typically appear 2-14 days after contracting the virus</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คุณควรติดต่อสถานพยาบาลหรือผู้เชี่ยวชาญเมื่อคุณมีอาการเริ่มมีอาการ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>You should contact your healthcare professional at the first sign of symptoms</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>การแพร่ระบาดไปทั่วโลกและไม่สามารถนับหรือติดตามได้ง่ายๆ เรียกว่า pandemic</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>A pandemic is an outbreak that has spread globally and can not be easily tracked or contained.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>CDC มีข้อมูลเพิ่มเติมเกี่ยวกับว่าทำไม Covid-19 ถึงเป็นโรคระบาดทั่วโลกและมีผลกระทบอย่างไรบนเว็บไซท์</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The CDC has more information on why Covid-19 is a pandemic and what that means on their web site</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เนื่องจากสถานการณ์ของไวรัสโคโรนาหรือ Covid-19</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Due to the ongoing impact of coronavirus/COVID-19.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ดูเว็บเพจของสถานฑูตสหรัฐอเมริกาเกี่ยวกับสถานะของ Covid-19</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Visit US Embassy in Thailand webpages on COVID-19 for information on conditions</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>CDC แนะนำให้สวมหน้ากากผ้าในที่สาธารณะในสถานที่ ๆ การเว้นระยะห่างจากคนอื่นเป็นไปได้ยาก</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The CDC recommends wearing a cloth face covering in public settings where social distancing may be difficult to maintain</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สำหรับข้อมูลเกี่ยวหน้ากากผ้าและข้อแนะนำในการป้องกันตัวเองจากผู้อื่นหาอ่านได้ที่เว็บไซท์ของ CDC</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>For more information on face coverings and general guidance on protecting yourself and others please visit the CDC web site. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เจ้าหน้าที่สาธารณะสุขที่ดูแลผู้ต้องสงสัยติดเชื้อ Covid-19 จำเป็นต้องสวมหน้ากาเพื่อป้องกันการระบาดของเชื้อ Covid-19</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Healthcare workers caring for patients suspected to have Covid-19 also need to wear face-masks to prevent additional spread of Covid-19.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หากคุณมีหน้ากาก N95 หรือหน้ากากผ่าตัดเหลือ กรุณาบริจาคได้ที่โรงพยาบาลต่าง ๆ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>If you have a surplus of N95 masks or surgical masks, consider donating them to a local hospital</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>การเว้นระยะห่างจากผู้อื่นหมายถึงการพยายามเว้นระยะอย่างน้อย 6 ฟุตจากผู้อื่น</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Social distancing generally means remaining and managing a minimum of six feet of separation between people</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>การเว้นระยะแบบนี้ช่วยป้องกันคุณจากการได้รับเชื้อจากการไอหรือจาม</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Keeping this distance helps prevent droplets created by sneezing and coughing from reaching you</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ยังมีวิธีการอื่น ๆ - เช่นการล้างมือด้วยสบู่บ่อย ๆ เพื่อลดความเสี่ยงในการกระจายเชื้อในแหล่งชุมชน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>There are other actions - like washing your hands with soap frequently, you can take to reduce the risk of possible exposure in the community.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คุณต้องการฟังต่อไหม ?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Would you like to hear more ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>วันนี้ สำนักงานการบินพลเรือนแห่งประเทศไทย ประกาศยืดการห้ามบินเข้าประเทศออกไปถึง 30 เมษายน 2020</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Today, the Civil Aviation Authority of Thailand (CAAT) announced the extension until 30 April 2020 of the ban on incoming international flights</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>การยืดเวลาออกไปน่าจะทำให้เที่ยวบินขาออกลดจำนวนลงในอนาคต </seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The extension will likely mean a further reduction in outgoing international flights in the days ahead</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ในวันที่ 7 เมษายน 2020 กระทรวงดิจิตอลเศรษฐกิจและสังคม ร่วมมือกับ สำนักงานส่งเสริมเศรษฐกิจดิจิทัล IBM และ Ecardstudio เปิดใช้งานโปรแกรมมือถือชื่อ "Card2U"</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>On 7 April 2020, the Ministry of Digital Economy and Society, in cooperation with Digital Economy Promotion Agency (DEPA), IBM, and Ecartstudio, launched a new mobile application called “Card2U,” </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ซึ่งให้ข้อมูลล่าสุดเกี่ยวกับ Covid-19</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>which provides real time information on COVID-19. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>โปรแกรมมือถือนี้เสนอข้อมูลล่าสุดเกี่ยวกับการระบาด Covid-19 ได้แก่พื้นที่ระบาด การประเมินความเสี่ยงก่อนพบแพทย์ รายการโรงพยาบาลที่รับตรวจ Covid-19 สายด่วน และอื่น ๆ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>This mobile application offers updated official information to help the public cope with the COVID-19 outbreak, such as, infected areas, risk assessment before testing, lists of hospital for COVID-19 examination, hotlines, etc. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>โปรแกรมนี้มีให้ดาวน์โหลดใน App Store และ Play Store</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The application is now available for download from the Apple App Store and Play Store.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ผู้ใช้ใหม่ทุกคนจำเป็นต้องลงทะเบียนโดยใช้บัตรดิจิตอลเพื่อเข้าถึงข่าวและบริการเกี่ยวกับ Covid-19</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>All new users are required to register for a digital card which is needed for access to the latest news and services related to COVID-19. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>กระทรวงสาธารณะสุข และกรมควบคุมโรค ได้มีคำแนะนำเพื่อความปลอดภัยสำหรับคุณและคนรอบตัวและเพื่อลดผลกระทบต่อสังคมและเศรษฐกิจ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Ministry of Public Health (MoPH) &amp; Department of Disease Control recommends for your safety and for others, and to decrease negative social and economic impacts. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>พื้นที่ติดเชื้อรวมถึงประเทศจีน (รวมถึงมาเก๊าและฮ่องกง) เกาหลีใต้ อีหร่าน อิตาลี</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The Disease Infected Zones were determined to include the People’s Republic of China (including Special Administrative Regions Macau and Hong Kong), South Korea, Iran and Italy:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ดูที่นี่สำหรับการตรวจ Covid-19 ในประเทศไทย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Look here to find out about getting tested for COVID-19 in Thailand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สำหรับเคอร์ฟิวเรื่องไวรัสโคโรนาล่าสุดในประเทศไทย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>For the latest coronavirus curfew update in Thailand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ดูวิดีโอจากองค์การอนามัยโลกเพื่อเรียนรู้เกี่ยวกับ Covid-19 ได้ทันที</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Watch this video from the World Health Organization to learn what we know about COVID-19 right now</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>แนะนำให้ควรทานอาหารปรุงสุก หากเป็นไปได้ทานทันทีหลังปรุงเสร็จ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>It's advised to eat well cooked food, preferable immediately after cooked. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>วัตถุดิบนั้นอาจมีหรือไม่มีเชื้อไวรัสปนเปือ้นทั้งก่อนหรือหลังปรุงอาหาร</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The material itself may or may not be safe but the virus may contaminated it before or after cook. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>อาหารปรุงสุกหมายถึงอาหารที่ได้รับความร้อนในปริมาณที่เหมาะสมเป็นเวลานานพอสมควร</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Well cooked food mean a food that is heated to some considerable amount of temperature to some period of time. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ยกตัวอย่างเช่น แกง สเต็กสุก ปลาทอดกรอบ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>For example: curry soup, well done steak, deep fried fish.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เราปิดในวันอาทิตย์</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>We are closed on Sunday</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เราปิดในวันเสาร์</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>We are closed on Saturday</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>จาก 10 โมงเช้า ถึง 2 ทุ่ม</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>from 10am until 8pm</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เราเปิดบริการ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>We are open</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เวลาทำการ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>regular hours</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>11 โมงเช้าถึง 6 โมงเย็น</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>11am to 6pm</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เราทำการตลอด 24 ชั่วโมง 7 วัน เพื่อให้คุณได้รับข่าวสารสำคัญเพื่อป้องกันตนเองจากสถานการณ์ Covid-19</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>We are available 24/7 to provide you with critical information to protect yourself during the COVID-19 crisis.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สวัสดียามเช้า</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Hello. Good morning</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สวัสดียามบ่าย</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Hello. Good afternoon</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>สวัสดียามเย็น</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Hello. Good evening</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เจอกันอีก</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>So long</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>เจอกันใหม่</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>See ya</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ลาก่อน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Good bye</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ยินดีให้บริการ บอกฉันได้หากต้องการอะไรอย่างอื่นอีก</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>You're welcome. Just let me know if you need anything else</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ไม่มีปัญหา บอกฉันได้หากต้องการอะไรอย่างอื่นอีก</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>No problem. Just let me know if you need anything else</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ด้วยความยินดี บอกฉันได้หากต้องการอะไรอย่างอื่นอีก</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>My pleasure. Just let me know if you need anything else</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คุณต้องการคุยกับตัวแทนไหม ?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Would you like me to transfer you to a representative?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>โอเค กำลังโอนไปอยู่</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>OK. Transferring... </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>โอเค บอกฉันได้ว่าต้องการให้ช่วยอะไร</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>OK. Let me know how I can help</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ฉันสามารถแสดงให้คุณเห็นข่าวล่าสุดเกี่ยวกับไวรัส Covid-19 ในบริเวณนี้</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>I can show you local news updates about the COVID-19 virus</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ฉันสามารถเชื่อมโยงข้อมูลล่าสุดจาก CDC เกี่ยวกับการระบาดทั่วโลกนี้</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>I can link you to the latest information from the CDC about the pandemic.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คุณสามารถขอคุยกับตัวแทนได้</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>You could also ask me to connect you to an agent.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>นี่คือผลลัพธ์จากการค้นหาจาก Watson Discovery</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Here's some search result from Watson Discovery</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คุณหมายถึง</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Did you mean</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>มีสิ่งที่คุณอยากรู้เกี่ยวกับ Covid-19 อีกไหม ?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Anything other COVID-19 information that you are seeking?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>คุณต้องการข้อมูลอะไรอย่างอื่นเกี่ยวกับ Covid-19 อีกไหม ?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>What other COVID-19 information can I provide?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ใช่แล้ว นั่นคือสิ่งที่ฉันต้องการ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Affirmative. That's what I'm looking for.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>หลังจากหายจาก Covid19 แล้ว ฉันยังต้องกักตัวต่ออีกไหม ?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>After recovering from COVID19, do I continue to self isolate ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>การเดินทางโดยเครื่องบิน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>airline travel</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ข้อมูลสายการบิน</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>airlines information</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ร้านขายทุกร้อนไม่่มีน้ำยาฆ่าเชื้อ ฉันต้องทำยังไง ?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>All the stores are out of disinfecting wipes, what do I do?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ฉันสามารถไปยังสวนในช่วยกักกันตัวเองได้ไหม</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Am I allowed to go to my garden in quarantine ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ฉันสามารถรวมกลุ่มกับคนอื่นได้หรือไม่ ?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Am I allowed to have gatherings ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ฉันสามารถชวนเพื่อนมาหาได้ไหม ?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Am I allowed to have friends over ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ฉันคุยกับคนอยู่หรือเปล่า ?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Am I chatting with a human?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ฉันป่วยไหม</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>am i sick</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ฉันคุยกับบอทหรือเปล่า ?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Am I talking to a Bot?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ฉันคุยกับคน หรือฉันกำลังคุยกับบอทกันแน่ ?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Am I talking to a person or am I talking to an AI?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>ขอมุกเพิ่ม</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Another joke</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="th">
+        <seg>มีใครอยู่ไหม ?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Anyone there?</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

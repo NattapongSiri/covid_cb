@@ -1,0 +1,378 @@
+﻿th,en
+ยอดผู้ป่วย,patient count
+ยอดผู้ติดเชื้อ,infected count
+ยังออกจากบ้านได้ไหม,Is it permitted to leave the house
+การคัดกรองโควิดในประเทศไทย,Covid-19 screening in Thailand
+สวัสดี เราคือ Watson Assistant เราพร้อมจะตอบคำถามเกี่ยวกับโควิดด้วยข้อมูลใหม่ล่าสุด มีคำถามอะไรไหม ?,"Hello, I’m Watson Assistant, ready to answer your questions about COVID-19 with the latest information. How can I help you?"
+นี่ใช่สิ่งที่คุณต้องการหรือไม่ ?,You can:
+หาข้อมูลจาก CDC สหรัฐอเมริกา,Get information from CDC - USA
+หาข้อมูลจาก DDC ประเทศไทย,Get information from DDC - Thailand
+การตรวจคัดกรองเชื้อ Covid-19 ในประเทศไทย,Covid-19 screening in Thailand
+หาข้อมูลเกี่ยวกับการเดินทาง,Get travel information
+นี่คือข้อมูลใหม่ล่าสุดจาก CDC:,Here are some of the most up-to-date bulletins from the CDC:
+ดูวิดีโอนี้เพื่อเรียนรู้เกี่ยวกับ Covid-19,Watch this video to learn about COVID-19
+ข้อเท็จจริงของ Covid-19 จาก CDC,Facts About COVID-19 from the CDC
+ข้อมูลสำหรับนักเดินทางจาก CDC,CDC Information for Travelers
+ข้อสรุปล่าสุดจาก CDC,Latest summary update from the CDC
+โทรหาหมอทันทีหากคุณสัมผัสใกล้ชิดกับผู้ติดเชื้อ Covid-19,Call your doctor: If you are a close contact of someone with COVID-19
+คุณอยู่ในแหล่งชุมชนที่มีการแพร่ระบาดของเชื้อโควิดและมีอาการเบื้องต้นของโรคโควิด,you are a resident in a community where there is ongoing spread of COVID-19 and develop symptoms of COVID-19
+โทรปรึกษากับผู้เชียวชาญทางด้านสาธารณสุขและอธิบายถึงอาการและภาวะเสี่ยงของคุณ,"call your healthcare provider and tell them about your symptoms and your exposure. They will decide whether you need to be tested, but keep in mind that there is no treatment for COVID-19 and people who are mildly ill may be able to isolate and care for themselves at home."
+เขาจะสามารถแนะนำคุณได้ว่าคุณควรจะต้องไปตรวจสอบหรือไม่,They will decide whether you need to be tested
+อย่างไรก็ตาม ในขณะนี้ไม่มียารักษาสำหรับโรค Covid-19,but keep in mind that there is no treatment for COVID-19 and people who are mildly ill may be able to isolate and care for themselves at home.
+ผู้ที่มีอาการป่วยเล็กน้อยอาจสามารถกักตัวอยู่ที่บ้านเพื่อรักษาตัวเองจนหาย,people who are mildly ill may be able to isolate and care for themselves at home.
+โรงพยาบาลในไทยที่ให้บริการตรวจคัดกรองเชื้อสำหรับผู้ต้องสงสัยที่แสดงอาการของเชื้อไวรัสโคโรนา:,Thailand Hospital is offering screening tests for anyone in Thailand who suspects they are showing symptoms of the corona virus:
+โรงพยายาลรับผู้ป่วย Covid-19 ในประเทศไทย: คลิกที่นี่เพื่อดูเพิ่มเติม,COVID-19 hospital in Thailand: click here to find our more
+เราได้ทำการส่งข้อความถึงโทรศัพท์ของคุณแล้ว,The text message has been sent to your phone number.
+คุณต้องการให้ส่งข้อความไปที่หมายเลขโทรศัพท์ใด ?,To what phone number should the text message be sent?
+คุณได้ทำการจองการตรวจคัดกรองเชื้อโคโรน่าเรียบร้อยแล้ว,You can schedule a virtual appointment with a provider for Corona virus screening
+คลิกที่นี่เพื่อดูเพิ่มเติม,click here to find out more
+อาการของการติดเชื้อโคโรน่า (Covid-19) อาจดูเหมือนไข้หวัดหรืออาการป่วยทั่วไป,Symptoms of the coronavirus (COVID-19) can look similar to the flu and other common ailments.
+เรามาเริ่มจากอาการพื้นฐานกันก่อน,Let's start with the most indicative symptom.
+คุณมีไข้ไหม ?,Do you have a fever?
+การมีไข้เป็นอาการอย่างหนึ่งของเชื้อโคโรนา,Fever is one of the symptoms of the corona virus.
+คุณมีอาการหายใจติดขัดหรือไม่ ?,Do you have shortness of breath?
+จากอาการข้างต้น คุณอาจติดเชื้อไวรัสโคโรนา,"Based on the symptoms you describe, you may have the coronavirus."
+อาการอื่น ๆ ของการติดเชื้อโคโรนา ได้แก่ ไอ และ เจ็บคอ เป็นต้น,Other coronavirus symptoms include coughing and  sore throat.
+จากอาการข้างต้น คุณอาจเป็นไข้หวัด,"Based on the symptoms you describe, you may just have the flu. "
+อาการอื่น ๆ ของไข้หวัด ได้แก่ ไอ อ่อนเพลีย และ เหนื่อย เป็นต้น,"Other flu symptoms include coughing, fatigue, weakness, and exhaustion."
+การหายใจติดขัดหมายถึงคุณหายใจลำบากขึ้นกว่าปกติ โดยเฉพาะการหายใจลึก ๆ,"Having shortness of breath means you're having trouble breathing, in particular taking deep breaths."
+ผู้ติดเชื้อไวรัสโคโรนา มักมีไข้,Someone with coronavirus would typically have a fever. 
+ไข้หวัดใหญ่​ (หรือที่มักเรียกสั้น ๆ ว่าไข้) เป็นโรคติดต่อในทางเดินหายใจ โดยมีสาเหตจากเชื้อไวรัสไข้หวัด,Influenza (also known as “flu”) is a contagious respiratory illness caused by influenza viruses. 
+มันอาจมีอาการตั้งแต่ไม่สบายเล็กน้อยจนถึงเสียชีวิต,"It can cause mild to severe illness, and at times can lead to death."
+อาการของหวัดอาจมีไข้และรู้สึกร้อนหรือหนาว ไอ เจ็บคอ มีน้ำมูก ขี้มูก ปวดเมื่อยตามตัว ปวดหัว และ อ่อนเพลีย,"The symptoms of flu can include fever or feeling feverish/chills, cough, sore throat, runny or stuffy nose, muscle or body aches, headaches and fatigue (tiredness). "
+อาการของหวัดทั่วไปไม่รุนแรงเท่าไข้หวัด,Cold symptoms are usually milder than the symptoms of flu. 
+คนที่ไม่สบายทั่วไปมักจะมีน้ำมูกหรือขี้มูกมากกว่า,People with colds are more likely to have a runny or stuffy nose. 
+หวัดโดยทั่วไปมักไม่เป็นอันตรายต่อสุขภาพ,Colds generally do not result in serious health problems.
+อย่างไรก็ตาม อาการของ Covid-19 คือการมีไข้ ไอ และ หายใจติดขัด,"However, COVID-19 causes a respiratory illness manifested by fever, cough and difficulty breathing. "
+อาการเหล่านี้เป็นสัญญาณของโรค Covid-19,Those three symptoms together are indications of COVID-19. 
+อย่างไรก็ตาม อาการของ Covid-19 อาจดูเหมือนไข้ธรรมดา เช่น ปวดเมื่อย เจ็บคอ มีน้ำมูก หรือ ท้องเสีย เป็นต้น,"However, COVID-19 infection can also produce symptoms similar to the flu like aches and pains, sore throat, runny nose, nasal congestion or diarrhea."
+โทรปรึกษาหมอหรือนัดหมายการตรวจทางไกลกับผู้เชียวชาญทางด้านสาธารณสุข,Call your doctor or schedule a virtual visit with a medical professional. 
+ไม่ควรไปพบแพทย์ที่สถานพยาบาลหรือศูนย์ผู้ป่วยฉุกเฉินโดยไม่โทรนัดหมายล่วงหน้า เนื่องจากสถานการณ์ของไวรัสโคโรนาขณะนี้,"Given heightened threat of coronavirus and the stress on the healthcare system, do not go to a doctor’s office, urgent care center or hospital emergency department without calling first."
+หากคุณป่วยจากเชื้อ Covid-19 หรือสงสัยว่าจะติดเชื้อ Covid-19 ให้ทำตามขั้นตอนต่อไปนี้เพื่อป้องกันการระบาดภายในบ้านหรือแหล่งชุมชมของท่าน:,"If you are sick with COVID-19 or suspect you are infected with the virus that causes COVID-19, follow the steps below to help prevent the disease from spreading to people in your home and community:"
+อยู่ที่บ้าน ยกเว้นจำเป็นต้องไปสถานพยาบาล,Stay home except to get medical care
+แยกตัวเองให้ห่างจากผู้อื่นรวมถึงสัตว์เลี้ยงภายในบ้าน,Separate yourself from other people and animals in your home
+โทรนัดหมายล่วงหน้าก่อนพบแพทย์,Call ahead before visiting your doctor
+สวมหน้ากากหากไม่สบาย,Wear a face mask if you are sick
+ล้างมือบ่อย ๆ,Clean your hands often
+ทำความสะอาดพื้นผิวที่สัมผัสบ่อย ๆ ทุก ๆ วัน,"Clean all ""high touch"" surfaces everyday"
+จากอาการที่กล่าวมา คุณน่าจะเป็นภูมแพ้ทั่วไป,"Based on the symptoms you describe, you may just have seasonal allergies. "
+อาการอื่น ๆ ของภูมิแพ้ได้แก่ จาม และ มีน้ำมูก,Other allergy symptoms include sneezing and runny nose.
+อาการทั่วไปอาจแตกต่างกันในแต่ละคน,Common symptoms can vary from person to person. 
+ข้อมูลนี้เป็นเพียงคำแนะนำส่วนบุคคล,This information is intended to provide personal guidance. 
+มีเพียงแพทย์ที่สามารถตรวจสอบยืนยันได้,Only your doctor can make a complete diagnosis. 
+ควรพบแพทย์หากคุณมีอาการรุนแรง หรือ อาการที่อาจเป็นอันตรายถึงแก่ชีวิต,Seek immediate medical attention for any serious or life threatening health issue.
+อาการภูมิแพ้ คือ อาการที่ภูมิต้านทานตอบสนองต่อเกษรดอกไม้หรือเชื้อรา,"Seasonal allergies, also known as allergic rhinitis or hay fever, are an immune response to pollen and mold. "
+สิ่งที่แตกต่างจากไข้นั่นคือภูมิแพ้มักมีอาการต่อเนื่องหลายสัปดาห์จนถึงหลายเดือนหรืออาจหลายปี,"Unlike a cold or the flu, allergy symptoms often last for several weeks to months of the years.  "
+ภูมิแพ้มักเป็นสาเหตุของการติดเชื้อในโพรงไซนัส หู และ ทางเดินหายใจ,"Allergies can also be an underlying cause of frequent sinus, ear, and respiratory infections. "
+อาการได้แก่:,Symptoms include:
+มีน้ำมูกในโพรงไซนัส,Sinus Congestion
+น้ำมูกไหล,Runny Nose
+เสมหะ,Post-Nasal Drip
+จาม,Sneezing
+ไอ,Coughing
+คัน หรือ น้ำตาไหล,Itchy or Watery Eyes
+ภูมิแพ้ทำให้จาม ไอ มีน้ำมูก และ คันผิวหรือตา แต่ covid-19 นั้นมีอาการได้แก่ ไข้ ปวดเมื่อยตามตัว หายใจลำบาก,"Seasonal allergies cause sneezing, coughing, runny nose and irritated skin or eyes while COVID-19 can be mild but can include fever, body aches and difficulty breathing. "
+Covid-19 หรือ ไข้ จะแสดงอาการอย่างรวดเร็ว ในขณะที่อาการภูมิแพ้นั้นป้องกันได้ด้วยการลดการสัมผัส (อยู่กับบ้าน),COVID-19 or the flu come on quickly while allergies are mitigated by limiting exposure (not going outside).
+จากอาการข้างต้น คุณอาจเป็นไข้หวัด,"Based on the symptoms you describe, you may just have a common cold. "
+อาการของหวัดทั่วไปได้แก่ จาม และ น้ำมูกไหล,Other common cold symptoms include sneezing and runny nose.
+อาการของหวัดทั่วไป,Common cold symptoms
+วิธีการรักษาพยาบาลหวัดทั่วไป,Common cold primary treatments
+ความแตกต่างของหวัดทั่วไป กับ ไข้หวัด,Common cold vs. flu
+ความแตกต่างของหวัดทั่วไป กับ โคโรนา,Common cold vs. coronavirus
+ถ้าไวรัสหวัดทั่วไป คุณจะพบว่าคุณจำเป็นต้องพกกระดาษทิชชู่ติดตัวไปหลายวัน,"If it’s a cold virus, you may find yourself close to a tissue box for several days. "
+โดยทั่วไปแล้ว หวัดจะหายได้เองภายใน 10 วันหรือน้อยกว่านั้น,"Most of the time, colds get better on their own in 10 days or less. "
+หวัดอาจมีอาการอย่างอื่นร่วมด้วยที่ทำให้คุณรู้สึกลำคาญ ได้แก่,Colds bring on a nasty mix of symptoms that can really wear you down. They can include:
+เจ็บคอ,Sore throat 
+ปวดหัว,Headache 
+มีขี้มูก,Stuffy nose
+ปวดกล้ามเนื้อ,Mucus buildup
+อ่อนเพลีย,Fatigue 
+โพรงไซนัสอักเสบ,Swollen sinuses
+ไข้ (มักจะมีไข้ต่ำในผู้ใหญ่ แต่อาจมีไข้สูงในเด็ก),Fever (usually low-grade in adults but higher in children)
+ถึงแม้ว่าคุณจะสามารถโทรหาหมอเพื่อขอคำแนะนำ แต่หวัดโดยทั่วไป ไม่จำเป็นต้องหาหมอ ยกเว้นคุณมีอาการอย่างอื่นร่วมด้วย เช่น,"While you can certainly call your primary physician for advice and guidance the nominal cold will not require a doctor visit unless secondary indications require a visit – for example, "
+ถ้าคุณมีอาการไซนัสอักเสบ,if you contract a sinus infection or
+เริ่มมีปัญหาในการหายใจ หรือ เจ็บปอดหรือหน้าอก,begin to have more severe breathing issues or lung and chest pains. 
+เพราะว่าหวัดทั่วไปคือไวรัส ยาปฏิชีวนะจะใช้ไม่ได้ผล,"Because the common cold is a virus, antibiotics won’t help. "
+แต่ยาที่สามารถหาได้ตามร้านขายยาทั่วไปอาจสามารถช่วยให้คุณรู้สึกดีขึ้นได้,But over-the-counter medications may make you feel better.
+อาการของไข้หวัดได้แก่ มีไข้ ตัวร้อน หรือ หนาว ไอ เจ็บคอ มีน้ำมูก ขี้มูก ปวดเมื่อย ปวดหัว อ่อนเพลีย,"The symptoms of flu can include fever or feeling feverish/chills, cough, sore throat, runny or stuffy nose, muscle or body aches, headaches and fatigue (tiredness). "
+อาการหวัดมักจะเบากว่าไข้หวัด,Cold symptoms are usually milder than the symptoms of flu.
+CDC ถือว่าคนนั้นมีไข้หากเขาหรือเธอมีอุณหภูมิสูงกว่า 100.4 องศาฟาเรนไฮ (38 องศาเซลเซียส) หรือรู้สึกอุ่นจากการสัมผัส หรือรู้สึกตัวร้อน,"The CDC considers a person to have a fever when he or she has a measured temperature of 100.4° F (38° C) or greater, or feels warm to the touch, or gives a history of feeling feverish."
+ทุกคนควรอยู่ที่บ้านเพื่อหยุดการแพร่กระจายของเชื้อไวรัสโคโรนา,Everyone must stay at home to help stop the spread of coronavirus. 
+คุณควรทำตัวคุณเองให้สถอาดและล้างมือบ่อย ๆ โดยเฉพาะหลังจากคุณสัมผัสกับสิ่งที่อาจมีเชื้อโรค,You should keep yourself clean and wash your hand regularly especially after you've got contact to object that might be contaminated.
+คุณควรออจากบ้านเฉพาะ 1 ใน 4 เหตุผลเหล่านี้เท่านั้น,You should only leave the house for 1 of 4 reasons:
+ซื้อสิ่งของจำเป็น เช่น อาหาร ยา ซึ่งควรจะถี่น้อยที่สุด,"shopping for basic necessities, for example food and medicine, which must be as infrequent as possible"
+ออกกำลังกายแบบเดียว เช่น วิ่ง เดิน ขี่จักรยาน คนเดียว หรือกับครอบครัว,"one form of exercise a day, for example a run, walk, or cycle – alone or with members of your household"
+ความจำเป็นทางการแพทย์ หรือการช่วยเหลือบุคคลอื่น,"any medical need, or to provide care or to help a vulnerable person"
+การไปกลับที่ทำงาน แต่ควรจะเฉพาะเท่าที่จำเป็น เช่นงานที่ไม่สามารถทำจากที่บ้านได้,"travelling to and from work, but only where this absolutely cannot be done from home"
+บุตรหลานของคุณเรียนโรงเรียนแบบใด ?,What type of school do your children attend?
+รหัสไปรษณีย์ของที่อยู่คุณคืออะไร​ ?,What zip code do you live in?
+วิทยาลัยและมหาวิทยาลัยในรหัสไปรษณีย์ $zip_code ได้เปลี่ยนเป็นการเรียน online,Colleges and universities in zip code $zip_code have moved their classes online. 
+กรุณาติดต่อโรงเรียนของคุณสำหรับข้อมูลเพิ่มเติม,Please contact your school for further details.
+ทุกโรงเรียนระดับต่ำกว่าวิทยาลัย/มหาวิทยาลัยในรหัสไปรษณีย์ $zip_code ปิดจนกว่าจะมีประกาศเป็นอย่างอื่น,All schools below the college/university level in zip code $zip_code will remain closed until further notice.
+คุณควรทำตามคำแนะนำของ CDC ในการเดินทางทุกชนิด,Follow the CDC's guidelines for all travel. 
+คุณสามารถหาข้อมูลเกี่ยวกับการห้ามเดินทางของแต่ละประเทศรวมถึงแผนที่การประเมินความเสียงการกระจายของ Covid-19 ได้ที่นี่,You can find travel restrictions by country as well as a Geographic Risk Assessment map for COVID-19 transmission here.
+ติดตามแผนที่การประเมินความเสี่ยงระดับภูมิภาคของแพร่ระบาด Covid-19 ได้ที่นี่,Follow the Geographic Risk Assessment map for COVID-19 transmission here.
+คุณสามารถพบรายการสถานพยาบาลของเอกชนและรัฐได้ที่นี่,You can also find a list of State and Local Health Departments here
+ถ้าคุณต้องการเดินทางกลับไปที่สหรัฐ CDC แนะนำให้ทำดังต่อไปนี้,"If you are returning to the US from international travel, the CDC recommends following these guidelines"
+ข้อมูลเกียวกับ Visa ที่เกี่ยวข้องกับไวรัสโคโรนาจากการเดินทางไปต่างประเทศ,Information for Visa Applicants Regarding Novel Coronavirus read more.
+อยู่กับบ้าน 14 วันนับจากวันที่คุณเดินทางกลับมาถึง,Stay home for 14 days from the time you returned from international travel. 
+ภายใน 14 วันนี้ ทำตามขั้นตอนดังต่อไปนี้เพื่อตรวจสอบสุขภาพของคุณ อย่าลืมอยู่ห่างจากคนรอบข้าง,"During this 14-day period, take these steps to monitor your health and practice social distancing:"
+วัดอุณหภูมิของคุณด้วยเทอร์โมมิเตอร์สองครั้งต่อวันเพื่อตรวจสอบไข้,Take your temperature with a thermometer two times a day and monitor for fever. 
+สังเกตว่ามีการไอ หรือหายใจลำบากหรือไม่,Also watch for cough or trouble breathing.
+อยู่กับบ้านและหลีกเลี่ยงการปฏิสัมพันธ์กับบุคคลอื่น,Stay home and avoid contact with others. 
+ห้ามไปทำงานหรือโรงเรียน,Do not go to work or school.
+ห้ามเดินทางโดยใช้ระบบขนส่งมวลชน แท็กซี่ หรือ อาศัยรถผู้อื่น,"Do not take public transportation, taxis, or ride-shares."
+รักษาระยะห่างจากผู้อื่น (ประมาณ 6 ฟุตหรือ 2 เมตร),Keep your distance from others (about 6 feet or 2 meters).
+สำหรับข้อมูลเกี่ยวกับการห้ามเดินทาง ดูได้ที่นี่,"For more information on travel restrictions, visit here"
+กระทรวงสาธารณะสุข โดยกรมควบคุมโรค ได้มีคำแนะนำสำหรับการเดินทางข้ามชาติ,Ministry of Public Health By the Department of Disease Control There are suggestions for those traveling to or from abroad. 
+เผยแพร่บนเว็บไซต์ https://ibm.biz/Bdqfk2 ,Publish on website https://ibm.biz/Bdqfk2 
+หากคุณเดินทางกลับมาจากประเทศที่กำลังมีการแพร่ระบาด หากไม่มีความจำเป็นกระทรวงสาธารณะสุขแนะนำให้ท่านงดการเดินทางโดยใช้ระบบขนส่งมวลชน,When traveling back from a country that has an ongoing epidemic The Ministry of Public Health recommends refraining from going out in public places unnecessarily. 
+และคุณควรวัดอุณหภูมิร่างกายทุกวันจนครบ 14 วันนับจากวันแรกที่กลับสู่ประเทศไทย หากคุณมีไข้ และ ไอ ติดต่อเบอร์ 1422,"And measure body temperature daily until 14 days have elapsed after traveling to Thailand During the symptom observation, if there is a fever, cough, report 1422."
+อาการเบื้องต้นของ Covid-19 คือ ไข้ ไอแห้ง และหอบ,"The most common symptoms of COVID-19 are fever, a dry cough, and shortness of breath. "
+อาการอาจเกิดขึ้นในช่วงเวลา 2-14 วันหลังจากได้รับเชื้อ,These symptoms may appear 2-14 days after exposure.
+โทรปรึกษาแพทย์ หากคุณคิดว่าคุณได้รับเชื้อ Covid-19 และเริ่มมีไข้ ไอ และหายใจลำบาก,"Call your doctor: If you think you have been exposed to COVID-19 and develop a fever and symptoms, such as cough or difficulty breathing, "
+โทรปรึกษากับผู้เชียวชาญทางด้านสาธารณสุขเพื่อขอคำแนะนำในการรักษา,call your healthcare provider for medical advice.
+หากคุณมีอากา Covid-19 ขั้นรุนแรง กรุณาพบแพทย์โดยทันที,If you develop emergency warning signs for COVID-19 get medical attention immediately. 
+สัญญาณเตือนขั้นรุนแรงได้แก่,Emergency warning signs include: 
+หายใจลำบากและหอบหืด,Difficulty breathing or shortness of breath
+เจ็บ ปวด หรือ รู้สึกเหมือนถูกทับบริเวณหน้าอก,Persistent pain or pressure in the chest
+สับสน หรือ ขาดการตื่นตัว,New confusion or inability to arouse
+ปากหรือหน้าแดง,Bluish lips or face
+หากต้องการข้อมูลเพิ่มเติม ดูที่ https://ibm.biz/BdqfkZ,"For more information, visit:  https://ibm.biz/BdqfkZ"
+พบข้อมูลการเตือนเกี่ยวกับ Covid-19 ได้ที่นี่,Find our Covid-19 alert document: click here to find our more
+อาการหอบหมายถึงอาการหายใจลำบาก มาโยคลินิคได้อธิบายไว้ที่นี่,Shortness of breath refers to difficulty breathing. The Mayo clinic has a definition here.
+ปฏิบัติตามข้อกำหนดของรัฐหรือผู้มีอำนาจสั่งการ,Listen to and follow the directions of your state and local authorities.
+ผู้ป่วย Covid-19 จำนวนไม่มากที่จำเป็นต้องนอนโรงพยาบาล,Not all patients with COVID-19 require hospital admission. 
+ผู้ป่วยที่โรงพยาบาลระบุว่าจำเป็นต้องนอนโรงพยาบาลเพื่อใช้บริการทางการแพทย์ควรได้รับการดูแลและแยกห่างจากผู้อื่นอย่างระมัดระวัง,Patients whose clinical presentation warrants in-patient clinical management for supportive medical care should be admitted to the hospital under appropriate isolation precautions.
+การตัดสินใจว่าผู้ใดควรนอนโรงพยาบาลต้องดูเป็นกรณี ๆ ไป,The decision to monitor these patients in the inpatient or outpatient setting should be made on a case-by-case basis. 
+เงื่อนไขการตัดสินใจไม่ได้จำกัดอยู่เพียงแต่ทางด้านการรักษา แต่ยังรวมถึงความสามารถในการดูแลตัวเอง ความสามารถในการกักกันตัวเอง และความเสี่ยงในการแพร่ระบาดในย่านที่พักของผู้ป่วย,"This decision will depend not only on the clinical presentation, but also on the patient’s ability to engage in self-monitoring, the feasibility of safe isolation at home, and the risk of transmission in the patient’s home environment."
+สำหรับข้อมูลเพิ่มเติม ดูได้ที่นี่ หรือ ที่นี่,For more information visit here or here.
+หากคุณมีไข้ ไอ หรือหายใจลำบาก กรุณาติดต่อบริการสาธารณะสุขใกล้บ้านคุณ,"If you have fever, cough, or shortness of breath, call your healthcare provider. "
+เขาอาจบอกวิธีการดูแลตัวเองจากที่บ้าน ในกรณีดังกล่าว แนะนำให้ทำดังต่อไปนี้,"They may tell you to manage your care from home. If so, follow these tips."
+หากคุณมีอาการบ่งบอกถึงอันตรายของ Covid-19 ดังต่อไปนี้ ให้รีบเข้ารับการรักษาโดยทันที,If you develop emergency warning signs for COVID-19 get medical attention immediately. Emergency warning signs include*:
+รายการดังกล่าวเป็นเพียงตัวอย่าง กรุณาปรึกษาบริการสาธารณะสุขใกล้บ้านคุณหากมีข้อสงสัยเพิ่มเติม,This list is not all inclusive. Please consult your medical provider for any other symptoms that are severe or concerning.
+สามารถหาข้อมูลเกี่ยวกับการดูแลตัวเองที่บ้านได้ที่นี่,"For more information on caring for yourself at home, visit here."
+กรณีศึกษา,CASE STUDY
+ครอบครัว ผู้อยู่อาศัย และแขก ได้เข้าพักในพื้นที่เสี่ยงสูงภายในประเทศไทยในวันที่ 28 กุมภาพันธ์ 2020,"Family member/resident/visitor arrives in Thailand on Feb 28th, 2020, from a high-risk country/area."
+ครอบครัว ผู้อยู่อาศัย และแขก ซึ่งได้เดินทางไปยังพื้นที่เสี่ยงสูง รวมถึงบุตรหลานที่ไม่ได้เดินทางด้วยต้องถูกกักบริเวณ 14 วัน,"Family member/resident/visitor who had travelled to high-risk country/area, and child (did not travel) both need to be quarantined for 14 days, "
+แม้ว่าไม่มีใครได้รับผลตรวจ Covid-19 เป็นบวก,even though no one has tested positive for COVID-19. 
+วันที่ 28 กุมภาพันธ์ 2020 นับเป็นวันแรกของการกักบริเวณ,"Feb 28th, 2020 is counted as the first day of quarantine. "
+การเดินทางระหว่างประเทศ,International travellers
+อนุญาตให้เฉพาะผู้มี Passport ถูกต้องเท่านั้นถึงจะเข้าไปยังที่พักผู้โดยสารระหว่างประเทศ,Only travellers with a valid passport will be able to access the international terminal.
+เพื่อให้การเว้นระยะห่างเป็นไปอย่างมีประสิทธิภาพ เราจำเป็นต้องขอให้ผู้เดินทางทุกท่านมาถึงก่อนเวลาเดินทาง 3 ชั่วโมง,To help with social distancing requirements we also request that travellers only arrive three hours before their flight.
+การเดินทางภายในประเทศ,Domestic travellers
+การเดินทางภายในประเทศยังสามารถทำได้ตามปกติ อย่างไรก็ตาม ทางรัฐบาลขอความร่วมมือในการลดการเดินทางที่ไม่จำเป็นลง,The domestic terminal is still open however; the Government has asked to limit all non-essential domestic travel
+ขอความร่วมมือให้ทุกท่านลดการเดินทางไปยังพื้นที่อื่น ๆ ภายในประเทศยกเว้นแต่หากมีเหตุจำเป็น,People are encouraged not to visit different parts of the country unless it’s for an essential reason.
+ใช่ หากมีใครเดินทางผ่านสนามบินในพื้นที่หรือประเทศที่มีความเสี่ยงสูง ท่านจำเป็นต้องได้ถูกกักตัวเป็นระยะเวลา 14 วันในประเทศไทย,Yes. A person who had made transits in airports located in high-risk countries/areas will need to be quarantined for 14 days upon arrival in Thailand. 
+CDC แนะนำให้ล้างมือด้วยสบู่เป็นระยะเวลาไม่น้อยกว่า 20 วินาที และควรทำความสะอาดบริเวณใต้เล็บด้วย หลังจากนั้นควรทำให้แห้งโดยใช้ผ้าสะอาดหรือเครื่องเป่ามือ,"The CDC recommends washing your hands with soap and water for at least 20 seconds, being sure to scrub all around and under fingernails, and finally drying with an air dryer or clean towel.   "
+หากคุณไม่มีสบู่หรือน้ำ คุณสามารถใช้แอลกอฮอลเจลสำหรับทำความสะอาดมือที่มีความเข้มข้นไม่ต่ำกว่า 60%,"If you do not have access to soap or running water, you can use a hand sanitizer with at least 60% alcohol concentration. "
+คุณสามารถหาข้อมูลเพิ่มเติมเกี่ยวกับการล้างมือจาก CDC ได้ที่นี่,You can find more information on the CDC's hand-washing recommendations here.
+ปกป้องตัวเอง,Protect yourself. 
+ล้างมือบ่อย ๆ,Clean your hands regularly. 
+ล้างมือด้วยสบู่และน้ำและทำให้แห้ง คลิกที่นี่เพื่ออ่านเพิ่มเติม,"Wash your hands with soap and water, and dry them thoroughly: click here to find our more"
+ไวรัสโคโรนาเป็นไวรัสตระกูลใหญ่ บางครั้งอาจติดไปยังสัตว์เช่นอูฐ แมว และ ค้างคาว,"Coronaviruses are a large family of viruses, some causing illness in people and others circulating among animals, including camels, cats and bats."
+เชื้อไวรัสโคโรนา 2019 (2019) เป็นเชื้อไรวัสใหม่ที่ทำให้เกินอาการป่วยในทางเดินหายใจ สามารถแพร่ระบาดระหว่างคนถึงคน,The 2019 novel coronavirus (COVID-19) is a new virus that causes respiratory illness in people and can spread from person-to-person. 
+ไวรัสถูกค้นพบครั้งแรกที่เหมือนอู่ฮั่นประเทศจีน,"This virus was first identified during an investigation into an outbreak in Wuhan, China."
+ชื่อของโรคเรียกว่าโรคโคโรนา 2019 หรือเรียกสั้น ๆ ว่า Covid-19,"The name of this disease is coronavirus disease 2019, abbreviated as COVID-19"
+ใน Covid-19 นั้น Co มาจากคำว่า Corona Vi มาจากคำว่า Virus และ D มาจากคำว่าโรคระบาด,"In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for disease."
+ก่อนหน้านี้ โรคนี้ถูกเรียกว่า เชื้อไวรัสโคโรน่า 2019 หรือ 2019-nCov,"Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV.”"
+เชื่อว่าเชื้อ Covid-19 นั้นติดระหว่างคนถึงคน ดังนั้นการเว้นระยะห่างระหว่างบุคคลจึงเป็นเรื่องสำคัญสำหรับการป้องกันตนเองจากการติดเชื้อไวรัส,"Covid-19 is thought to spread mainly through person to person transmission, so it's important to distance yourself from others as much as possible to prevent getting the virus.  "
+ยิ่งกว่านั้น คุณยังควรล้างมือบ่อย ๆ และ หลีกเลี่ยงจากการสัมผัสใบหน้าให้มากที่สุด,"Additionally, you should wash your hands often and avoid touching your face as much as possible. "
+สำหรับข้อมูลเพิ่มเติม อ่านได้ที่คำแนะนำในการปกป้องตนเองและผู้อื่นของ CDC,"For more information, check out the CDC's guide to protecting yourself and others."
+วิธีการป้องกันที่ดีที่สุดสำหรับตัวคุณ ครอบครัว และเพื่อนฝูง จากไวรัส คือการล้างมืออย่างน้อย 20 วินาทีด้วยสบู่และน้ำ จากนั้นทำให้มือแห้งทันที,"The best way to protect yourself, family, friends and colleagues from germs and viruses is to wash your hands for 20 seconds with soap and water and dry them well."
+ดังนั้น เมื่อใดก็ตาที่คุณทำงานที่บ้าน,"So, whether you’re at work or at home"
+ทำมือให้เปียกด้วยน้ำ ใช้น้ำอุ่นหากเป็นไปได้,Wet your hands under clean running water. Use warm water if available.
+ถูมือด้วยสบู่เป็นเวลาไม่ต่ำกว่า 20 วินาที สบู่เหลวจะมีประสิทธิภาพดีที่สุด,Put soap on your hands and wash for 20 seconds. Liquid soap is best
+ถูมือจนกว่าจะมีฟอง,Rub hands together until the soap makes bubbles.
+ถูทั้งสองด้านของทั้งสองมือ,Rub on both sides of both hands
+และทั้งซอกนิ้วรวมถึงนิ้วโป้ง,and in between fingers and thumbs
+และรอบ ๆ ทั้งสองมือ,and round and round both hands
+ล้างสบู่ออกโดยให้น้ำเปล่าไหลผ่าน,Rinse all the soap off under clean running water. 
+หากเป็นไปได้ ให้ใช้น้ำอุ่น,Use warm water if available
+ทำมือให้แห้งไม่ต่ำกว่า 20 วินาที,Dry your hands all over for 20 seconds
+ใช้ผ้าเช็ดมือจะดีที่สุด (หากอยู่ที่บ้านให้ใช้ผ้าแห้งที่สะอาด),"Using a paper towel is best (or, if at home, a clean dry towel)"
+ควรล้างมือและทำมือให้แห้งบ่อย ๆ,Always wash and dry your hands
+กินหรือเตรียมอาหาร,Eating or preparing food
+จาม ไอ หรือสั่งน้ำมูก (หรือการเช็ดจมูกเด็ก),"Sneezing, coughing or blowing your nose (or wiping children's noses)"
+ทำสวน (หรือเล่นนอกบ้านกับเด็ก),Gardening (or playing outside for children)
+สัมผัสสัตว์,Having contact with animals
+การเข้าห้องน้ำหรือการเปลี่ยนผ้าอ้อม,Going to the toilet or changing nappies
+ดูแลผู้ป่วย,Looking after sick people
+ในเดือนกุมภาพันธ์ 2020 ประเทศจีนได้อนุมัติการใช้ยา Favilavir สำหรับรักษา Covid-19,"In February 2020, China has approved the use of Favilavir for the treatment of COVID-19"
+รวมถึงยาอื่น ๆ เช่น antiretroviral therapy (lopinavir และ Ritonavir) มักถูกใช้ร่วมกันเพื่อนต่อต้านไข้หวัดและไข้มาเลเลีย,"Also, many drugs such as antiretroviral therapy (lopinavir with Ritonavir) are used in combination with anti-influenza, anti-malarial drugs"
+พบว่ายา Remdesivir มีประสิทธิภาพในการรักษาสัตว์ที่ติดโรค Sars และ Mers,Remdesivir has been found to be effective in vitro and in animals infected with SARS and MERS
+ทั้งหมดนี้ยังต้องการการวิจัยเพื่อยืนยันผลการรักษา,All of this still requires further research to confirm reliable treatment results. 
+สำหรับการรักษานั้น แนะนำให้ไปยังโรงพยาบาลและให้แพทย์ทำการรักษา,"For treatment, it is advisable to only be hospitalized by a professional doctor"
+เพื่อให้การรักษามีประสิทธิภาพสูงสุดและลดภาวะอันตรายจากผลข้างเคียงของยา,To fully achieve therapeutic effects and prevent dangerous side effects from medication 
+สิ่งเหล่านี้สามารถช่วยลดความเสี่ยงของคุณและคนรอบตัวจากการติดเชื้อไวรัสโคโรนา,There are things you can do to help reduce the risk of you and anyone you live with getting ill with coronavirus.
+ล้างมือด้วยสบู่บ่อย ๆ,wash your hands with soap and water often
+ไม่ต่ำกว่า 20 วินาที,do this for at least 20 seconds
+ใช้เจลฆ่าเชื้อในกรณีที่ไม่มีสบู่,use hand sanitiser gel if soap and water are not available
+ล้างมือทันทีที่กลับถึงบ้าน,wash your hands as soon as you get back home
+ปิดปากและจมูกด้วยทิชชู่หรือแขนเสือ (ไม่ควรใช้มือ) หากไอหรือจาม,cover your mouth and nose with a tissue or your sleeve (not your hands) when you cough or sneeze
+ทิ้งกระดาษทิชชู่ลงถังขยะและล้างมือทันที,put used tissues in the bin immediately and wash your hands afterwards
+ห้ามสัมผัสตา จมูก หรือ ปาก หากยังไม่ได้ล้างมือ,"do not touch your eyes, nose or mouth if your hands are not clean"
+ตั้งแต่วันที่ 24 มีนาคม แนะนำให้ผู้ปกครองดูแลบุตรหลานที่บ้าน,"From Tuesday 24 March, parents are encouraged to keep their children at home. "
+จะไม่มีการไล่บุตรหลานท่านออกจากโรงเรียน,No child will be turned away from school.
+นักเรียนหรือคณาจารย์ที่มีการเดินทางไปต่างประเทศภายใน 14 วันก่อนหน้าควรกักตัวเองเป็นระยะเวลา 14 วันหลังจากกลับมา,Any student or staff member who over the last 14 days has been overseas should be in self-isolation for 14 days after they returned
+พวกเขาควรถูกแยกจากโรงเรียนและไม่ควรกลับไปยังโรงเรียนหรือสถานดูแลเด็กเป็นระยะเวลาไม่ต่ำกว่า 14 วันนับจากวันที่กลับมา,"They are excluded from school and should not return to school or child care services for a period of 14 days after arriving, "
+เนื่องจาก Covid-19 มีระยะเวลาฟักเชื้อยาวนานกว่า 2 อาทิตย์,as the COVID-19 incubation period can be as long as two weeks
+คณาจารย์และนักเรียนที่พบว่าใกล้ชิดกับผู้ที่ถูกวินิจฉัยว่าเป็น Covid-19 จะต้องกักตัวเองที่บ้าน,"Staff and students who have been identified as close contacts of a person diagnosed with COVID-19 during their infectious period must also self-isolate at home, "
+และไม่ควรไปยังโรงเรียนหรือสถานรับเลี้ยงเด็กไม่ต่ำกว่า 14 วัน นับจากวันที่ใกล้ชิดกับผู้ป่วย,and should not attend school or childcare settings until 14 days after their last contact with the infected person.
+กรุณางดการแสดงความกังวลบนสื่น social ทุกชนิด,Please do not discuss anyone you have concerns about via any type of social media.
+มันอาจสร้างปัญหาให้แก่สังคมและความเป็นอยู่ของผู้คน มันไม่มีผลดีใด ๆ,This can be damaging to the community and people’s wellbeing and has no positive outcomes
+หลาย ๆ คน มีปัญหาด้านสุขภาพซึ่งไม่เกี่ยวข้องใด ๆ กับความเสี่ยงของ Covid-19,Many people may have a range of health issues that are in no way related to a risk of Covid-19.
+จนถึงวันนี้ยังไม่มีวัคซีนหรือยาต้านไวรัสที่สามารถป้องกันหรือรักษา Covid-2019,"To date, there is no vaccine and no specific antiviral medicine to prevent or treat COVID-2019"
+อย่างไรก็ตาม ผู้ติดเชื้อควรได้รบการรักษาตามอาการ,"However, those affected should receive care to relieve symptoms."
+ผู้ที่ป่วยหนักควรเข้ารับการรักษาที่โรงพยาบาล,People with serious illness should be hospitalized.
+ผู้ป่วยส่วนใหญ่หายได้จากการรักษาดังกล่าว,Most patients recover thanks to supportive care
+วัคซีนและยากำลังถูกคิดค้น,Possible vaccines and some specific drug treatments are under investigation
+มันกำลังถูกทดลองรักษา,They are being tested through clinical trials.
+WHO กำลังร่วมมือกันสร้างวัคซีนและยาสำหรับป้องกันและรักษา Covid-19,WHO is coordinating efforts to develop vaccines and medicines to prevent and treat COVID-19.
+รัฐบาลไทยได้กำหนดให้มีการคัดกรองและกักตัวเพื่อลดการแพร่ระบาดของ Covid-19,The Royal Thai Government (RTG) has implemented enhanced screening and quarantine measures to reduce the spread of COVID-19
+นักเดินทางควรเตรียมพร้อมสำหรับการจำกัดการเดินทางโดยอาจไม่มีการแจ้งให้ทราบล่วงหน้า,Travelers should be prepared for travel restrictions to be put into effect with little or no advance notice
+ประชาชนจากสหรัฐอเมริกาที่มีความประสงค์จะเดินทางกลับประเทศควรตรวจสอบกับสายการบินเพื่อทำการจองเที่ยวบินล่วงหน้า,U.S. citizens who are considering returning to the United States are urged to work with their airlines to make travel arrangements while flights are still available.
+การนับการกักตัว 14 วันนั้น เริ่มนับวันที่ 1 จากวันที่มาถึง ไม่ใช่วันที่ออกจากพื้นที่เสี่ยง,"The 14 day period begins with Day 1 on the day of entry into Thailand, not the day of departure from the high-risk area. "
+ในระยะเวลากักตัว 14 วันนี้ เราแนะนำให้ท่านทำตามข้อปฏิบัติของรัฐเพื่อลดการสัมผัสกับผู้อื่น หลีกเลี่ยงจากพื้นที่คับคั่งให้มากที่สุด เช่น ขนส่งมวลชน ห้างสรรพสินค้า หลีกเลี่ยงการสนทนากับผู้อื่น,"During this 14 day self quarantine period, we advise you to follow the government guidance to minimise contact with people and stay away from busy places such as public transport and shopping centres. As far as possible, avoid face to face contact with anyone from community."
+หากอุณหภูมิของท่านสูงกว่า 38 องศา กรุณาอยู่บ้านและปฏิบัติตามคำแนะนำของบุคลากรทางการแพทย์,"If your temperature is 38 degrees or higher, please stay at home and seek medical advice"
+หากอุณหภูมิของท่านเพิ่มขึ้นในสถานศึกษา ควรหาทางส่งตัวท่านสู่บ้านอย่างปลอดภัย,"If your temperature becomes elevated in school, the necessary arrangements will be made to have you sent home safely."
+ถ้าท่านไม่ได้เดินทางไปหยั่งสถานที่ ๆ มีความเสี่ยงสูง ท่านจะได้กลับมาสถานศึกษาใหม่เมื่อท่านหายดีและมีหนังสือรับรองแพทย์ที่น่าเชื่อถือ,"If you have not travelled to the high risk areas, you will be able to return to school when you are fully recovered and are able to bring a note of good health from a reputable doctor."
+กรุณาละลึกไว้เสมอว่าการมีไข้เป็นอาการเบื้องต้นของการป่วยได้หลายชนิด,Please remember that a high temperature may be a symptom of a number of illnesses
+ไม่ได้หมายความว่าการมีไข้จะต้องป่วยเป็น Covid-19 เสมอไป,there is no reason to assume that a temperature is caused by the Covid-19 virus.
+หากคุณตั้งครรภ์และเป็นกังวลเรื่องไวรัสโคโรนา คุณสามารถขอคำปรึกษาได้จาก Royal College of Obstretricians and Gynaecologists.,"If you're pregnant and worried about coronavirus, you can get advice about coronavirus and pregnancy from the Royal College of Obstretricians and Gynaecologists."
+เพื่อให้คุณแข็งแรงในขณะที่อยู่บ้าน,To help yourself stay well while you're at home
+พูดคุยกับเพื่อหรือครอบครัวผ่านทางโทรศัพท์หรือสื่อ Social,stay in touch with family and friends over the phone or on social media
+ทำตัวเองให้ยุ่งเสมอ,try to keep yourself busy
+คุณอาจลองทำกิจกรรมต่าง ๆ เช่น ทำอาหาร อ่านหนังสือ เรียนออนไลน์ หรือ ดูหนัง,"you could try activities like cooking, reading, online learning and watching films"
+ออกกำลังกายแบบเบา ๆ ที่บ้าน หรือ กลางแจ้ง วันละครั้ง,"do light exercise at home, or outside once a day"
+หากคุณต้องการความช่วยเหลือด้านสาธารณะสุข หลีกเลี่ยงการไปยังสถานพยาบาล ร้านขายยา หรือ โรงพยาบาล,"If you need medical help for any reason, do not go to places like a GP surgery, pharmacy or hospital."
+หากคุณมีอาการของไวรัสโคโรนา (มีไข้ ไอต่อเนื่อง) โทร 111 สายด่วนไวรัสโคโรนา,"If you have symptoms of coronavirus (a high temperature or a new, continuous cough), use the 111 coronavirus service."
+หากคุณต้องการคำแนะนำเรื่องที่ไม่เกี่ยวกับไวรัสโคโรนา,If you need help or advice not related to coronavirus
+สำหรับข้อมูลเกี่ยวกับสุขภาพ ไปที่เว็บไซต์ของ NHS หรือ เว็บไซท์สถานพยาบาลนั้น ๆ,"for health information and advice, use the NHS website or your GP surgery website"
+สำหรับความช่วยเหลือฉุกเฉิน ใช้บริการออนไลน์ 111 ของ NHS - โทร 111 เฉพาะเมื่อคุณไม่สามารถขอความช่วยเหลือออนไลน์ได้,"for urgent medical help, use the NHS 111 online service – only call 111 if you're unable to get help online"
+สำหรับเหตุฉุกเฉินด้านสุขภาพอื่น ๆ โทร 999 เพื่อเรียกรถพยาบาล,"for life-threatening emergencies, call 999 for an ambulance"
+อ่านคำแนะนำเกี่ยวกับเรื่องสุขภาพจากที่บ้าน,Read more advice about getting medical help at home
+ไม่ ใครก็ตามที่เดินทางกลับมาจากสถานที่หรือประเทศ ๆ มีความเสี่ยงสูง ควรกักตัวเองไม่น้อยกว่า 14 วันและไม่ควรไปโรงเรียน,No. Anyone who had travelled to high-risk countries/areas should be quarantined for 14 days and should not visit the school premises.
+ตามคำแนะนำของกระทรวงศึกษาแห่งประเทศไทย,According to the directive by the Ministry of Education of Thailand
+ทุกคนที่เคยอาศัยร่วมด้วยจะต้องถูกกักตัว 14 วัน นับจากวันที่มาถึงประเทศไทย,all residents who live in the same household must be placed on a 14-day quarantine starting from the day of arrival to Thailand
+หากพวกเขาเคยไปยังพื้นที่/ประเทศกลุ่มเสี่ยงดังต่อไปนี้,if they have visited the following high-risk countries/areas
+ทุกคนที่เคยอาศัยร่วมด้วยจะต้องมีหนังสืออนุญาตเดินทางหากเป็นการเดินทางระหว่างประเทศ,All those who live in the same household will need to complete a travel declaration form if they are travelling overseas
+ใช่ กรุณาดูข้อกำหนดที่ออกในวันที่ 28 กุมภาพันธ์ 2020 โดยกระทรวงศึกษาธิการประเทศไทย,"Yes. Please refer to the following directive issued by the Ministry of Education of Thailand on February 28, 2020."
+ในกรณีจ้าวพนักงาน ครู และบุคคลากรภายในกระทรวงศึกษาธิการ นักเรียน และ นักศึกษาภายใต้กระทรวงศึกษามีบุคคลในครอบครัวเดินทางกลับมาจากพื้นที่เสี่ยงหรือมีการใกล้ชิดกับผู้ต้องสงสัยว่าจะติดเชื้อ ห้ามบุคคลนั้นไปเรียนหรือไปทำงานและให้กักตัวอยู่ที่บ้านอย่างน้อย 14 วัน,"In case that the government officers, teachers and educational personnel, officers under the Ministry of Education and all divisions, students in all schools and universities under the Ministry of Education have family members returned from at-risk countries or have had close contact with those who are suspected to be an infected case, they must not attend class or not go to work for 14-day self-quarantine at home"
+เริ่มบังคับใช้ตั้งแต่วันที่ 28 กุมภาพันธ์ 2020 ทุกคนภายใต้กฏดังกล่าวจะต้องกักตัว 14 วัน,"With effect from February 28th, 2020, any personnel which falls under the directive above will need to be quarantined for 14 days. "
+"ค่าใช้จ่ายในการตรวจยืนยันแตกต่างกันสำหรับแต่ละโรงพยาบาล ตั้งแต่ 2,500 - 13,000 บาท เนื่องจากค่าใช้จ่ายในการจัดการความเสี่ยงของบุคลากรและค่าคนส่ง","The cost of laboratory confirmation is different for each public and private hospital, from 2,500 - 13,000 baht due to the cost of personnel protection in accordance with the risk level of the client, the sample transportation cost"
+เนื่องจากบางโรงพยาบาลไม่มีแลบสำหรับทดสอบ,Because some hospitals do not perform self-tests
+มีผลการศึกษาจากประเทศจีน,There is a study report in China
+ตรวจพบการติดเชื้อโดยใช้เครื่อง RT-PCR หลังจากได้รับการรักษา,The infection was detected by RT-PCR again after receiving treatment
+ไม่มีการพบเชื้อระหว่างการตรวจทั้งสองครั้งซึ่งห่างกัน 48 ชั่วโมง,"no infection was found at least 2 times apart, 48 hours apart"
+อย่างไรก็ตาม ผลการศึกษายังไม่พอที่จะยืนยันว่าผลบวกของ RT-PCR หมายถึงการติดเชื้อ เนื่องจากการทดสอบ RT-PCR ไม่ได้ใช้สำหรับตรวจสอบการติดเชื้อ,"However, more studies have yet to be found that the positive RT-PCR results Means the patient is infected because RT-PCR is a test that does not indicate infection."
+นอกจากนั้น ผู้ป่วยที่ตรวจนั้นไม่แสดงอาการอย่างอื่น,"In addition, patients who have detected the infection do not show symptoms"
+โดยทั่วไปแล้ว ผู้ป่วยจากเชื้อไวรัสเมื่อหายแล้วจะมีภูมิคุ้มกันสูงพอจะป้องกันโรคนั้นได้อีกหลายเดือน,"In general, general viral infection Patients who recover from the disease build immunity that is high enough to prevent the disease for many months"
+จากข้อมูลของ Thai PBS ค่าใช้จ่ายอาจแตกต่างกันในแต่ละโรงพยาบาลสำหรับแต่ละบุคคล ดูได้ที่นี่,"According to information obtained by Thai PBS, the charges made for an individual to be tested for COVID-19 infection vary from hospital to hospital available here"
+ในปัจจุบันยังไม่มีหลักฐานการระบาดทางอากาศ,There is currently no strong evidence of the transmission as airborne
+การติดเชื้อจะติดผ่านละอองที่มีของเหลวเป็นภาหะ,"Is a diffusion, also known as aerosol, that is to get infected through the aerosol that is diffused by a nebulizer"
+การได้รับเชื้อโดยหลักมาจากละอองน้ำลาย ไอ หรือมือที่สัมผัสถูกพื้นผิวที่มีเชื้อและเข้าสู่ร่างกายผ่านเนื้อเยื่ออ่อนทางการขยี้ตาหรือการแคะจมูก,"The main contact is also close to the aura, cough or hand touch the contaminated surface and then brought to the body through rubbing eyes soft tissue or nose picking (Mucosa)"
+สมุนไพรบางชนิดได้รับการยืนยันผ่านกรมการแพทย์แผนไทยและการแพทย์ทางเลือกสำหรับรักษาหวัดเช่น andrographis paniculata ,"Herbal medicine such as andrographis paniculata, an herbal medicine recommended by the Department of Thai Traditional Medicine and Alternative Medicine to treat colds"
+Covid-19 เป็นไวรัสในกลุ่มโคโรนา ไม่ใช่กลุ่มไข้หวัดทั่วไป,"COVID-19 is a virus in the corona virus group, not influenza virus"
+ข้อมูลเกี่ยวกับการเดินทางจากสถานฑูตไทย หาได้ที่นี่,Travel information from Thailand Embassy: available here
+Covid-19 สามารถกระจายผ่านทางสิ่งของที่มีเชื้อ,COVID-19 can spread through contaminated items
+มันสามารถมีชีวิตอยู่ได้หลายวันหากไม่ได้ทำความสะอาด,Can last for many days without cleaning
+ยกตัวอย่างเช่น อุปกรณ์ต่างๆ ในพื้นที่สาธารณะ เช่น ลูกบิดประตู มือจับประตู ฝักบัว ราว รถสาธารณะ,"For example, various devices Used in public areas such as door knobs and door handles, faucets, handrails, public vehicles"
+ยังมีบางครั้งอาจได้รับเชื้อจากการจับโทรศัพท์มือถือ,"In addition, there may be tarnish through the hand and then hold the mobile phone"
+ถ้าใช้มือสัมผัสวัตถุนั้น ๆ แล้วสัมผัสบริเวณหน้า,If using hands to touch an object and then touch the face area
+จับอาหารเข้าปาก,picking food into the mouth 
+สามารถติดเชื้อได้ไม่ต่างจากการได้รับโดยตรงจากผู้ติดเชื้อ,Can be infected as well as direct contact from patients
+ควรทำความสะอาดพื้นผิวที่อาจมีเชื้อโรคอย่างละเอียดบ่อย ๆ และ ล้างมือบ่อย ๆ,Should be careful Cleaning the surface that may be contaminated frequently And wash hands frequently
+ข่าวล่าสุดเกี่ยวกับไวรัสโคโรนารายวันรวมถึงข้อมูลเกี่ยวกับจำนวนผู้ป่วย มีอยู่ที่นี่,The latest coronavirus news updated every day including coronavirus cases: available here
+ยังไม่มีรายงานเกี่ยวกับการติดเชื้อจากสระว่ายน้ำ,There is currently no reported infection from swimming in the pool. 
+หรือจากแหล่งน้ำ อย่างไรก็ตาม ควรหลีกเลี่ยงจากสระว่ายน้ำที่มีคนเยอะ,Or other water sources But should avoid a crowded pool
+นี่คือแหล่งข่าวเกี่ยวกับ Covid-19 ในพื้นที่ของคุณ,Here is up-to-the-minute news about COVID-19 in your area:
+จำนวนผู้ป่วย Covid-19 ล่าสุดในประเทศไทย,Latest count of COVID-19 cases in Thailand
+ข่าวด่วนล่าสุดจาก BangkokPost,Latest breaking news on BangkokPost
+ข้อมูลเกี่ยวกับการได้รับการตรวจสอบในประเทศไทย,Information about getting tested in Thailand
+จากข้อแนะนำของ WHO หน้ากากทางการแพทย์สามารถลดอัตราการติดเชื้อได้,"Based on WHO guideline, standard medical grade mask can significantly reduce infection rate"
+อย่างไรก็ตาม มันมีสิ่งที่ควรรู้มากกว่านั้น กรุณาอ่านคำแนะนำของ WHO เกี่ยวกับเรื่องนี้,"However, there is a lot more to that. Please read WHO guideline for this"
+กดที่นี่เพื่ออ่านเพิ่มเติม,click here to find our more
+หากคุณกลับมาจากพื้นที่ ๆ มีการระบาดอย่างกว้างขวางระหว่างคนสู่คน (ระดับ 3 ควรระมัดระวังสุขภาพในการเดินทางเข้าสู่ประเทศ),"If you are returning from an area with widespread, ongoing community spread (Level 3 Travel Health Notice countries)"
+อยู่บ้าน 14 วัน นับจากวันที่คุณออกมา และ อยู่ห่างจากบุคคลอื่น ๆ,stay home for 14 days from the time you left and practice social distancing
+ดูที่นี่เกี่ยวกับการแจ้งเตือนความเสี่ยงด้านสุขภาพจากการเดินทางจาก CDC,See the latest the CDC Travel Health Notices here
+ขึ้นอยู่กับสถานการณ์ของคุณ คุณอาจเลื่อนหรือยกเลิกแผนนั้น,"Depending on your unique circumstances, you may choose to delay or cancel your plans"
+ถ้าคุณตัดสินใจเดินทาง ควรมั่นใจว่าคุณระมัดระวังในการติดเชื้อหรือแพร่เชื้อ Covid-19 และโรคทางเดินหายใจอื่น ๆ ในระหว่างเดินทาง,"If you do decide to travel, be sure to practice precautions to prevent getting and spreading COVID-19 and other respiratory diseases during travel"
+สำหรับข้อมูลสำหรับการเดินทางล่าสุดสืบเนื่องจาก Covid-19 ดูได้ที่หน้าของ CDC Covid-19,"For the most up-to-date COVID-19 travel information, visit CDC COVID-19 Travel page"
+รับรู้ข้อเท็จจริงเกี่ยวกับการระบาดของไวรัสโคโรนา 2019 (Covid-19) และช่วยหยุดการกระจายข่าวลือ,Know the facts about coronavirus disease 2019 (COVID-19) and help stop the spread of rumors.
+ไปที่เว็บไซท์นี้เพื่อดูข้อมูลล่าสุดเกี่ยวกับสถานการณ์ Covid-19 จาก CDC,Go to this web site for the latest update on the COVID-19 situation from the CDC
+พบปัญหาบางอย่าง ไม่สามารถดึงข้อมูลยอดผู้ป่วยได้,"Internal error, cannot retrieve case count"
+เว็บดังต่อไปนี้มีข้อมูลยอดผู้ป่วย Covid-19 ที่ได้รับการยืนยันแล้วในประเทศไทย,The following web page contains the latest number of confirmed Covid-19 patients in Thailand.
+คลิกที่นี่เพื่อดูข้อมูลเพิ่มเติมจาก Cognos Analytics,Click here to find our more from Cognos Analytics
+ติดตามคำแนะนำการเดินทางจาก CDC,Follow the CDC's guidelines for all travel
+คุณสามารถหาข้อมูลคำแนะนำการเดินทางในแต่ละประเทศได้จากแผนที่ประเมินความเสี่ยงของการแพร่ระบาด Covid-19 ได้ที่นี่,You can find travel recommendations by country as well as a Geographic Risk Assessment map for COVID-19 transmission here
+อาการของ Covid-19 มักปรากฎภายใน 2-14 วันหลังจากได้รับเชื้อไวรัส,Symptoms for Covid-19 typically appear 2-14 days after contracting the virus
+คุณควรติดต่อสถานพยาบาลหรือผู้เชี่ยวชาญเมื่อคุณมีอาการเริ่มมีอาการ,You should contact your healthcare professional at the first sign of symptoms
+การแพร่ระบาดไปทั่วโลกและไม่สามารถนับหรือติดตามได้ง่ายๆ เรียกว่า pandemic,A pandemic is an outbreak that has spread globally and can not be easily tracked or contained.
+CDC มีข้อมูลเพิ่มเติมเกี่ยวกับว่าทำไม Covid-19 ถึงเป็นโรคระบาดทั่วโลกและมีผลกระทบอย่างไรบนเว็บไซท์,The CDC has more information on why Covid-19 is a pandemic and what that means on their web site
+เนื่องจากสถานการณ์ของไวรัสโคโรนาหรือ Covid-19,Due to the ongoing impact of coronavirus/COVID-19.
+ดูเว็บเพจของสถานฑูตสหรัฐอเมริกาเกี่ยวกับสถานะของ Covid-19,Visit US Embassy in Thailand webpages on COVID-19 for information on conditions
+CDC แนะนำให้สวมหน้ากากผ้าในที่สาธารณะในสถานที่ ๆ การเว้นระยะห่างจากคนอื่นเป็นไปได้ยาก,The CDC recommends wearing a cloth face covering in public settings where social distancing may be difficult to maintain
+สำหรับข้อมูลเกี่ยวหน้ากากผ้าและข้อแนะนำในการป้องกันตัวเองจากผู้อื่นหาอ่านได้ที่เว็บไซท์ของ CDC,For more information on face coverings and general guidance on protecting yourself and others please visit the CDC web site. 
+เจ้าหน้าที่สาธารณะสุขที่ดูแลผู้ต้องสงสัยติดเชื้อ Covid-19 จำเป็นต้องสวมหน้ากาเพื่อป้องกันการระบาดของเชื้อ Covid-19,Healthcare workers caring for patients suspected to have Covid-19 also need to wear face-masks to prevent additional spread of Covid-19.
+หากคุณมีหน้ากาก N95 หรือหน้ากากผ่าตัดเหลือ กรุณาบริจาคได้ที่โรงพยาบาลต่าง ๆ,"If you have a surplus of N95 masks or surgical masks, consider donating them to a local hospital"
+การเว้นระยะห่างจากผู้อื่นหมายถึงการพยายามเว้นระยะอย่างน้อย 6 ฟุตจากผู้อื่น,Social distancing generally means remaining and managing a minimum of six feet of separation between people
+การเว้นระยะแบบนี้ช่วยป้องกันคุณจากการได้รับเชื้อจากการไอหรือจาม,Keeping this distance helps prevent droplets created by sneezing and coughing from reaching you
+ยังมีวิธีการอื่น ๆ - เช่นการล้างมือด้วยสบู่บ่อย ๆ เพื่อลดความเสี่ยงในการกระจายเชื้อในแหล่งชุมชน,"There are other actions - like washing your hands with soap frequently, you can take to reduce the risk of possible exposure in the community."
+คุณต้องการฟังต่อไหม ?,Would you like to hear more ?
+วันนี้ สำนักงานการบินพลเรือนแห่งประเทศไทย ประกาศยืดการห้ามบินเข้าประเทศออกไปถึง 30 เมษายน 2020,"Today, the Civil Aviation Authority of Thailand (CAAT) announced the extension until 30 April 2020 of the ban on incoming international flights"
+การยืดเวลาออกไปน่าจะทำให้เที่ยวบินขาออกลดจำนวนลงในอนาคต ,The extension will likely mean a further reduction in outgoing international flights in the days ahead
+"ในวันที่ 7 เมษายน 2020 กระทรวงดิจิตอลเศรษฐกิจและสังคม ร่วมมือกับ สำนักงานส่งเสริมเศรษฐกิจดิจิทัล IBM และ Ecardstudio เปิดใช้งานโปรแกรมมือถือชื่อ ""Card2U""","On 7 April 2020, the Ministry of Digital Economy and Society, in cooperation with Digital Economy Promotion Agency (DEPA), IBM, and Ecartstudio, launched a new mobile application called “Card2U,” "
+ซึ่งให้ข้อมูลล่าสุดเกี่ยวกับ Covid-19,which provides real time information on COVID-19. 
+โปรแกรมมือถือนี้เสนอข้อมูลล่าสุดเกี่ยวกับการระบาด Covid-19 ได้แก่พื้นที่ระบาด การประเมินความเสี่ยงก่อนพบแพทย์ รายการโรงพยาบาลที่รับตรวจ Covid-19 สายด่วน และอื่น ๆ,"This mobile application offers updated official information to help the public cope with the COVID-19 outbreak, such as, infected areas, risk assessment before testing, lists of hospital for COVID-19 examination, hotlines, etc. "
+โปรแกรมนี้มีให้ดาวน์โหลดใน App Store และ Play Store,The application is now available for download from the Apple App Store and Play Store.
+ผู้ใช้ใหม่ทุกคนจำเป็นต้องลงทะเบียนโดยใช้บัตรดิจิตอลเพื่อเข้าถึงข่าวและบริการเกี่ยวกับ Covid-19,All new users are required to register for a digital card which is needed for access to the latest news and services related to COVID-19. 
+กระทรวงสาธารณะสุข และกรมควบคุมโรค ได้มีคำแนะนำเพื่อความปลอดภัยสำหรับคุณและคนรอบตัวและเพื่อลดผลกระทบต่อสังคมและเศรษฐกิจ,"Ministry of Public Health (MoPH) & Department of Disease Control recommends for your safety and for others, and to decrease negative social and economic impacts. "
+พื้นที่ติดเชื้อรวมถึงประเทศจีน (รวมถึงมาเก๊าและฮ่องกง) เกาหลีใต้ อีหร่าน อิตาลี,"The Disease Infected Zones were determined to include the People’s Republic of China (including Special Administrative Regions Macau and Hong Kong), South Korea, Iran and Italy:"
+ดูที่นี่สำหรับการตรวจ Covid-19 ในประเทศไทย,Look here to find out about getting tested for COVID-19 in Thailand
+สำหรับเคอร์ฟิวเรื่องไวรัสโคโรนาล่าสุดในประเทศไทย,For the latest coronavirus curfew update in Thailand
+ดูวิดีโอจากองค์การอนามัยโลกเพื่อเรียนรู้เกี่ยวกับ Covid-19 ได้ทันที,Watch this video from the World Health Organization to learn what we know about COVID-19 right now
+แนะนำให้ควรทานอาหารปรุงสุก หากเป็นไปได้ทานทันทีหลังปรุงเสร็จ,"It's advised to eat well cooked food, preferable immediately after cooked. "
+วัตถุดิบนั้นอาจมีหรือไม่มีเชื้อไวรัสปนเปือ้นทั้งก่อนหรือหลังปรุงอาหาร,The material itself may or may not be safe but the virus may contaminated it before or after cook. 
+อาหารปรุงสุกหมายถึงอาหารที่ได้รับความร้อนในปริมาณที่เหมาะสมเป็นเวลานานพอสมควร,Well cooked food mean a food that is heated to some considerable amount of temperature to some period of time. 
+ยกตัวอย่างเช่น แกง สเต็กสุก ปลาทอดกรอบ,"For example: curry soup, well done steak, deep fried fish."
+เราปิดในวันอาทิตย์,We are closed on Sunday
+เราปิดในวันเสาร์,We are closed on Saturday
+จาก 10 โมงเช้า ถึง 2 ทุ่ม,from 10am until 8pm
+เราเปิดบริการ,We are open
+เวลาทำการ,regular hours
+11 โมงเช้าถึง 6 โมงเย็น,11am to 6pm
+เราทำการตลอด 24 ชั่วโมง 7 วัน เพื่อให้คุณได้รับข่าวสารสำคัญเพื่อป้องกันตนเองจากสถานการณ์ Covid-19,We are available 24/7 to provide you with critical information to protect yourself during the COVID-19 crisis.
+สวัสดียามเช้า,Hello. Good morning
+สวัสดียามบ่าย,Hello. Good afternoon
+สวัสดียามเย็น,Hello. Good evening
+เจอกันอีก,So long
+เจอกันใหม่,See ya
+ลาก่อน,Good bye
+ยินดีให้บริการ บอกฉันได้หากต้องการอะไรอย่างอื่นอีก,You're welcome. Just let me know if you need anything else
+ไม่มีปัญหา บอกฉันได้หากต้องการอะไรอย่างอื่นอีก,No problem. Just let me know if you need anything else
+ด้วยความยินดี บอกฉันได้หากต้องการอะไรอย่างอื่นอีก,My pleasure. Just let me know if you need anything else
+คุณต้องการคุยกับตัวแทนไหม ?,Would you like me to transfer you to a representative?
+โอเค กำลังโอนไปอยู่,OK. Transferring... 
+โอเค บอกฉันได้ว่าต้องการให้ช่วยอะไร,OK. Let me know how I can help
+ฉันสามารถแสดงให้คุณเห็นข่าวล่าสุดเกี่ยวกับไวรัส Covid-19 ในบริเวณนี้,I can show you local news updates about the COVID-19 virus
+ฉันสามารถเชื่อมโยงข้อมูลล่าสุดจาก CDC เกี่ยวกับการระบาดทั่วโลกนี้,I can link you to the latest information from the CDC about the pandemic.
+คุณสามารถขอคุยกับตัวแทนได้,You could also ask me to connect you to an agent.
+นี่คือผลลัพธ์จากการค้นหาจาก Watson Discovery,Here's some search result from Watson Discovery
+คุณหมายถึง,Did you mean
+มีสิ่งที่คุณอยากรู้เกี่ยวกับ Covid-19 อีกไหม ?,Anything other COVID-19 information that you are seeking?
+คุณต้องการข้อมูลอะไรอย่างอื่นเกี่ยวกับ Covid-19 อีกไหม ?,What other COVID-19 information can I provide?
+ใช่แล้ว นั่นคือสิ่งที่ฉันต้องการ,Affirmative. That's what I'm looking for.
+หลังจากหายจาก Covid19 แล้ว ฉันยังต้องกักตัวต่ออีกไหม ?,"After recovering from COVID19, do I continue to self isolate ?"
+การเดินทางโดยเครื่องบิน,airline travel
+ข้อมูลสายการบิน,airlines information
+ร้านขายทุกร้อนไม่่มีน้ำยาฆ่าเชื้อ ฉันต้องทำยังไง ?,"All the stores are out of disinfecting wipes, what do I do?"
+ฉันสามารถไปยังสวนในช่วยกักกันตัวเองได้ไหม,Am I allowed to go to my garden in quarantine ?
+ฉันสามารถรวมกลุ่มกับคนอื่นได้หรือไม่ ?,Am I allowed to have gatherings ?
+ฉันสามารถชวนเพื่อนมาหาได้ไหม ?,Am I allowed to have friends over ?
+ฉันคุยกับคนอยู่หรือเปล่า ?,Am I chatting with a human?
+ฉันป่วยไหม,am i sick
+ฉันคุยกับบอทหรือเปล่า ?,Am I talking to a Bot?
+ฉันคุยกับคน หรือฉันกำลังคุยกับบอทกันแน่ ?,Am I talking to a person or am I talking to an AI?
+ขอมุกเพิ่ม,Another joke
+มีใครอยู่ไหม ?,Anyone there?
