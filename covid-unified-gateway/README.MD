@@ -27,6 +27,12 @@ WA_ENDPOINT=<YOUR_WA_ENDPOINT_URL>
 WA_VERSION=<YOUR_WA_API_VERSION>
 WA_RETRY=<MAX_RETRY_ON_FAIL_WA>
 ```
+It has optional entries for model customization, for example,
+```
+th_en=d589d1c7-aaaa-aaaa-aaaa-cec1e4caaaaa
+```
+It will use custom model id `d589d1c7-aaaa-aaaa-aaaa-cec1e4caaaaa` for translation
+from "Thai" to "English"
 ## Step to deploy
 Follow every step on step to build
 1. cd target/x86_64-unknown-linux-musl/release
