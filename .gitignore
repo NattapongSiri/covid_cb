@@ -1,8 +1,11 @@
 **/build/*
 **/node_modules
 case_count_sync/*
+covid-unified-gateway/target
+covid-unified-gateway/cargo.lock
 .*
 !.gitignore
 node_modules
 *.zip
 package-lock.json
+~$*.xlsx
